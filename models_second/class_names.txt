@@ -1,0 +1,13 @@
+Mango_Anthracnose
+Mango_Healthy
+Mango_Powdery_Mildew
+Pepper_Bacterial_Spot
+Pepper_Healthy
+Potato_Early_Blight
+Potato_Healthy
+Potato_Late_Blight
+Tomato_Early_Blight
+Tomato_Healthy
+Tomato_Late_Blight
+Tomato_Leaf_Mold
+Tomato_Yellow_leaf_curl_virus
