@@ -1,0 +1,185 @@
+[
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/mini_dataset/Mango_Anthracnose/Mango_Anthracnose_0002.png",
+    "predicted_class": "Mango_Anthracnose",
+    "confidence": 0.9999527931213379,
+    "top3": [
+      {
+        "class": "Mango_Anthracnose",
+        "confidence": 0.9999527931213379
+      },
+      {
+        "class": "Pepper_Bacterial_Spot",
+        "confidence": 4.535490006674081e-05
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 1.574750967847649e-06
+      }
+    ],
+    "severity_label": "Moderate",
+    "severity_percent": 25.0,
+    "recommendation": {
+      "summary": "Disease is established on a noticeable part of the canopy or fruiting structures, with increased risk of fruit set loss and postharvest quality reduction.",
+      "treatment": [
+        "Prune and remove infected plant material more thoroughly to reduce ongoing inoculum.",
+        "Use integrated management combining sanitation, canopy management, and preventative protection of healthy tissue where locally approved.",
+        "During flowering and fruit set, pay particular attention to disease suppression because infection at these stages can strongly affect fruit development.",
+        "For harvested fruit, validated postharvest management options may be used where available to reduce lesion development during storage and handling."
+      ],
+      "prevention": [
+        "Reduce humidity within the canopy through pruning and spacing where feasible.",
+        "Remove fallen infected debris and other sources of persistent inoculum.",
+        "Plan management around weather conditions, especially wet periods that increase infection risk."
+      ],
+      "monitoring": [
+        "Inspect every 3 to 5 days during favorable disease periods.",
+        "Track whether lesions are increasing on flowers, panicles, or fruit."
+      ],
+      "caution": [
+        "Anthracnose can remain latent and become more obvious later, including after harvest.",
+        "Relying only on late-stage intervention is less effective than integrated early management."
+      ],
+      "references": [
+        {
+          "title": "Mango anthracnose disease: the current situation and future direction for integrated disease management",
+          "authors": "Dofuor et al.",
+          "year": "2023",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Enhancing anthracnose management in Tomy Atkins mango using integrated practices",
+          "authors": "Hio et al.",
+          "year": "2024",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Management of Post-Harvest Anthracnose: Current Approaches and Future Perspectives",
+          "authors": "Ciofini et al.",
+          "year": "2022",
+          "type": "peer_reviewed_review"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T12:36:06.525207"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/mini_dataset/Mango_Anthracnose/Mango_Anthracnose_0002.png",
+    "predicted_class": "Mango_Anthracnose",
+    "confidence": 0.9999527931213379,
+    "top3": [
+      {
+        "class": "Mango_Anthracnose",
+        "confidence": 0.9999527931213379
+      },
+      {
+        "class": "Pepper_Bacterial_Spot",
+        "confidence": 4.535490006674081e-05
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 1.574750967847649e-06
+      }
+    ],
+    "severity_label": "Moderate",
+    "severity_percent": 22.05585825217727,
+    "leaf_pixels": 69927,
+    "affected_pixels": 15423,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/gradcam_overlay.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/affected_overlay.png",
+    "recommendation": {
+      "summary": "Disease is established on a noticeable part of the canopy or fruiting structures, with increased risk of fruit set loss and postharvest quality reduction.",
+      "treatment": [
+        "Prune and remove infected plant material more thoroughly to reduce ongoing inoculum.",
+        "Use integrated management combining sanitation, canopy management, and preventative protection of healthy tissue where locally approved.",
+        "During flowering and fruit set, pay particular attention to disease suppression because infection at these stages can strongly affect fruit development.",
+        "For harvested fruit, validated postharvest management options may be used where available to reduce lesion development during storage and handling."
+      ],
+      "prevention": [
+        "Reduce humidity within the canopy through pruning and spacing where feasible.",
+        "Remove fallen infected debris and other sources of persistent inoculum.",
+        "Plan management around weather conditions, especially wet periods that increase infection risk."
+      ],
+      "monitoring": [
+        "Inspect every 3 to 5 days during favorable disease periods.",
+        "Track whether lesions are increasing on flowers, panicles, or fruit."
+      ],
+      "caution": [
+        "Anthracnose can remain latent and become more obvious later, including after harvest.",
+        "Relying only on late-stage intervention is less effective than integrated early management."
+      ],
+      "references": [
+        {
+          "title": "Mango anthracnose disease: the current situation and future direction for integrated disease management",
+          "authors": "Dofuor et al.",
+          "year": "2023",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Enhancing anthracnose management in Tomy Atkins mango using integrated practices",
+          "authors": "Hio et al.",
+          "year": "2024",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Management of Post-Harvest Anthracnose: Current Approaches and Future Perspectives",
+          "authors": "Ciofini et al.",
+          "year": "2022",
+          "type": "peer_reviewed_review"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T12:42:40.172372"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/unseen_test_dataset_final/Mango_Healthy/Mango_Healthy_0002.jpg",
+    "predicted_class": "Mango_Healthy",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Mango_Healthy",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 1.0720651390282512e-13
+      },
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 4.982074577512081e-15
+      }
+    ],
+    "severity_label": null,
+    "severity_percent": null,
+    "leaf_pixels": null,
+    "affected_pixels": null,
+    "gradcam_overlay_path": null,
+    "affected_overlay_path": null,
+    "recommendation": {
+      "status": "healthy",
+      "summary": "The leaf appears healthy, with no major visible disease pattern detected.",
+      "treatment": [
+        "No disease treatment is required at this stage."
+      ],
+      "prevention": [
+        "Maintain good canopy airflow through appropriate pruning.",
+        "Monitor the tree during humid and rainy periods when fungal diseases are more likely to develop.",
+        "Avoid prolonged leaf wetness where possible."
+      ],
+      "monitoring": [
+        "Inspect the tree again within 7 to 14 days.",
+        "Reassess if spots, powdery growth, or fruit lesions appear."
+      ],
+      "caution": [
+        "A healthy-looking leaf can still develop symptoms later, especially under favorable disease conditions."
+      ],
+      "references": [
+        {
+          "title": "General orchard sanitation and disease prevention practices for mango production",
+          "type": "supporting_practical_guidance"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T15:16:09.173401"
+  }
+]
