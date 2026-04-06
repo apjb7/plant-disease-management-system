@@ -23,3 +23,12 @@ def save_rgb_image(image_rgb, save_path):
     save_path.parent.mkdir(parents=True, exist_ok=True)
     image_bgr = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2BGR)
     cv2.imwrite(str(save_path), image_bgr)
+
+def safe_filename(name: str) -> str:
+    keep = []
+    for ch in name:
+        if ch.isalnum() or ch in ("_", "-", "."):
+            keep.append(ch)
+        else:
+            keep.append("_")
+    return "".join(keep)

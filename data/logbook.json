@@ -181,5 +181,706 @@
       ]
     },
     "timestamp": "2026-04-06T15:16:09.173401"
+  },
+  {
+    "image_path": "/var/folders/wk/_hnbdwdd4hv16rrrdlz12_b80000gn/T/tmpqki9ad5v.jpg",
+    "predicted_class": "Tomato_Leaf_Mold",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Tomato_Leaf_Mold",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 9.752700036447237e-11
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 3.508759602310896e-11
+      }
+    ],
+    "severity_label": "Moderate",
+    "severity_percent": 29.58177600206212,
+    "leaf_pixels": 31036,
+    "affected_pixels": 9181,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/tmpqki9ad5v_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/tmpqki9ad5v_affected.png",
+    "recommendation": {
+      "summary": "Disease is established on a noticeable portion of the foliage, with increasing lower-canopy infection and clear risk of additional spread under humid conditions.",
+      "treatment": [
+        "Remove heavily infected leaves and destroy infected plant material away from the growing area.",
+        "Use integrated management combining sanitation, humidity reduction, and locally approved protective treatment where appropriate.",
+        "Where available, supportive biological control strategies may be included as part of a broader disease management plan."
+      ],
+      "prevention": [
+        "Increase spacing and ventilation where possible to reduce moisture retention on leaves.",
+        "Avoid irrigation practices that increase humidity or extended foliage wetness.",
+        "Use resistant cultivars where suitable options are available, while recognizing that resistance can be overcome by changing pathogen populations."
+      ],
+      "monitoring": [
+        "Inspect every 3 to 5 days during humid or enclosed growing conditions.",
+        "Track whether infection is moving upward through the canopy or increasing on new leaves."
+      ],
+      "caution": [
+        "Leaf mold can become difficult to suppress once humidity remains consistently high and sporulation is widespread.",
+        "Resistance-based management should be supported by continued monitoring because pathogen race variation is known to occur."
+      ],
+      "references": [
+        {
+          "title": "Exploring the Antifungal Activity of Moroccan Bacterial Isolates and Azoxystrobin against Cladosporium fulvum, the Causal Agent of Tomato Leaf Mold",
+          "authors": "Belabess et al.",
+          "year": "2024",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Mapping of the Cladosporium fulvum resistance gene Cf-16, a small cysteine-rich transmembrane protein, in tomato",
+          "authors": "Zhang et al.",
+          "year": "2023",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Characterization of two conserved cell death elicitor families from the tomato fungal pathogen Cladosporium fulvum",
+          "authors": "Tarallo et al.",
+          "year": "2022",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T15:29:54.443390"
+  },
+  {
+    "image_path": "/var/folders/wk/_hnbdwdd4hv16rrrdlz12_b80000gn/T/tmplxos7yrj.jpg",
+    "predicted_class": "Tomato_Leaf_Mold",
+    "confidence": 0.9999372959136963,
+    "top3": [
+      {
+        "class": "Tomato_Leaf_Mold",
+        "confidence": 0.9999372959136963
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 5.687850352842361e-05
+      },
+      {
+        "class": "Tomato_Early_Blight",
+        "confidence": 2.4790138013486285e-06
+      }
+    ],
+    "severity_label": "Moderate",
+    "severity_percent": 18.69995112598218,
+    "leaf_pixels": 26599,
+    "affected_pixels": 4974,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/tmplxos7yrj_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/tmplxos7yrj_affected.png",
+    "recommendation": {
+      "summary": "Disease is established on a noticeable portion of the foliage, with increasing lower-canopy infection and clear risk of additional spread under humid conditions.",
+      "treatment": [
+        "Remove heavily infected leaves and destroy infected plant material away from the growing area.",
+        "Use integrated management combining sanitation, humidity reduction, and locally approved protective treatment where appropriate.",
+        "Where available, supportive biological control strategies may be included as part of a broader disease management plan."
+      ],
+      "prevention": [
+        "Increase spacing and ventilation where possible to reduce moisture retention on leaves.",
+        "Avoid irrigation practices that increase humidity or extended foliage wetness.",
+        "Use resistant cultivars where suitable options are available, while recognizing that resistance can be overcome by changing pathogen populations."
+      ],
+      "monitoring": [
+        "Inspect every 3 to 5 days during humid or enclosed growing conditions.",
+        "Track whether infection is moving upward through the canopy or increasing on new leaves."
+      ],
+      "caution": [
+        "Leaf mold can become difficult to suppress once humidity remains consistently high and sporulation is widespread.",
+        "Resistance-based management should be supported by continued monitoring because pathogen race variation is known to occur."
+      ],
+      "references": [
+        {
+          "title": "Exploring the Antifungal Activity of Moroccan Bacterial Isolates and Azoxystrobin against Cladosporium fulvum, the Causal Agent of Tomato Leaf Mold",
+          "authors": "Belabess et al.",
+          "year": "2024",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Mapping of the Cladosporium fulvum resistance gene Cf-16, a small cysteine-rich transmembrane protein, in tomato",
+          "authors": "Zhang et al.",
+          "year": "2023",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Characterization of two conserved cell death elicitor families from the tomato fungal pathogen Cladosporium fulvum",
+          "authors": "Tarallo et al.",
+          "year": "2022",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T15:30:14.777234"
+  },
+  {
+    "image_path": "/var/folders/wk/_hnbdwdd4hv16rrrdlz12_b80000gn/T/tmpe2b0abzw.jpg",
+    "predicted_class": "Potato_Late_Blight",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 5.035529770935909e-10
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 3.0550420526687105e-10
+      }
+    ],
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "leaf_pixels": 29484,
+    "affected_pixels": 0,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/tmpe2b0abzw_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/tmpe2b0abzw_affected.png",
+    "recommendation": {
+      "summary": "Early late blight symptoms are visible on a limited portion of foliage, typically as water-soaked dark lesions, but disease spread is still relatively localized.",
+      "treatment": [
+        "Remove and safely discard visibly infected foliage where disease is still limited.",
+        "Apply locally approved preventative protection effective against oomycete pathogens to protect healthy foliage.",
+        "Strengthen crop protection immediately if cool, wet, or foggy weather is expected."
+      ],
+      "prevention": [
+        "Avoid overhead irrigation and reduce prolonged leaf wetness.",
+        "Water at the base of the plant where possible and avoid practices that increase splash dispersal.",
+        "Monitor nearby potato and tomato plants because linked spread can occur under favorable conditions."
+      ],
+      "monitoring": [
+        "Inspect again within 24 to 48 hours during favorable weather.",
+        "Check whether lesions are expanding or whether pale or white sporulation appears around lesion margins."
+      ],
+      "caution": [
+        "Late blight spreads rapidly under cool and wet conditions, so early intervention is critical.",
+        "Because Phytophthora infestans is an oomycete rather than a true fungus, management should rely on measures validated for oomycete control."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Late Blight Resistance Evaluation and Genome-Wide Association Analysis in Tetraploid Potato",
+          "authors": "Duan et al.",
+          "year": "2021",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T15:37:04.659990"
+  },
+  {
+    "image_path": "/var/folders/wk/_hnbdwdd4hv16rrrdlz12_b80000gn/T/tmpmi599w3s.jpg",
+    "predicted_class": "Potato_Late_Blight",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 5.035529770935909e-10
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 3.0550420526687105e-10
+      }
+    ],
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "leaf_pixels": 29484,
+    "affected_pixels": 0,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/tmpmi599w3s_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/tmpmi599w3s_affected.png",
+    "recommendation": {
+      "summary": "Early late blight symptoms are visible on a limited portion of foliage, typically as water-soaked dark lesions, but disease spread is still relatively localized.",
+      "treatment": [
+        "Remove and safely discard visibly infected foliage where disease is still limited.",
+        "Apply locally approved preventative protection effective against oomycete pathogens to protect healthy foliage.",
+        "Strengthen crop protection immediately if cool, wet, or foggy weather is expected."
+      ],
+      "prevention": [
+        "Avoid overhead irrigation and reduce prolonged leaf wetness.",
+        "Water at the base of the plant where possible and avoid practices that increase splash dispersal.",
+        "Monitor nearby potato and tomato plants because linked spread can occur under favorable conditions."
+      ],
+      "monitoring": [
+        "Inspect again within 24 to 48 hours during favorable weather.",
+        "Check whether lesions are expanding or whether pale or white sporulation appears around lesion margins."
+      ],
+      "caution": [
+        "Late blight spreads rapidly under cool and wet conditions, so early intervention is critical.",
+        "Because Phytophthora infestans is an oomycete rather than a true fungus, management should rely on measures validated for oomycete control."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Late Blight Resistance Evaluation and Genome-Wide Association Analysis in Tetraploid Potato",
+          "authors": "Duan et al.",
+          "year": "2021",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T15:38:42.487744"
+  },
+  {
+    "image_path": "/var/folders/wk/_hnbdwdd4hv16rrrdlz12_b80000gn/T/tmpylam1spc.jpg",
+    "predicted_class": "Potato_Late_Blight",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 6.047884415494309e-09
+      },
+      {
+        "class": "Potato_Early_Blight",
+        "confidence": 2.8911950958332433e-12
+      }
+    ],
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "leaf_pixels": 40957,
+    "affected_pixels": 0,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/tmpylam1spc_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/tmpylam1spc_affected.png",
+    "recommendation": {
+      "summary": "Early late blight symptoms are visible on a limited portion of foliage, typically as water-soaked dark lesions, but disease spread is still relatively localized.",
+      "treatment": [
+        "Remove and safely discard visibly infected foliage where disease is still limited.",
+        "Apply locally approved preventative protection effective against oomycete pathogens to protect healthy foliage.",
+        "Strengthen crop protection immediately if cool, wet, or foggy weather is expected."
+      ],
+      "prevention": [
+        "Avoid overhead irrigation and reduce prolonged leaf wetness.",
+        "Water at the base of the plant where possible and avoid practices that increase splash dispersal.",
+        "Monitor nearby potato and tomato plants because linked spread can occur under favorable conditions."
+      ],
+      "monitoring": [
+        "Inspect again within 24 to 48 hours during favorable weather.",
+        "Check whether lesions are expanding or whether pale or white sporulation appears around lesion margins."
+      ],
+      "caution": [
+        "Late blight spreads rapidly under cool and wet conditions, so early intervention is critical.",
+        "Because Phytophthora infestans is an oomycete rather than a true fungus, management should rely on measures validated for oomycete control."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Late Blight Resistance Evaluation and Genome-Wide Association Analysis in Tetraploid Potato",
+          "authors": "Duan et al.",
+          "year": "2021",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T15:38:58.040893"
+  },
+  {
+    "image_path": "/var/folders/wk/_hnbdwdd4hv16rrrdlz12_b80000gn/T/tmp30__i4ha.jpg",
+    "predicted_class": "Tomato_Yellow_leaf_curl_virus",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Tomato_Yellow_leaf_curl_virus",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 2.2824542256216773e-10
+      },
+      {
+        "class": "Tomato_Leaf_Mold",
+        "confidence": 5.262050170595778e-11
+      }
+    ],
+    "severity_label": "Severe",
+    "severity_percent": 45.56779970019852,
+    "leaf_pixels": 49366,
+    "affected_pixels": 22495,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/tmp30__i4ha_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/tmp30__i4ha_affected.png",
+    "recommendation": {
+      "summary": "TYLCV is widespread, with extensive leaf curling, yellowing, stunting, and high risk of major yield loss across the crop.",
+      "treatment": [
+        "Remove severely infected plants to reduce virus reservoirs for continued whitefly transmission where practical.",
+        "Focus management on protecting remaining healthy plants through strict whitefly suppression and sanitation.",
+        "Do not rely on curative treatment of infected plants; prioritize prevention of further spread."
+      ],
+      "prevention": [
+        "For future planting, prioritize resistant cultivars carrying validated TYLCV resistance genes where available.",
+        "Use only clean transplants and reduce whitefly exposure at the nursery and field level.",
+        "Plan future crop cycles around integrated vector management, reflective mulch where feasible, and sanitation."
+      ],
+      "monitoring": [
+        "Inspect surrounding tomato plants and nearby susceptible hosts frequently during active outbreaks.",
+        "Continue monitoring whitefly abundance even after removing symptomatic plants."
+      ],
+      "caution": [
+        "Severe TYLCV outbreaks can cause major yield loss and are difficult to reverse once widely established.",
+        "Long-term management depends more on resistance and vector control than on treatment after symptom expression."
+      ],
+      "references": [
+        {
+          "title": "The viral etiology of tomato yellow leaf curl disease - a review",
+          "authors": "Glick et al.",
+          "year": "2009",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Natural resistance of tomato plants to Tomato yellow leaf curl virus",
+          "authors": "El-Sappah et al.",
+          "year": "2022",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Integrated Management of Tomato Yellow Leaf Curl Virus and Bemisia tabaci in Tomato Using Resistant Tomato Cultivars, Insecticides, and Mulches",
+          "authors": "Riley et al.",
+          "year": "2019",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T15:39:12.345715"
+  },
+  {
+    "image_path": "/var/folders/wk/_hnbdwdd4hv16rrrdlz12_b80000gn/T/tmpu2bhtepx.jpg",
+    "predicted_class": "Tomato_Yellow_leaf_curl_virus",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Tomato_Yellow_leaf_curl_virus",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 2.2824542256216773e-10
+      },
+      {
+        "class": "Tomato_Leaf_Mold",
+        "confidence": 5.262050170595778e-11
+      }
+    ],
+    "severity_label": "Severe",
+    "severity_percent": 54.80506225760359,
+    "leaf_pixels": 48990,
+    "affected_pixels": 26849,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/tmpu2bhtepx_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/tmpu2bhtepx_affected.png",
+    "recommendation": {
+      "summary": "TYLCV is widespread, with extensive leaf curling, yellowing, stunting, and high risk of major yield loss across the crop.",
+      "treatment": [
+        "Remove severely infected plants to reduce virus reservoirs for continued whitefly transmission where practical.",
+        "Focus management on protecting remaining healthy plants through strict whitefly suppression and sanitation.",
+        "Do not rely on curative treatment of infected plants; prioritize prevention of further spread."
+      ],
+      "prevention": [
+        "For future planting, prioritize resistant cultivars carrying validated TYLCV resistance genes where available.",
+        "Use only clean transplants and reduce whitefly exposure at the nursery and field level.",
+        "Plan future crop cycles around integrated vector management, reflective mulch where feasible, and sanitation."
+      ],
+      "monitoring": [
+        "Inspect surrounding tomato plants and nearby susceptible hosts frequently during active outbreaks.",
+        "Continue monitoring whitefly abundance even after removing symptomatic plants."
+      ],
+      "caution": [
+        "Severe TYLCV outbreaks can cause major yield loss and are difficult to reverse once widely established.",
+        "Long-term management depends more on resistance and vector control than on treatment after symptom expression."
+      ],
+      "references": [
+        {
+          "title": "The viral etiology of tomato yellow leaf curl disease - a review",
+          "authors": "Glick et al.",
+          "year": "2009",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Natural resistance of tomato plants to Tomato yellow leaf curl virus",
+          "authors": "El-Sappah et al.",
+          "year": "2022",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Integrated Management of Tomato Yellow Leaf Curl Virus and Bemisia tabaci in Tomato Using Resistant Tomato Cultivars, Insecticides, and Mulches",
+          "authors": "Riley et al.",
+          "year": "2019",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T15:42:17.850864"
+  },
+  {
+    "image_path": "/var/folders/wk/_hnbdwdd4hv16rrrdlz12_b80000gn/T/tmpu2ljqa_t.jpg",
+    "predicted_class": "Potato_Late_Blight",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 5.035529770935909e-10
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 3.0550420526687105e-10
+      }
+    ],
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "leaf_pixels": 27993,
+    "affected_pixels": 0,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/tmpu2ljqa_t_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/tmpu2ljqa_t_affected.png",
+    "recommendation": {
+      "summary": "Early late blight symptoms are visible on a limited portion of foliage, typically as water-soaked dark lesions, but disease spread is still relatively localized.",
+      "treatment": [
+        "Remove and safely discard visibly infected foliage where disease is still limited.",
+        "Apply locally approved preventative protection effective against oomycete pathogens to protect healthy foliage.",
+        "Strengthen crop protection immediately if cool, wet, or foggy weather is expected."
+      ],
+      "prevention": [
+        "Avoid overhead irrigation and reduce prolonged leaf wetness.",
+        "Water at the base of the plant where possible and avoid practices that increase splash dispersal.",
+        "Monitor nearby potato and tomato plants because linked spread can occur under favorable conditions."
+      ],
+      "monitoring": [
+        "Inspect again within 24 to 48 hours during favorable weather.",
+        "Check whether lesions are expanding or whether pale or white sporulation appears around lesion margins."
+      ],
+      "caution": [
+        "Late blight spreads rapidly under cool and wet conditions, so early intervention is critical.",
+        "Because Phytophthora infestans is an oomycete rather than a true fungus, management should rely on measures validated for oomycete control."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Late Blight Resistance Evaluation and Genome-Wide Association Analysis in Tetraploid Potato",
+          "authors": "Duan et al.",
+          "year": "2021",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T15:42:27.474431"
+  },
+  {
+    "image_path": "/var/folders/wk/_hnbdwdd4hv16rrrdlz12_b80000gn/T/tmpdj4js3p0.jpg",
+    "predicted_class": "Potato_Late_Blight",
+    "confidence": 0.9999966621398926,
+    "top3": [
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 0.9999966621398926
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 3.3129942949017277e-06
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 3.1751707041394184e-08
+      }
+    ],
+    "severity_label": "Severe",
+    "severity_percent": 89.47340168554405,
+    "leaf_pixels": 37258,
+    "affected_pixels": 33336,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/tmpdj4js3p0_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/tmpdj4js3p0_affected.png",
+    "recommendation": {
+      "summary": "Late blight is widespread, with extensive foliage infection and high risk of complete canopy loss, tuber infection, and severe yield reduction.",
+      "treatment": [
+        "Remove severely infected plants or heavily affected plant material promptly to reduce inoculum pressure and protect surrounding plants.",
+        "Do not compost heavily infected plant material unless safe disposal guidance specifically permits it.",
+        "Focus management on limiting further spread and protecting nearby healthy plants rather than attempting to recover severely damaged tissue."
+      ],
+      "prevention": [
+        "For future planting, prioritize resistant or less susceptible cultivars where suitable options are available.",
+        "Remove volunteer potatoes and maintain strict sanitation after the season.",
+        "Plan future management around early preventative action and forecasting support rather than delayed response."
+      ],
+      "monitoring": [
+        "Inspect surrounding susceptible plants frequently during active outbreaks.",
+        "Monitor harvested tubers carefully for signs of late blight infection during storage."
+      ],
+      "caution": [
+        "Severe late blight can lead to major field loss and postharvest tuber problems.",
+        "Under high disease pressure, integrated control and resistance are more reliable than relying on a single intervention."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Late Blight Resistance Evaluation and Genome-Wide Association Analysis in Tetraploid Potato",
+          "authors": "Duan et al.",
+          "year": "2021",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Reduced fungicide inputs for Phytophthora infestans control in potato using a decision support system",
+          "authors": "Kessel et al.",
+          "year": "2018",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T15:42:43.315645"
+  },
+  {
+    "image_path": "/var/folders/wk/_hnbdwdd4hv16rrrdlz12_b80000gn/T/tmpi3iq957o.jpg",
+    "predicted_class": "Tomato_Late_Blight",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 4.970048195218624e-08
+      },
+      {
+        "class": "Tomato_Leaf_Mold",
+        "confidence": 2.830595313696449e-08
+      }
+    ],
+    "severity_label": "Mild",
+    "severity_percent": 13.149214151736627,
+    "leaf_pixels": 30922,
+    "affected_pixels": 4066,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/tmpi3iq957o_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/tmpi3iq957o_affected.png",
+    "recommendation": {
+      "summary": "Early late blight symptoms are visible on a limited portion of foliage, typically as water-soaked dark lesions, but disease spread is still localized.",
+      "treatment": [
+        "Remove and safely discard visibly infected leaves or shoots where disease is still limited.",
+        "Apply locally approved preventative protection effective against oomycete pathogens to protect healthy foliage.",
+        "Strengthen crop protection immediately when cool, wet, or foggy weather is expected."
+      ],
+      "prevention": [
+        "Avoid overhead irrigation and reduce prolonged leaf wetness.",
+        "Water at the base of the plant where possible.",
+        "Inspect nearby tomato and potato plants because linked spread can occur under favorable conditions."
+      ],
+      "monitoring": [
+        "Inspect again within 24 to 48 hours during favorable disease conditions.",
+        "Check lesion margins and the underside of leaves for pale or white sporulating growth."
+      ],
+      "caution": [
+        "Late blight spreads rapidly under cool and wet conditions, so early intervention is critical.",
+        "Because Phytophthora infestans is an oomycete rather than a true fungus, management should be based on measures validated for oomycete control."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Identification and mapping of QTLs for late blight resistance in tomato",
+          "authors": "Sullenberger et al.",
+          "year": "2024",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T15:50:51.470664"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Late_Blight_0001.jpg",
+    "predicted_class": "Tomato_Late_Blight",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 3.7243683692622653e-08
+      },
+      {
+        "class": "Tomato_Early_Blight",
+        "confidence": 1.0703985253712744e-08
+      }
+    ],
+    "severity_label": "Moderate",
+    "severity_percent": 28.673106253177426,
+    "leaf_pixels": 11802,
+    "affected_pixels": 3384,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0001_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0001_affected.png",
+    "recommendation": {
+      "summary": "Disease is established on a noticeable portion of the foliage, with clear risk of rapid spread to additional leaves, stems, and nearby susceptible plants.",
+      "treatment": [
+        "Remove heavily infected foliage and destroy infected plant debris away from the growing area.",
+        "Use integrated management combining preventative oomycete-directed protection, sanitation, and strict moisture control.",
+        "Where available, use disease forecasting or decision-support guidance to improve timing of intervention."
+      ],
+      "prevention": [
+        "Eliminate volunteer tomato or potato plants and other possible sources of carryover inoculum where relevant.",
+        "Reduce leaf wetness duration and improve air movement around plants where possible.",
+        "Plan management around preventive action rather than waiting for severe spread."
+      ],
+      "monitoring": [
+        "Inspect every 1 to 2 days during cool, wet, or highly favorable conditions.",
+        "Track lesion expansion and appearance of new water-soaked symptoms on upper foliage and stems."
+      ],
+      "caution": [
+        "Preventative management is generally more effective than attempting recovery after rapid spread has begun.",
+        "Once disease becomes active across multiple leaves, delayed action can lead to major crop loss."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Integrated Disease Management of Tomato Late Blight",
+          "authors": "Shrestha and Ashley",
+          "year": "2007",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T16:59:38.632919"
   }
 ]

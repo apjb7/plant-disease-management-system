@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plant Disease Management System</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#2e7d32" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Plant Disease Management System</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/history">Logbook</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Upload Leaf Image</h2>
+      <p>Upload a plant leaf image to detect disease, estimate severity, and retrieve recommendations.</p>
+
+      <input type="file" id="imageInput" accept=".jpg,.jpeg,.png" />
+      <button id="analyzeBtn">Analyze</button>
+
+      <div id="status"></div>
+    </section>
+
+    <section class="card hidden" id="resultSection">
+      <h2>Analysis Result</h2>
+
+      <div class="grid two">
+        <div>
+          <h3>Prediction</h3>
+          <p><strong>Predicted class:</strong> <span id="predictedClass"></span></p>
+          <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+          <p><strong>Severity:</strong> <span id="severity"></span></p>
+          <p><strong>Severity percent:</strong> <span id="severityPercent"></span></p>
+
+          <h3>Top 3 Predictions</h3>
+          <ul id="top3List"></ul>
+        </div>
+
+        <div>
+          <h3>Recommendation Summary</h3>
+          <p id="summary"></p>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <div>
+          <h3>Treatment</h3>
+          <ul id="treatmentList"></ul>
+
+          <h3>Prevention</h3>
+          <ul id="preventionList"></ul>
+        </div>
+
+        <div>
+          <h3>Monitoring</h3>
+          <ul id="monitoringList"></ul>
+
+          <h3>Caution</h3>
+          <ul id="cautionList"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card hidden" id="visualSection">
+      <h2>Visual Outputs</h2>
+
+      <div class="grid three">
+        <div>
+          <h3>Uploaded Image</h3>
+          <img id="uploadedPreview" alt="Uploaded image preview" />
+        </div>
+
+        <div>
+          <h3>Grad-CAM Overlay</h3>
+          <img id="gradcamImage" alt="Grad-CAM overlay" />
+        </div>
+
+        <div>
+          <h3>Affected Area Overlay</h3>
+          <img id="affectedImage" alt="Affected area overlay" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

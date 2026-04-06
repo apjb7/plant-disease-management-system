@@ -20,3 +20,15 @@ def save_logbook_entry(entry):
 
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+
+def read_logbook_entries():
+    path = Path(LOGBOOK_PATH)
+
+    if not path.exists():
+        return []
+
+    with open(path, "r", encoding="utf-8") as f:
+        try:
+            return json.load(f)
+        except Exception:
+            return []
