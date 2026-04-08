@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Plant Disease Management System</title>
   <link rel="stylesheet" href="/styles.css" />
   <link rel="manifest" href="/manifest.json" />
-  <meta name="theme-color" content="#2e7d32" />
+  <meta name="theme-color" content="#064e3b" />
 </head>
+
 <body>
   <header class="topbar">
-    <h1>Plant Disease Management System</h1>
+    <div class="brand-block">
+      <h1>Plant Disease Management System</h1>
+      <p class="brand-subtitle">Simple plant health support for home gardeners</p>
+    </div>
     <nav>
       <a href="/">Home</a>
       <a href="/history">Logbook</a>
@@ -18,78 +23,144 @@
   </header>
 
   <main class="container">
-    <section class="card">
-      <h2>Upload Leaf Image</h2>
-      <p>Upload a plant leaf image to detect disease, estimate severity, and retrieve recommendations.</p>
+    <section class="card hero-card highlight">
+      <span class="section-label">Leaf Analysis</span>
+      <h2>Upload a Leaf Photo</h2>
+      <p class="hero-text">
+        Upload a clear leaf image to identify the disease, estimate severity,
+        and get easy-to-follow care guidance.
+      </p>
 
-      <input type="file" id="imageInput" accept=".jpg,.jpeg,.png" />
-      <button id="analyzeBtn">Analyze</button>
+      <div class="upload-panel">
+        <input type="file" id="imageInput" accept=".jpg,.jpeg,.png" />
+        <button id="analyzeBtn">Analyze Image</button>
+      </div>
 
       <div id="status"></div>
     </section>
 
-    <section class="card hidden" id="resultSection">
-      <h2>Analysis Result</h2>
+    <section class="hidden" id="resultSection">
+      <!-- Main summary -->
+      <section class="card summary-card">
+        <span class="section-label">Analysis Result</span>
+        <h2>Plant Health Summary</h2>
 
-      <div class="grid two">
-        <div>
-          <h3>Prediction</h3>
-          <p><strong>Predicted class:</strong> <span id="predictedClass"></span></p>
-          <p><strong>Confidence:</strong> <span id="confidence"></span></p>
-          <p><strong>Severity:</strong> <span id="severity"></span></p>
-          <p><strong>Severity percent:</strong> <span id="severityPercent"></span></p>
+        <div class="summary-stack">
+          <div class="big-result-box">
+            <span class="result-label">Detected condition</span>
+            <div class="big-result-value" id="predictedClass"></div>
+          </div>
 
-          <h3>Top 3 Predictions</h3>
-          <ul id="top3List"></ul>
+          <div class="summary-metrics">
+            <div class="metric-box">
+              <span class="metric-label">Confidence</span>
+              <div class="metric-value-small" id="confidence"></div>
+            </div>
+
+            <div class="metric-box">
+              <span class="metric-label">Severity</span>
+              <div id="severity"></div>
+            </div>
+
+            <div class="metric-box">
+              <span class="metric-label">Affected area</span>
+              <div class="metric-value-small" id="severityPercent"></div>
+            </div>
+          </div>
+
+          <div class="simple-summary-box">
+            <span class="result-label">What this means</span>
+            <p id="summary" class="summary-text"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main actions first -->
+      <section class="card action-card">
+        <span class="section-label">What To Do Now</span>
+        <h2>Immediate Action Plan</h2>
+        <ul id="treatmentList" class="action-list"></ul>
+      </section>
+
+      <section class="card action-card secondary-card">
+        <span class="section-label">Prevent Further Problems</span>
+        <h2>Prevention Tips</h2>
+        <ul id="preventionList" class="action-list"></ul>
+      </section>
+
+      <section class="card action-card secondary-card">
+        <span class="section-label">Check Again Later</span>
+        <h2>Monitoring Advice</h2>
+        <ul id="monitoringList" class="action-list"></ul>
+      </section>
+
+      <section class="card caution-card">
+        <span class="section-label">Important Note</span>
+        <h2>Please Be Careful</h2>
+        <ul id="cautionList" class="action-list caution-list"></ul>
+      </section>
+
+      <!-- Optional advanced details -->
+      <section class="card details-card">
+        <div class="section-header">
+          <div>
+            <span class="section-label">Additional Details</span>
+            <h2>Model Details and Alternatives</h2>
+          </div>
         </div>
 
-        <div>
-          <h3>Recommendation Summary</h3>
-          <p id="summary"></p>
+        <div class="details-grid">
+          <div class="report-card">
+            <div class="report-card-header">
+              <h3>Top 3 Predictions</h3>
+              <span class="report-chip">Alternatives</span>
+            </div>
+            <ul id="top3List" class="prediction-list"></ul>
+          </div>
+
+          <div class="report-card hidden" id="referencesCard">
+            <div class="report-card-header">
+              <h3>References</h3>
+              <span class="report-chip">Evidence Base</span>
+            </div>
+            <ul id="referencesList" class="references-list"></ul>
+          </div>
         </div>
-      </div>
-
-      <div class="grid two">
-        <div>
-          <h3>Treatment</h3>
-          <ul id="treatmentList"></ul>
-
-          <h3>Prevention</h3>
-          <ul id="preventionList"></ul>
-        </div>
-
-        <div>
-          <h3>Monitoring</h3>
-          <ul id="monitoringList"></ul>
-
-          <h3>Caution</h3>
-          <ul id="cautionList"></ul>
-        </div>
-      </div>
+      </section>
     </section>
 
     <section class="card hidden" id="visualSection">
-      <h2>Visual Outputs</h2>
-
-      <div class="grid three">
+      <div class="section-header">
         <div>
-          <h3>Uploaded Image</h3>
+          <span class="section-label">Visual Explanation</span>
+          <h2>Image Analysis</h2>
+        </div>
+      </div>
+
+      <div class="visual-grid compact-visual-grid">
+        <div class="visual-card compact-visual-card">
+          <h3>Your Uploaded Image</h3>
           <img id="uploadedPreview" alt="Uploaded image preview" />
         </div>
 
-        <div>
-          <h3>Grad-CAM Overlay</h3>
+        <div class="visual-card compact-visual-card">
+          <h3>Model Focus Area</h3>
           <img id="gradcamImage" alt="Grad-CAM overlay" />
         </div>
 
-        <div>
-          <h3>Affected Area Overlay</h3>
+        <div class="visual-card compact-visual-card">
+          <h3>Estimated Affected Area</h3>
           <img id="affectedImage" alt="Affected area overlay" />
         </div>
       </div>
+
+      <p class="footer-note">
+        The severity result is an approximate support indicator based on model attention and leaf-region masking.
+      </p>
     </section>
   </main>
 
   <script src="/app.js"></script>
 </body>
+
 </html>

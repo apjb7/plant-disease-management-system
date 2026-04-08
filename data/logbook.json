@@ -882,5 +882,1428 @@
       ]
     },
     "timestamp": "2026-04-06T16:59:38.632919"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Late_Blight_0011.jpg",
+    "predicted_class": "Tomato_Late_Blight",
+    "confidence": 0.9999973773956299,
+    "top3": [
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 0.9999973773956299
+      },
+      {
+        "class": "Mango_Powdery_Mildew",
+        "confidence": 1.5399022004203289e-06
+      },
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 8.313552939398505e-07
+      }
+    ],
+    "severity_label": "Severe",
+    "severity_percent": 100.0,
+    "leaf_pixels": 36937,
+    "affected_pixels": 36937,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0011_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0011_affected.png",
+    "recommendation": {
+      "summary": "Late blight is widespread, with extensive foliage infection and high risk of major plant loss, fruit infection, and severe yield reduction.",
+      "treatment": [
+        "Remove severely infected plants or heavily affected plant material promptly to reduce inoculum pressure and protect surrounding plants.",
+        "Do not compost heavily infected plant material unless safe disposal guidance specifically permits it.",
+        "Focus management on limiting further spread and protecting nearby healthy plants rather than attempting to recover severely damaged tissue."
+      ],
+      "prevention": [
+        "For future planting, prioritize resistant or less susceptible cultivars where suitable options are available.",
+        "Maintain strict sanitation and remove residual infected material after the season.",
+        "Use early preventative management and forecasting support where available in future crop cycles."
+      ],
+      "monitoring": [
+        "Inspect surrounding susceptible plants frequently during active outbreaks.",
+        "Monitor fruit and any harvested material carefully for signs of continuing infection."
+      ],
+      "caution": [
+        "Severe late blight can lead to major crop loss in a very short period under favorable weather.",
+        "Under high disease pressure, integrated control and host resistance are more reliable than relying on a single intervention."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Identification and mapping of QTLs for late blight resistance in tomato",
+          "authors": "Sullenberger et al.",
+          "year": "2024",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Integrated Disease Management of Tomato Late Blight",
+          "authors": "Shrestha and Ashley",
+          "year": "2007",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T17:30:02.698841"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Late_Blight_0007.jpg",
+    "predicted_class": "Tomato_Late_Blight",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 3.624148203762445e-10
+      },
+      {
+        "class": "Mango_Healthy",
+        "confidence": 2.2936087751279643e-10
+      }
+    ],
+    "severity_label": "Severe",
+    "severity_percent": 98.29048140043764,
+    "leaf_pixels": 14624,
+    "affected_pixels": 14374,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0007_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0007_affected.png",
+    "recommendation": {
+      "summary": "Late blight is widespread, with extensive foliage infection and high risk of major plant loss, fruit infection, and severe yield reduction.",
+      "treatment": [
+        "Remove severely infected plants or heavily affected plant material promptly to reduce inoculum pressure and protect surrounding plants.",
+        "Do not compost heavily infected plant material unless safe disposal guidance specifically permits it.",
+        "Focus management on limiting further spread and protecting nearby healthy plants rather than attempting to recover severely damaged tissue."
+      ],
+      "prevention": [
+        "For future planting, prioritize resistant or less susceptible cultivars where suitable options are available.",
+        "Maintain strict sanitation and remove residual infected material after the season.",
+        "Use early preventative management and forecasting support where available in future crop cycles."
+      ],
+      "monitoring": [
+        "Inspect surrounding susceptible plants frequently during active outbreaks.",
+        "Monitor fruit and any harvested material carefully for signs of continuing infection."
+      ],
+      "caution": [
+        "Severe late blight can lead to major crop loss in a very short period under favorable weather.",
+        "Under high disease pressure, integrated control and host resistance are more reliable than relying on a single intervention."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Identification and mapping of QTLs for late blight resistance in tomato",
+          "authors": "Sullenberger et al.",
+          "year": "2024",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Integrated Disease Management of Tomato Late Blight",
+          "authors": "Shrestha and Ashley",
+          "year": "2007",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T17:32:02.586224"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Late_Blight_0006.jpg",
+    "predicted_class": "Tomato_Late_Blight",
+    "confidence": 0.8548041582107544,
+    "top3": [
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 0.8548041582107544
+      },
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 0.13137732446193695
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 0.0095116151496768
+      }
+    ],
+    "severity_label": "Mild",
+    "severity_percent": 13.254221020025303,
+    "leaf_pixels": 45842,
+    "affected_pixels": 6076,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0006_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0006_affected.png",
+    "recommendation": {
+      "summary": "Early late blight symptoms are visible on a limited portion of foliage, typically as water-soaked dark lesions, but disease spread is still localized.",
+      "treatment": [
+        "Remove and safely discard visibly infected leaves or shoots where disease is still limited.",
+        "Apply locally approved preventative protection effective against oomycete pathogens to protect healthy foliage.",
+        "Strengthen crop protection immediately when cool, wet, or foggy weather is expected."
+      ],
+      "prevention": [
+        "Avoid overhead irrigation and reduce prolonged leaf wetness.",
+        "Water at the base of the plant where possible.",
+        "Inspect nearby tomato and potato plants because linked spread can occur under favorable conditions."
+      ],
+      "monitoring": [
+        "Inspect again within 24 to 48 hours during favorable disease conditions.",
+        "Check lesion margins and the underside of leaves for pale or white sporulating growth."
+      ],
+      "caution": [
+        "Late blight spreads rapidly under cool and wet conditions, so early intervention is critical.",
+        "Because Phytophthora infestans is an oomycete rather than a true fungus, management should be based on measures validated for oomycete control."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Identification and mapping of QTLs for late blight resistance in tomato",
+          "authors": "Sullenberger et al.",
+          "year": "2024",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T17:37:31.479491"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Late_Blight_0010.jpg",
+    "predicted_class": "Tomato_Late_Blight",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 4.970048195218624e-08
+      },
+      {
+        "class": "Tomato_Leaf_Mold",
+        "confidence": 2.830595313696449e-08
+      }
+    ],
+    "severity_label": "Mild",
+    "severity_percent": 13.149214151736627,
+    "leaf_pixels": 30922,
+    "affected_pixels": 4066,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0010_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0010_affected.png",
+    "recommendation": {
+      "summary": "Early late blight symptoms are visible on a limited portion of foliage, typically as water-soaked dark lesions, but disease spread is still localized.",
+      "treatment": [
+        "Remove and safely discard visibly infected leaves or shoots where disease is still limited.",
+        "Apply locally approved preventative protection effective against oomycete pathogens to protect healthy foliage.",
+        "Strengthen crop protection immediately when cool, wet, or foggy weather is expected."
+      ],
+      "prevention": [
+        "Avoid overhead irrigation and reduce prolonged leaf wetness.",
+        "Water at the base of the plant where possible.",
+        "Inspect nearby tomato and potato plants because linked spread can occur under favorable conditions."
+      ],
+      "monitoring": [
+        "Inspect again within 24 to 48 hours during favorable disease conditions.",
+        "Check lesion margins and the underside of leaves for pale or white sporulating growth."
+      ],
+      "caution": [
+        "Late blight spreads rapidly under cool and wet conditions, so early intervention is critical.",
+        "Because Phytophthora infestans is an oomycete rather than a true fungus, management should be based on measures validated for oomycete control."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Identification and mapping of QTLs for late blight resistance in tomato",
+          "authors": "Sullenberger et al.",
+          "year": "2024",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T17:47:26.833742"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Late_Blight_0004.jpg",
+    "predicted_class": "Tomato_Late_Blight",
+    "confidence": 0.9998687505722046,
+    "top3": [
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 0.9998687505722046
+      },
+      {
+        "class": "Tomato_Early_Blight",
+        "confidence": 0.00012951965618412942
+      },
+      {
+        "class": "Tomato_Leaf_Mold",
+        "confidence": 1.4380666470970027e-06
+      }
+    ],
+    "severity_label": "Severe",
+    "severity_percent": 61.63608724855941,
+    "leaf_pixels": 28287,
+    "affected_pixels": 17435,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0004_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0004_affected.png",
+    "recommendation": {
+      "summary": "Late blight is widespread, with extensive foliage infection and high risk of major plant loss, fruit infection, and severe yield reduction.",
+      "treatment": [
+        "Remove severely infected plants or heavily affected plant material promptly to reduce inoculum pressure and protect surrounding plants.",
+        "Do not compost heavily infected plant material unless safe disposal guidance specifically permits it.",
+        "Focus management on limiting further spread and protecting nearby healthy plants rather than attempting to recover severely damaged tissue."
+      ],
+      "prevention": [
+        "For future planting, prioritize resistant or less susceptible cultivars where suitable options are available.",
+        "Maintain strict sanitation and remove residual infected material after the season.",
+        "Use early preventative management and forecasting support where available in future crop cycles."
+      ],
+      "monitoring": [
+        "Inspect surrounding susceptible plants frequently during active outbreaks.",
+        "Monitor fruit and any harvested material carefully for signs of continuing infection."
+      ],
+      "caution": [
+        "Severe late blight can lead to major crop loss in a very short period under favorable weather.",
+        "Under high disease pressure, integrated control and host resistance are more reliable than relying on a single intervention."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Identification and mapping of QTLs for late blight resistance in tomato",
+          "authors": "Sullenberger et al.",
+          "year": "2024",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Integrated Disease Management of Tomato Late Blight",
+          "authors": "Shrestha and Ashley",
+          "year": "2007",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T17:53:35.750287"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Late_Blight_0006.jpg",
+    "predicted_class": "Tomato_Late_Blight",
+    "confidence": 0.8548041582107544,
+    "top3": [
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 0.8548041582107544
+      },
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 0.13137732446193695
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 0.0095116151496768
+      }
+    ],
+    "severity_label": "Mild",
+    "severity_percent": 13.254221020025303,
+    "leaf_pixels": 45842,
+    "affected_pixels": 6076,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0006_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0006_affected.png",
+    "recommendation": {
+      "summary": "Early late blight symptoms are visible on a limited portion of foliage, typically as water-soaked dark lesions, but disease spread is still localized.",
+      "treatment": [
+        "Remove and safely discard visibly infected leaves or shoots where disease is still limited.",
+        "Apply locally approved preventative protection effective against oomycete pathogens to protect healthy foliage.",
+        "Strengthen crop protection immediately when cool, wet, or foggy weather is expected."
+      ],
+      "prevention": [
+        "Avoid overhead irrigation and reduce prolonged leaf wetness.",
+        "Water at the base of the plant where possible.",
+        "Inspect nearby tomato and potato plants because linked spread can occur under favorable conditions."
+      ],
+      "monitoring": [
+        "Inspect again within 24 to 48 hours during favorable disease conditions.",
+        "Check lesion margins and the underside of leaves for pale or white sporulating growth."
+      ],
+      "caution": [
+        "Late blight spreads rapidly under cool and wet conditions, so early intervention is critical.",
+        "Because Phytophthora infestans is an oomycete rather than a true fungus, management should be based on measures validated for oomycete control."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Identification and mapping of QTLs for late blight resistance in tomato",
+          "authors": "Sullenberger et al.",
+          "year": "2024",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T18:26:24.545914"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Mango_Powdery_Mildew_0004.jpg",
+    "predicted_class": "Mango_Powdery_Mildew",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Mango_Powdery_Mildew",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 1.8777878784354566e-19
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 1.9454064199993287e-21
+      }
+    ],
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "leaf_pixels": 21169,
+    "affected_pixels": 0,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Mango_Powdery_Mildew_0004_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Mango_Powdery_Mildew_0004_affected.png",
+    "recommendation": {
+      "summary": "Early powdery mildew symptoms are visible on a limited portion of leaves, flowers, or young tissues, and infection is still localized.",
+      "treatment": [
+        "Remove and safely discard visibly infected tissues where infection is still limited.",
+        "Improve canopy airflow through light pruning and by avoiding excessive canopy density.",
+        "Where locally approved and appropriate, apply sulfur-based protective treatment as part of an integrated management approach.",
+        "Begin management early, especially during flowering and early fruit development, because these stages are highly vulnerable."
+      ],
+      "prevention": [
+        "Monitor closely during conditions favorable for powdery mildew development, especially around flowering and young fruit stages.",
+        "Reduce prolonged humidity within the canopy where possible.",
+        "Avoid practices that keep young tissues damp for long periods."
+      ],
+      "monitoring": [
+        "Inspect the tree again within 5 to 7 days during favorable weather.",
+        "Check whether white powdery growth is spreading to panicles, flowers, or young fruit."
+      ],
+      "caution": [
+        "Powdery mildew can significantly reduce fruit set if not managed early.",
+        "Sulfur-based products should only be used according to locally approved guidance and label instructions."
+      ],
+      "references": [
+        {
+          "title": "Alleviating biotic stress of powdery mildew in mango cv. Keitt by sulfur nanoparticles and assessing their effect on productivity and disease severity",
+          "authors": "Abou El-Nasr et al.",
+          "year": "2025",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Powdery mildew of mango in South Africa: A review",
+          "authors": "Joubert, Manicom, and Wingfield",
+          "year": "1993",
+          "type": "peer_reviewed_review"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T18:31:13.264832"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Mango_Powdery_Mildew_0004.jpg",
+    "predicted_class": "Mango_Powdery_Mildew",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Mango_Powdery_Mildew",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 1.8777878784354566e-19
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 1.9454064199993287e-21
+      }
+    ],
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "leaf_pixels": 21169,
+    "affected_pixels": 0,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Mango_Powdery_Mildew_0004_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Mango_Powdery_Mildew_0004_affected.png",
+    "recommendation": {
+      "summary": "Early powdery mildew symptoms are visible on a limited portion of leaves, flowers, or young tissues, and infection is still localized.",
+      "treatment": [
+        "Remove and safely discard visibly infected tissues where infection is still limited.",
+        "Improve canopy airflow through light pruning and by avoiding excessive canopy density.",
+        "Where locally approved and appropriate, apply sulfur-based protective treatment as part of an integrated management approach.",
+        "Begin management early, especially during flowering and early fruit development, because these stages are highly vulnerable."
+      ],
+      "prevention": [
+        "Monitor closely during conditions favorable for powdery mildew development, especially around flowering and young fruit stages.",
+        "Reduce prolonged humidity within the canopy where possible.",
+        "Avoid practices that keep young tissues damp for long periods."
+      ],
+      "monitoring": [
+        "Inspect the tree again within 5 to 7 days during favorable weather.",
+        "Check whether white powdery growth is spreading to panicles, flowers, or young fruit."
+      ],
+      "caution": [
+        "Powdery mildew can significantly reduce fruit set if not managed early.",
+        "Sulfur-based products should only be used according to locally approved guidance and label instructions."
+      ],
+      "references": [
+        {
+          "title": "Alleviating biotic stress of powdery mildew in mango cv. Keitt by sulfur nanoparticles and assessing their effect on productivity and disease severity",
+          "authors": "Abou El-Nasr et al.",
+          "year": "2025",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Powdery mildew of mango in South Africa: A review",
+          "authors": "Joubert, Manicom, and Wingfield",
+          "year": "1993",
+          "type": "peer_reviewed_review"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T18:31:43.520725"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Mango_Anthracnose_0001.jpg",
+    "predicted_class": "Mango_Anthracnose",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Mango_Anthracnose",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 1.0246904978792543e-16
+      },
+      {
+        "class": "Mango_Healthy",
+        "confidence": 2.1238236526526166e-18
+      }
+    ],
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "leaf_pixels": 15023,
+    "affected_pixels": 0,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Mango_Anthracnose_0001_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Mango_Anthracnose_0001_affected.png",
+    "recommendation": {
+      "summary": "Early anthracnose symptoms are visible on a limited portion of leaves, flowers, or young fruit, and disease spread is still relatively localized.",
+      "treatment": [
+        "Remove and safely discard visibly infected twigs, leaves, flowers, or fruit to reduce inoculum pressure.",
+        "Improve canopy airflow through light pruning and avoid conditions that prolong leaf and flower wetness.",
+        "Where locally approved and appropriate, apply preventative fungicidal protection to healthy tissues as part of an integrated management program.",
+        "For postharvest fruit protection, validated biological or physical postharvest treatments may be considered where available."
+      ],
+      "prevention": [
+        "Monitor closely during humid, rainy, or prolonged wet periods because these conditions favor infection and disease development.",
+        "Reduce canopy density where practical to lower humidity and improve drying.",
+        "Avoid practices that increase splash dispersal or prolonged surface moisture."
+      ],
+      "monitoring": [
+        "Inspect again within 5 to 7 days during humid conditions.",
+        "Check whether symptoms are spreading to flowers, panicles, or developing fruit."
+      ],
+      "caution": [
+        "Anthracnose management is more effective when started early rather than after extensive spread.",
+        "No single cultivar is fully resistant across all known anthracnose-causing strains."
+      ],
+      "references": [
+        {
+          "title": "Mango anthracnose disease: the current situation and future direction for integrated disease management",
+          "authors": "Dofuor et al.",
+          "year": "2023",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Isolation and evaluation of biocontrol agents in controlling anthracnose disease of mango in Thailand",
+          "authors": "Rungjindamai",
+          "year": "2016",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Management of Post-Harvest Anthracnose: Current Approaches and Future Perspectives",
+          "authors": "Ciofini et al.",
+          "year": "2022",
+          "type": "peer_reviewed_review"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T18:31:54.405661"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Mango_Anthracnose_0003.jpg",
+    "predicted_class": "Mango_Anthracnose",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Mango_Anthracnose",
+        "confidence": 1.0
+      },
+      {
+        "class": "Mango_Healthy",
+        "confidence": 9.66824842407732e-10
+      },
+      {
+        "class": "Pepper_Bacterial_Spot",
+        "confidence": 1.5227151950372025e-13
+      }
+    ],
+    "severity_label": "Moderate",
+    "severity_percent": 15.669799837706247,
+    "leaf_pixels": 59152,
+    "affected_pixels": 9269,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Mango_Anthracnose_0003_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Mango_Anthracnose_0003_affected.png",
+    "recommendation": {
+      "summary": "Disease is established on a noticeable part of the canopy or fruiting structures, with increased risk of fruit set loss and postharvest quality reduction.",
+      "treatment": [
+        "Prune and remove infected plant material more thoroughly to reduce ongoing inoculum.",
+        "Use integrated management combining sanitation, canopy management, and preventative protection of healthy tissue where locally approved.",
+        "During flowering and fruit set, pay particular attention to disease suppression because infection at these stages can strongly affect fruit development.",
+        "For harvested fruit, validated postharvest management options may be used where available to reduce lesion development during storage and handling."
+      ],
+      "prevention": [
+        "Reduce humidity within the canopy through pruning and spacing where feasible.",
+        "Remove fallen infected debris and other sources of persistent inoculum.",
+        "Plan management around weather conditions, especially wet periods that increase infection risk."
+      ],
+      "monitoring": [
+        "Inspect every 3 to 5 days during favorable disease periods.",
+        "Track whether lesions are increasing on flowers, panicles, or fruit."
+      ],
+      "caution": [
+        "Anthracnose can remain latent and become more obvious later, including after harvest.",
+        "Relying only on late-stage intervention is less effective than integrated early management."
+      ],
+      "references": [
+        {
+          "title": "Mango anthracnose disease: the current situation and future direction for integrated disease management",
+          "authors": "Dofuor et al.",
+          "year": "2023",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Enhancing anthracnose management in Tomy Atkins mango using integrated practices",
+          "authors": "Hio et al.",
+          "year": "2024",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Management of Post-Harvest Anthracnose: Current Approaches and Future Perspectives",
+          "authors": "Ciofini et al.",
+          "year": "2022",
+          "type": "peer_reviewed_review"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T18:32:19.482578"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Mango_Powdery_Mildew_0006.jpg",
+    "predicted_class": "Mango_Powdery_Mildew",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Mango_Powdery_Mildew",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 1.1073893072328142e-22
+      },
+      {
+        "class": "Tomato_Leaf_Mold",
+        "confidence": 1.4409227587405702e-23
+      }
+    ],
+    "severity_label": "Severe",
+    "severity_percent": 78.83993462461314,
+    "leaf_pixels": 28757,
+    "affected_pixels": 22672,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Mango_Powdery_Mildew_0006_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Mango_Powdery_Mildew_0006_affected.png",
+    "recommendation": {
+      "summary": "Powdery mildew is widespread, with extensive infection affecting flowers, young fruit, and/or new vegetative growth, and there is high risk of severe fruit set reduction.",
+      "treatment": [
+        "Remove heavily infected plant material where practical to reduce ongoing inoculum.",
+        "Use a full integrated management approach combining sanitation, canopy management, and validated protective treatment where locally approved.",
+        "Focus on protecting remaining healthy flowers, young fruit, and new growth rather than attempting to recover severely damaged tissues."
+      ],
+      "prevention": [
+        "Maintain strict sanitation around infected trees and remove infected debris from the production area where feasible.",
+        "Strengthen monitoring during flowering and early fruit development, which are critical disease-sensitive stages.",
+        "Consider varietal susceptibility when selecting planting material for future seasons."
+      ],
+      "monitoring": [
+        "Inspect frequently during favorable disease conditions and monitor nearby susceptible mango trees.",
+        "Assess the extent of fruit set loss and continued spread to new tissues."
+      ],
+      "caution": [
+        "Severe powdery mildew can cause major loss of flowering success and fruit set.",
+        "No single management measure should be relied upon alone under severe disease pressure."
+      ],
+      "references": [
+        {
+          "title": "Alleviating biotic stress of powdery mildew in mango cv. Keitt by sulfur nanoparticles and assessing their effect on productivity and disease severity",
+          "authors": "Abou El-Nasr et al.",
+          "year": "2025",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Powdery mildew of mango in South Africa: A review",
+          "authors": "Joubert, Manicom, and Wingfield",
+          "year": "1993",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Evaluation of Various Mango Varieties against the Infection Dynamics of Powdery Mildew",
+          "authors": "Naqvi et al.",
+          "year": "2014",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T18:46:38.797629"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Mango_Powdery_Mildew_0006.jpg",
+    "predicted_class": "Mango_Powdery_Mildew",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Mango_Powdery_Mildew",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 1.1073893072328142e-22
+      },
+      {
+        "class": "Tomato_Leaf_Mold",
+        "confidence": 1.4409227587405702e-23
+      }
+    ],
+    "severity_label": "Severe",
+    "severity_percent": 78.83993462461314,
+    "leaf_pixels": 28757,
+    "affected_pixels": 22672,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Mango_Powdery_Mildew_0006_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Mango_Powdery_Mildew_0006_affected.png",
+    "recommendation": {
+      "summary": "Powdery mildew is widespread, with extensive infection affecting flowers, young fruit, and/or new vegetative growth, and there is high risk of severe fruit set reduction.",
+      "treatment": [
+        "Remove heavily infected plant material where practical to reduce ongoing inoculum.",
+        "Use a full integrated management approach combining sanitation, canopy management, and validated protective treatment where locally approved.",
+        "Focus on protecting remaining healthy flowers, young fruit, and new growth rather than attempting to recover severely damaged tissues."
+      ],
+      "prevention": [
+        "Maintain strict sanitation around infected trees and remove infected debris from the production area where feasible.",
+        "Strengthen monitoring during flowering and early fruit development, which are critical disease-sensitive stages.",
+        "Consider varietal susceptibility when selecting planting material for future seasons."
+      ],
+      "monitoring": [
+        "Inspect frequently during favorable disease conditions and monitor nearby susceptible mango trees.",
+        "Assess the extent of fruit set loss and continued spread to new tissues."
+      ],
+      "caution": [
+        "Severe powdery mildew can cause major loss of flowering success and fruit set.",
+        "No single management measure should be relied upon alone under severe disease pressure."
+      ],
+      "references": [
+        {
+          "title": "Alleviating biotic stress of powdery mildew in mango cv. Keitt by sulfur nanoparticles and assessing their effect on productivity and disease severity",
+          "authors": "Abou El-Nasr et al.",
+          "year": "2025",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Powdery mildew of mango in South Africa: A review",
+          "authors": "Joubert, Manicom, and Wingfield",
+          "year": "1993",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Evaluation of Various Mango Varieties against the Infection Dynamics of Powdery Mildew",
+          "authors": "Naqvi et al.",
+          "year": "2014",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-06T20:24:30.210876"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Mango_Powdery_Mildew_0015.jpg",
+    "predicted_class": "Mango_Powdery_Mildew",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Mango_Powdery_Mildew",
+        "confidence": 1.0
+      },
+      {
+        "class": "Mango_Anthracnose",
+        "confidence": 1.1199385169247122e-11
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 1.5262385132846015e-14
+      }
+    ],
+    "severity_label": "Moderate",
+    "severity_percent": 28.056962441623362,
+    "leaf_pixels": 30406,
+    "affected_pixels": 8531,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Mango_Powdery_Mildew_0015_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Mango_Powdery_Mildew_0015_affected.png",
+    "recommendation": {
+      "summary": "Disease is established on a noticeable part of the canopy or reproductive structures, with increasing risk to flowering, fruit set, and yield.",
+      "treatment": [
+        "Prune and remove infected plant material more thoroughly to reduce inoculum pressure.",
+        "Use an integrated management strategy combining sanitation, canopy opening, and protective sulfur-based management where locally approved.",
+        "Pay particular attention to disease suppression during flowering and fruit set, since these stages are strongly affected by powdery mildew."
+      ],
+      "prevention": [
+        "Reduce canopy humidity and improve air movement through pruning and spacing where possible.",
+        "Monitor susceptible growth flushes, flowers, and young fruit regularly.",
+        "For future planting decisions, prefer cultivars reported to be relatively less susceptible where locally suitable."
+      ],
+      "monitoring": [
+        "Inspect every 3 to 5 days during active disease-conducive periods.",
+        "Track whether infection is spreading to additional panicles, flowers, or fruit."
+      ],
+      "caution": [
+        "Delaying control until infection is widespread reduces effectiveness.",
+        "High doses or poorly timed sulfur-based treatments may increase the risk of phytotoxic effects."
+      ],
+      "references": [
+        {
+          "title": "Alleviating biotic stress of powdery mildew in mango cv. Keitt by sulfur nanoparticles and assessing their effect on productivity and disease severity",
+          "authors": "Abou El-Nasr et al.",
+          "year": "2025",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Powdery mildew of mango in South Africa: A review",
+          "authors": "Joubert, Manicom, and Wingfield",
+          "year": "1993",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Evaluation of Various Mango Varieties against the Infection Dynamics of Powdery Mildew",
+          "authors": "Naqvi et al.",
+          "year": "2014",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-07T16:31:34.533636"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Early_Blight_0009.jpg",
+    "predicted_class": "Tomato_Early_Blight",
+    "confidence": 0.9237333536148071,
+    "top3": [
+      {
+        "class": "Tomato_Early_Blight",
+        "confidence": 0.9237333536148071
+      },
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 0.07560798525810242
+      },
+      {
+        "class": "Pepper_Bacterial_Spot",
+        "confidence": 0.00042443169513717294
+      }
+    ],
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "leaf_pixels": 28985,
+    "affected_pixels": 0,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Early_Blight_0009_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Early_Blight_0009_affected.png",
+    "recommendation": {
+      "summary": "Early symptoms are visible on a limited number of leaves, usually as brown lesions with concentric ring patterns, often beginning on older or lower foliage.",
+      "treatment": [
+        "Remove and safely discard visibly infected lower leaves where infection is still limited.",
+        "Apply locally approved protectant fungicidal treatment to healthy foliage as part of an integrated management program.",
+        "Where available, consider biological support options such as Bacillus subtilis, Pseudomonas fluorescens, or Trichoderma-based products supported by current evidence."
+      ],
+      "prevention": [
+        "Reduce soil splash by mulching or maintaining a barrier between soil and foliage.",
+        "Prune lower leaves where appropriate to reduce contact with splash-dispersed inoculum.",
+        "Avoid prolonged leaf wetness and improve airflow around the canopy."
+      ],
+      "monitoring": [
+        "Inspect the plant again within 5 to 7 days under favorable disease conditions.",
+        "Check whether new lesions are appearing on additional lower leaves or petioles."
+      ],
+      "caution": [
+        "Early blight management is generally more effective when started before symptoms become widespread.",
+        "Biological and plant-based approaches may support suppression, but should not be treated as guaranteed replacements for an integrated management program."
+      ],
+      "references": [
+        {
+          "title": "Biology, ecology, and epidemiology of Alternaria species associated with the tomato pathosystem: a review",
+          "authors": "Salotti et al.",
+          "year": "2024",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Use of Trichoderma culture filtrates as a sustainable approach for controlling tomato early blight disease",
+          "authors": "Imran et al.",
+          "year": "2023",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Antifungal potential of volatiles produced by Bacillus subtilis for controlling Alternaria solani causing early blight disease in tomato",
+          "authors": "Awan et al.",
+          "year": "2023",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-07T16:37:26.328079"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Yellow_Leaf_Curl_Virus_0013.jpg",
+    "predicted_class": "Tomato_Yellow_leaf_curl_virus",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Tomato_Yellow_leaf_curl_virus",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Early_Blight",
+        "confidence": 9.164264902494779e-10
+      },
+      {
+        "class": "Pepper_Healthy",
+        "confidence": 1.7930879003813516e-10
+      }
+    ],
+    "severity_label": "Moderate",
+    "severity_percent": 33.15071507150715,
+    "leaf_pixels": 45450,
+    "affected_pixels": 15067,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Yellow_Leaf_Curl_Virus_0013_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Yellow_Leaf_Curl_Virus_0013_affected.png",
+    "recommendation": {
+      "summary": "Virus symptoms are clearly established on a noticeable part of the canopy, with increasing risk of spread through whitefly activity and significant reduction in plant vigor.",
+      "treatment": [
+        "Remove symptomatic plants or severely affected plant parts where practical to reduce the local virus source.",
+        "Strengthen integrated whitefly management immediately using locally approved methods.",
+        "Maintain or introduce reflective mulch or comparable whitefly-deterrent measures where possible."
+      ],
+      "prevention": [
+        "Continue using resistant cultivars and clean transplants as the main preventive strategy.",
+        "Control weeds and alternate hosts that may support whiteflies or virus reservoirs near the crop.",
+        "Avoid overlapping tomato plantings that sustain continuous vector and virus pressure."
+      ],
+      "monitoring": [
+        "Inspect every 2 to 3 days during periods of active whitefly pressure.",
+        "Track spread to nearby plants and worsening of leaf curl, yellowing, and stunting."
+      ],
+      "caution": [
+        "Once TYLCV is established, management is primarily about limiting spread and protecting remaining healthy plants.",
+        "Single-strategy management is less reliable than integrated resistance and vector control."
+      ],
+      "references": [
+        {
+          "title": "Natural resistance of tomato plants to Tomato yellow leaf curl virus",
+          "authors": "El-Sappah et al.",
+          "year": "2022",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Integrated Management of Tomato Yellow Leaf Curl Virus and Bemisia tabaci in Tomato Using Resistant Tomato Cultivars, Insecticides, and Mulches",
+          "authors": "Riley et al.",
+          "year": "2019",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Tomato Yellow Leaf Curl Virus-Resistant and -Susceptible Tomato Cultivars and Their Effects on Silverleaf Whitefly Population Dynamics",
+          "authors": "Marchant et al.",
+          "year": "2020",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-07T21:16:08.708033"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Potato_Early_Blight_0011.jpg",
+    "predicted_class": "Potato_Late_Blight",
+    "confidence": 0.6426804065704346,
+    "top3": [
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 0.6426804065704346
+      },
+      {
+        "class": "Potato_Early_Blight",
+        "confidence": 0.35331231355667114
+      },
+      {
+        "class": "Tomato_Early_Blight",
+        "confidence": 0.004003092646598816
+      }
+    ],
+    "severity_label": "Severe",
+    "severity_percent": 49.51785672793178,
+    "leaf_pixels": 43037,
+    "affected_pixels": 21311,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Potato_Early_Blight_0011_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Potato_Early_Blight_0011_affected.png",
+    "recommendation": {
+      "summary": "Late blight is widespread, with extensive foliage infection and high risk of complete canopy loss, tuber infection, and severe yield reduction.",
+      "treatment": [
+        "Remove severely infected plants or heavily affected plant material promptly to reduce inoculum pressure and protect surrounding plants.",
+        "Do not compost heavily infected plant material unless safe disposal guidance specifically permits it.",
+        "Focus management on limiting further spread and protecting nearby healthy plants rather than attempting to recover severely damaged tissue."
+      ],
+      "prevention": [
+        "For future planting, prioritize resistant or less susceptible cultivars where suitable options are available.",
+        "Remove volunteer potatoes and maintain strict sanitation after the season.",
+        "Plan future management around early preventative action and forecasting support rather than delayed response."
+      ],
+      "monitoring": [
+        "Inspect surrounding susceptible plants frequently during active outbreaks.",
+        "Monitor harvested tubers carefully for signs of late blight infection during storage."
+      ],
+      "caution": [
+        "Severe late blight can lead to major field loss and postharvest tuber problems.",
+        "Under high disease pressure, integrated control and resistance are more reliable than relying on a single intervention."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Late Blight Resistance Evaluation and Genome-Wide Association Analysis in Tetraploid Potato",
+          "authors": "Duan et al.",
+          "year": "2021",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Reduced fungicide inputs for Phytophthora infestans control in potato using a decision support system",
+          "authors": "Kessel et al.",
+          "year": "2018",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-07T21:18:39.383571"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Pepper_Bacterial_Spot_0001.jpg",
+    "predicted_class": "Pepper_Bacterial_Spot",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Pepper_Bacterial_Spot",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Early_Blight",
+        "confidence": 1.0252054413739664e-11
+      },
+      {
+        "class": "Pepper_Healthy",
+        "confidence": 5.276318444658035e-12
+      }
+    ],
+    "severity_label": "Mild",
+    "severity_percent": 10.394556559299598,
+    "leaf_pixels": 43061,
+    "affected_pixels": 4476,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Pepper_Bacterial_Spot_0001_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Pepper_Bacterial_Spot_0001_affected.png",
+    "recommendation": {
+      "summary": "Early bacterial spot symptoms are visible on a limited number of leaves or fruit, and infection is still localized.",
+      "treatment": [
+        "Remove and safely discard visibly infected plant parts where infection is still limited.",
+        "Apply locally approved protectant treatments to healthy foliage as part of an integrated management program.",
+        "Where available, consider biological management options supported by evidence, such as selected Bacillus-based products or bacteriophage-based suppression strategies."
+      ],
+      "prevention": [
+        "Avoid overhead irrigation and reduce splash dispersal between plants.",
+        "Do not handle or prune plants when foliage is wet.",
+        "Use clean tools and sanitize them after contact with infected plants.",
+        "Start with clean seed or transplants and use validated seed sanitation methods where appropriate."
+      ],
+      "monitoring": [
+        "Inspect plants again within 3 to 5 days during warm, humid, or rainy conditions.",
+        "Check whether lesions are appearing on new leaves, stems, or fruit."
+      ],
+      "caution": [
+        "Copper-based products act mainly as protectants and may be less reliable where copper-tolerant bacterial populations are present.",
+        "Early intervention is more effective than waiting until infection becomes widespread."
+      ],
+      "references": [
+        {
+          "title": "A centenary for bacterial spot of tomato and pepper",
+          "authors": "Osdaghi et al.",
+          "year": "2021",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Bacterial spot of tomato and pepper: diverse Xanthomonas species posing a worldwide challenge",
+          "authors": "Potnis et al.",
+          "year": "2015",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Pepper Bacterial Spot Control by Bacillus velezensis",
+          "authors": "Pajčin et al.",
+          "year": "2020",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-07T21:37:03.113918"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Pepper_Bacterial_Spot_0010.jpg",
+    "predicted_class": "Pepper_Bacterial_Spot",
+    "confidence": 0.9999947547912598,
+    "top3": [
+      {
+        "class": "Pepper_Bacterial_Spot",
+        "confidence": 0.9999947547912598
+      },
+      {
+        "class": "Pepper_Healthy",
+        "confidence": 5.141538167663384e-06
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 5.909955191896188e-08
+      }
+    ],
+    "severity_label": "Severe",
+    "severity_percent": 63.24661988704433,
+    "leaf_pixels": 35058,
+    "affected_pixels": 22173,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Pepper_Bacterial_Spot_0010_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Pepper_Bacterial_Spot_0010_affected.png",
+    "recommendation": {
+      "summary": "Bacterial spot is widespread, with extensive lesions on foliage and/or fruit and high risk of major plant damage and further spread.",
+      "treatment": [
+        "Remove severely infected plants or heavily affected plant material to reduce inoculum pressure and protect nearby plants.",
+        "Use a full integrated management strategy focused on sanitation, splash reduction, clean planting material, and locally approved protective measures.",
+        "Plan future control around host resistance, clean seed/transplants, and stronger preventative management rather than relying only on in-season treatment."
+      ],
+      "prevention": [
+        "Remove all infected crop debris at the end of the season.",
+        "Use disease-free seed or validated seed sanitation procedures before future planting.",
+        "Prefer resistant or less susceptible cultivars where locally suitable options exist."
+      ],
+      "monitoring": [
+        "Inspect surrounding susceptible plants frequently during active outbreaks.",
+        "Monitor new flushes of growth and fruit for continued lesion development."
+      ],
+      "caution": [
+        "Severe outbreaks can be difficult to reverse once disease is established across the crop.",
+        "Because copper tolerance and pathogen diversity are recognized problems, long-term management should emphasize integrated strategies and resistance where possible."
+      ],
+      "references": [
+        {
+          "title": "A centenary for bacterial spot of tomato and pepper",
+          "authors": "Osdaghi et al.",
+          "year": "2021",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Bacterial spot of tomato and pepper: diverse Xanthomonas species posing a worldwide challenge",
+          "authors": "Potnis et al.",
+          "year": "2015",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Mapping of the bs5 and bs6 non-race-specific recessive resistances against bacterial spot of pepper",
+          "authors": "Sharma et al.",
+          "year": "2023",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-07T21:37:44.659306"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Pepper_Bacterial_Spot_0012.jpg",
+    "predicted_class": "Pepper_Bacterial_Spot",
+    "confidence": 1.0,
+    "top3": [
+      {
+        "class": "Pepper_Bacterial_Spot",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 4.984038515232214e-09
+      },
+      {
+        "class": "Potato_Early_Blight",
+        "confidence": 4.596006242252315e-09
+      }
+    ],
+    "severity_label": "Moderate",
+    "severity_percent": 32.29693068780254,
+    "leaf_pixels": 37598,
+    "affected_pixels": 12143,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Pepper_Bacterial_Spot_0012_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Pepper_Bacterial_Spot_0012_affected.png",
+    "recommendation": {
+      "summary": "Disease is established on a noticeable part of the plant, with ongoing spread to new leaves or fruit and increased risk of yield and quality loss.",
+      "treatment": [
+        "Remove heavily infected leaves and fruit where practical and destroy infected debris away from the crop area.",
+        "Use an integrated disease management approach combining sanitation, protectant treatment, and resistance-inducing or biological tools where available.",
+        "Where locally available and validated, induced-resistance strategies or resistance-inducing products may help reduce disease severity."
+      ],
+      "prevention": [
+        "Reduce leaf wetness duration and minimize splash from irrigation or rain.",
+        "Improve spacing and airflow where possible.",
+        "Avoid repeated use of a single control strategy when resistance risk is known."
+      ],
+      "monitoring": [
+        "Inspect every 2 to 3 days during disease-conducive weather.",
+        "Monitor nearby pepper or tomato plants for linked spread."
+      ],
+      "caution": [
+        "Bacterial spot management is strongest when multiple control measures are combined rather than relying on one product alone.",
+        "Warm, humid conditions can accelerate spread."
+      ],
+      "references": [
+        {
+          "title": "A centenary for bacterial spot of tomato and pepper",
+          "authors": "Osdaghi et al.",
+          "year": "2021",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Pepper Bacterial Spot Control by Bacillus velezensis",
+          "authors": "Pajčin et al.",
+          "year": "2020",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Xanthomonas euvesicatoria-Specific Bacteriophage and Its Biocontrol Potential against Bacterial Spot of Pepper",
+          "authors": "Shopova et al.",
+          "year": "2023",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "ISR meets SAR outside: additive action of the endophyte Bacillus pumilus INR7 and the chemical inducer BTH on induced resistance against bacterial spot in pepper",
+          "authors": "Yi et al.",
+          "year": "2013",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-08T01:26:03.986551"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Potato_Healthy_0003.jpg",
+    "predicted_class": "Potato_Late_Blight",
+    "confidence": 0.9999967813491821,
+    "top3": [
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 0.9999967813491821
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 3.04455033983686e-06
+      },
+      {
+        "class": "Potato_Early_Blight",
+        "confidence": 8.483741709142123e-08
+      }
+    ],
+    "severity_label": "Severe",
+    "severity_percent": 60.54681194511703,
+    "leaf_pixels": 49560,
+    "affected_pixels": 30007,
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Potato_Healthy_0003_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Potato_Healthy_0003_affected.png",
+    "recommendation": {
+      "summary": "Late blight is widespread, with extensive foliage infection and high risk of complete canopy loss, tuber infection, and severe yield reduction.",
+      "treatment": [
+        "Remove severely infected plants or heavily affected plant material promptly to reduce inoculum pressure and protect surrounding plants.",
+        "Do not compost heavily infected plant material unless safe disposal guidance specifically permits it.",
+        "Focus management on limiting further spread and protecting nearby healthy plants rather than attempting to recover severely damaged tissue."
+      ],
+      "prevention": [
+        "For future planting, prioritize resistant or less susceptible cultivars where suitable options are available.",
+        "Remove volunteer potatoes and maintain strict sanitation after the season.",
+        "Plan future management around early preventative action and forecasting support rather than delayed response."
+      ],
+      "monitoring": [
+        "Inspect surrounding susceptible plants frequently during active outbreaks.",
+        "Monitor harvested tubers carefully for signs of late blight infection during storage."
+      ],
+      "caution": [
+        "Severe late blight can lead to major field loss and postharvest tuber problems.",
+        "Under high disease pressure, integrated control and resistance are more reliable than relying on a single intervention."
+      ],
+      "references": [
+        {
+          "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+          "authors": "Nowicki et al.",
+          "year": "2012",
+          "type": "peer_reviewed_review"
+        },
+        {
+          "title": "Late Blight Resistance Evaluation and Genome-Wide Association Analysis in Tetraploid Potato",
+          "authors": "Duan et al.",
+          "year": "2021",
+          "type": "peer_reviewed_article"
+        },
+        {
+          "title": "Reduced fungicide inputs for Phytophthora infestans control in potato using a decision support system",
+          "authors": "Kessel et al.",
+          "year": "2018",
+          "type": "peer_reviewed_article"
+        }
+      ]
+    },
+    "timestamp": "2026-04-08T01:35:49.464351"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Potato_Healthy_0008.jpg",
+    "predicted_class": "Potato_Healthy",
+    "confidence": 0.999923586845398,
+    "top3": [
+      {
+        "class": "Potato_Healthy",
+        "confidence": 0.999923586845398
+      },
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 7.392229599645361e-05
+      },
+      {
+        "class": "Potato_Early_Blight",
+        "confidence": 2.068990852421848e-06
+      }
+    ],
+    "severity_label": null,
+    "severity_percent": null,
+    "leaf_pixels": null,
+    "affected_pixels": null,
+    "gradcam_overlay_path": null,
+    "affected_overlay_path": null,
+    "recommendation": {
+      "status": "healthy",
+      "summary": "The leaf appears healthy, with no major visible disease pattern detected.",
+      "treatment": [
+        "No disease treatment is required at this stage."
+      ],
+      "prevention": [
+        "Reduce soil splash by maintaining mulch or appropriate crop spacing where practical.",
+        "Avoid prolonged leaf wetness and unnecessary overhead irrigation.",
+        "Monitor frequently during cool, wet, or humid periods that favor blight development."
+      ],
+      "monitoring": [
+        "Inspect the crop again within 5 to 7 days.",
+        "Reassess if target-like lesions, water-soaked spots, or rapid canopy changes appear."
+      ],
+      "caution": [
+        "Potato foliage can appear healthy before rapid disease onset under favorable weather conditions."
+      ],
+      "references": [
+        {
+          "title": "General potato disease prevention and field sanitation practices",
+          "type": "supporting_practical_guidance"
+        }
+      ]
+    },
+    "timestamp": "2026-04-08T01:36:19.373964"
+  },
+  {
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Healthy_0004.jpg",
+    "predicted_class": "Tomato_Healthy",
+    "confidence": 0.968940019607544,
+    "top3": [
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 0.968940019607544
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 0.030351191759109497
+      },
+      {
+        "class": "Pepper_Healthy",
+        "confidence": 0.0004810964746866375
+      }
+    ],
+    "severity_label": null,
+    "severity_percent": null,
+    "leaf_pixels": null,
+    "affected_pixels": null,
+    "gradcam_overlay_path": null,
+    "affected_overlay_path": null,
+    "recommendation": {
+      "status": "healthy",
+      "summary": "The leaf appears healthy, with no major visible disease pattern detected.",
+      "treatment": [
+        "No disease treatment is required at this stage."
+      ],
+      "prevention": [
+        "Maintain good airflow and avoid excessive canopy density.",
+        "Reduce soil splash with mulch or careful watering practices.",
+        "Avoid prolonged leaf wetness and inspect regularly during humid conditions."
+      ],
+      "monitoring": [
+        "Inspect the plant again within 5 to 7 days.",
+        "Reassess if spots, mold, curling, yellowing, or water-soaked lesions appear."
+      ],
+      "caution": [
+        "Healthy leaves can still develop disease later, especially under favorable environmental conditions or vector pressure."
+      ],
+      "references": [
+        {
+          "title": "General tomato disease prevention and crop hygiene practices",
+          "type": "supporting_practical_guidance"
+        }
+      ]
+    },
+    "timestamp": "2026-04-08T06:56:56.095650"
   }
 ]

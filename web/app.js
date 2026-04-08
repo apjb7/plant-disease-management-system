@@ -17,9 +17,21 @@ const preventionList = document.getElementById("preventionList");
 const monitoringList = document.getElementById("monitoringList");
 const cautionList = document.getElementById("cautionList");
 
+const referencesCard = document.getElementById("referencesCard");
+const referencesList = document.getElementById("referencesList");
+
 const uploadedPreview = document.getElementById("uploadedPreview");
 const gradcamImage = document.getElementById("gradcamImage");
 const affectedImage = document.getElementById("affectedImage");
+
+function prettifyClassName(name) {
+  if (!name) return "";
+
+  return name
+    .replace(/_/g, " ")
+    .replace(/\btylcv\b/gi, "TYLCV")
+    .replace(/\b([a-z])/g, (match) => match.toUpperCase());
+}
 
 function fillList(element, items) {
   element.innerHTML = "";
@@ -30,6 +42,28 @@ function fillList(element, items) {
   });
 }
 
+function fillReferences(references) {
+  referencesList.innerHTML = "";
+
+  if (!references || references.length === 0) {
+    referencesCard.classList.add("hidden");
+    return;
+  }
+
+  references.forEach(ref => {
+    const li = document.createElement("li");
+    const parts = [];
+    if (ref.authors) parts.push(ref.authors);
+    if (ref.year) parts.push(`(${ref.year})`);
+    if (ref.title) parts.push(ref.title);
+    if (ref.type) parts.push(`[${ref.type}]`);
+    li.textContent = parts.join(" ");
+    referencesList.appendChild(li);
+  });
+
+  referencesCard.classList.remove("hidden");
+}
+
 analyzeBtn.addEventListener("click", async () => {
   const file = imageInput.files[0];
 
@@ -38,9 +72,10 @@ analyzeBtn.addEventListener("click", async () => {
     return;
   }
 
-  statusDiv.textContent = "Analyzing image...";
+  statusDiv.textContent = "Analyzing image and preparing your care report...";
   resultSection.classList.add("hidden");
   visualSection.classList.add("hidden");
+  referencesCard.classList.add("hidden");
 
   const formData = new FormData();
   formData.append("image", file);
@@ -60,19 +95,34 @@ analyzeBtn.addEventListener("click", async () => {
       return;
     }
 
-    statusDiv.textContent = "Analysis completed.";
+    statusDiv.textContent = "Analysis report generated successfully.";
 
-    predictedClass.textContent = data.predicted_class;
+    predictedClass.textContent = prettifyClassName(data.predicted_class);
     confidence.textContent = Number(data.confidence).toFixed(4);
-    severity.textContent = data.severity_label || "Not applicable";
-    severityPercent.textContent = data.severity_percent !== null && data.severity_percent !== undefined
-      ? `${Number(data.severity_percent).toFixed(2)}%`
-      : "Not applicable";
+
+    severity.innerHTML = "";
+    if (!data.severity_label) {
+      severity.innerHTML = '<span class="result-pill healthy">Healthy</span>';
+      severityPercent.textContent = "Not applicable";
+    } else {
+      const pill = document.createElement("span");
+      pill.classList.add("result-pill");
+
+      const label = data.severity_label.toLowerCase();
+      if (label === "mild") pill.classList.add("mild");
+      else if (label === "moderate") pill.classList.add("moderate");
+      else if (label === "severe") pill.classList.add("severe");
+
+      pill.textContent = data.severity_label;
+      severity.appendChild(pill);
+
+      severityPercent.textContent = `${Number(data.severity_percent).toFixed(2)}%`;
+    }
 
     top3List.innerHTML = "";
     (data.top3 || []).forEach(item => {
       const li = document.createElement("li");
-      li.textContent = `${item.class}: ${Number(item.confidence).toFixed(4)}`;
+      li.textContent = `${prettifyClassName(item.class)}: ${Number(item.confidence).toFixed(4)}`;
       top3List.appendChild(li);
     });
 
@@ -83,6 +133,7 @@ analyzeBtn.addEventListener("click", async () => {
     fillList(preventionList, rec.prevention);
     fillList(monitoringList, rec.monitoring);
     fillList(cautionList, rec.caution);
+    fillReferences(rec.references);
 
     if (data.gradcam_overlay_path) {
       const rel = data.gradcam_overlay_path.split("/outputs/")[1];
@@ -100,7 +151,6 @@ analyzeBtn.addEventListener("click", async () => {
 
     resultSection.classList.remove("hidden");
     visualSection.classList.remove("hidden");
-
   } catch (error) {
     statusDiv.textContent = `Error: ${error.message}`;
   }

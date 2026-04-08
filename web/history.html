@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,9 +8,13 @@
   <link rel="stylesheet" href="/styles.css" />
   <link rel="manifest" href="/manifest.json" />
 </head>
+
 <body>
   <header class="topbar">
-    <h1>Plant Treatment Logbook</h1>
+    <div class="brand-block">
+      <h1>Plant Treatment Logbook</h1>
+      <p class="brand-subtitle">Saved plant health analysis records</p>
+    </div>
     <nav>
       <a href="/">Home</a>
       <a href="/history">Logbook</a>
@@ -17,12 +22,18 @@
   </header>
 
   <main class="container">
-    <section class="card">
-      <h2>Saved Analysis History</h2>
+    <section class="card highlight">
+      <div class="section-header">
+        <div>
+          <span class="section-label">Saved Reports</span>
+          <h2>Plant Treatment Logbook</h2>
+        </div>
+      </div>
       <div id="historyContainer"></div>
     </section>
   </main>
 
   <script src="/history.js"></script>
 </body>
+
 </html>

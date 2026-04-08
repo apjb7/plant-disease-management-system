@@ -11,6 +11,13 @@ from app.logbook import save_logbook_entry, read_logbook_entries
 
 WEB_DIR = BASE_DIR / "web"
 
+print("BASE_DIR =", BASE_DIR)
+print("WEB_DIR =", WEB_DIR)
+print("INDEX PATH =", WEB_DIR / "index.html")
+print("CSS PATH =", WEB_DIR / "styles.css")
+print("INDEX EXISTS =", (WEB_DIR / "index.html").exists())
+print("CSS EXISTS =", (WEB_DIR / "styles.css").exists())
+
 app = Flask(
     __name__,
     static_folder=str(WEB_DIR),
@@ -86,4 +93,4 @@ def serve_sw():
     return send_from_directory(WEB_DIR, "service-worker.js")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="127.0.0.1", port=5000, debug=False, use_reloader=False)
