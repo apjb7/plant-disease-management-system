@@ -82,59 +82,103 @@ class NvidiaLLMRecommender:
             "references": entry.get("references", {})
         }
 
-    def build_prompt(self, evidence: dict):
+    def _collect_reference_ids(self, *sections):
+        refs = []
+        for section in sections:
+            if not section:
+                continue
+            for item in section:
+                if isinstance(item, dict):
+                    refs.extend(item.get("paper_refs", []))
+        return sorted(list(set(refs)))
+
+    def build_research_evidence(self, evidence: dict):
+        if not evidence:
+            return {
+                "pathogen_notes": [],
+                "research_findings": [],
+                "supported_actions": [],
+                "monitoring_points": [],
+                "cautions": [],
+                "follow_up": "",
+                "references_used": []
+            }
+
+        if evidence.get("disease_type") == "healthy_leaf":
+            profile = evidence.get("evidence_profile", {})
+        else:
+            profile = evidence.get("severity_profile", {})
+
+        pathogen_notes = [item.get("statement", "") for item in evidence.get("pathogen_notes", [])]
+        research_findings = [item.get("statement", "") for item in profile.get("research_findings", [])]
+        supported_actions = [item.get("action", "") for item in profile.get("supported_actions", [])]
+        monitoring_points = [item.get("point", "") for item in profile.get("monitoring_points", [])]
+        cautions = [item.get("point", "") for item in profile.get("cautions", [])]
+        follow_up = profile.get("follow_up_rule", {}).get("statement", "")
+
+        references_used = self._collect_reference_ids(
+            evidence.get("pathogen_notes", []),
+            profile.get("research_findings", []),
+            profile.get("supported_actions", []),
+            profile.get("monitoring_points", []),
+            profile.get("cautions", []),
+            [profile.get("follow_up_rule", {})]
+        )
+
+        return {
+            "pathogen_notes": pathogen_notes,
+            "research_findings": research_findings,
+            "supported_actions": supported_actions,
+            "monitoring_points": monitoring_points,
+            "cautions": cautions,
+            "follow_up": follow_up,
+            "references_used": references_used
+        }
+
+    def build_prompt(self, evidence: dict, research_evidence: dict):
         class_name = evidence.get("class_name", "")
         disease_type = evidence.get("disease_type", "")
         causal_agent = evidence.get("causal_agent", "")
 
         prompt = []
         prompt.append("You are a plant disease recommendation assistant for home gardeners.")
+        prompt.append("You will receive research-based evidence for one detected plant condition.")
+        prompt.append("Your task is to rewrite the evidence into simpler home gardener language.")
         prompt.append("Use only the evidence provided below.")
         prompt.append("Do not invent treatments, chemical doses, timings, or claims.")
         prompt.append("Do not add any information not explicitly supported by the evidence.")
-        prompt.append("Do not mention actions unless they are clearly supported in the evidence.")
         prompt.append("Do not wrap the JSON in markdown code fences.")
-        prompt.append("Write in simple, clear, non-technical language.")
-        prompt.append("Return only valid JSON with the exact fields:")
-        prompt.append("summary, what_to_do_now, monitoring, caution, follow_up, references_used")
+        prompt.append("Write in simple, clear, practical language for non-expert home gardeners.")
+        prompt.append("Return only valid JSON with these exact fields:")
+        prompt.append("summary, what_to_do_now, monitoring, caution, follow_up")
         prompt.append("")
+
         prompt.append(f"Predicted class: {class_name}")
         prompt.append(f"Disease type: {disease_type}")
         prompt.append(f"Causal agent: {causal_agent}")
 
-        for item in evidence.get("pathogen_notes", []):
-            prompt.append(f"Pathogen note: {item.get('statement', '')}")
+        if evidence.get("severity"):
+            prompt.append(f"Severity: {evidence.get('severity')}")
 
-        if disease_type == "healthy_leaf":
-            profile = evidence.get("evidence_profile", {})
-        else:
-            prompt.append(f"Severity: {evidence.get('severity', '')}")
-            profile = evidence.get("severity_profile", {})
+        prompt.append("")
+        prompt.append("Research evidence:")
+        for item in research_evidence.get("pathogen_notes", []):
+            prompt.append(f"Pathogen note: {item}")
 
-        for item in profile.get("research_findings", []):
-            prompt.append(f"Research finding: {item.get('statement', '')}")
+        for item in research_evidence.get("research_findings", []):
+            prompt.append(f"Research finding: {item}")
 
-        for item in profile.get("supported_actions", []):
-            prompt.append(f"Supported action: {item.get('action', '')}")
-            prompt.append(f"Research support: {item.get('research_support', '')}")
+        for item in research_evidence.get("supported_actions", []):
+            prompt.append(f"Supported action: {item}")
 
-        for item in profile.get("monitoring_points", []):
-            prompt.append(f"Monitoring point: {item.get('point', '')}")
+        for item in research_evidence.get("monitoring_points", []):
+            prompt.append(f"Monitoring point: {item}")
 
-        for item in profile.get("cautions", []):
-            prompt.append(f"Caution: {item.get('point', '')}")
+        for item in research_evidence.get("cautions", []):
+            prompt.append(f"Caution: {item}")
 
-        follow_up = profile.get("follow_up_rule", {})
-        if follow_up:
-            prompt.append(f"Follow-up rule: {follow_up.get('statement', '')}")
-
-        refs = evidence.get("references", {})
-        if refs:
-            prompt.append("Available references:")
-            for ref_id, ref in refs.items():
-                prompt.append(
-                    f"{ref_id}: {ref.get('title', '')} | {ref.get('authors', '')} | {ref.get('year', '')}"
-                )
+        if research_evidence.get("follow_up"):
+            prompt.append(f"Follow-up rule: {research_evidence.get('follow_up')}")
 
         prompt.append("")
         prompt.append("Formatting rules:")
@@ -143,7 +187,6 @@ class NvidiaLLMRecommender:
         prompt.append("- monitoring must be a short list")
         prompt.append("- caution must be a short list")
         prompt.append("- follow_up must be one short sentence")
-        prompt.append("- references_used must contain only reference IDs actually used")
         prompt.append("- return JSON only")
 
         return "\n".join(prompt)
@@ -165,16 +208,29 @@ class NvidiaLLMRecommender:
         evidence = self.get_evidence_block(predicted_class, severity)
 
         if not evidence:
-            return {
+            empty_research = {
+                "pathogen_notes": [],
+                "research_findings": [],
+                "supported_actions": [],
+                "monitoring_points": [],
+                "cautions": [],
+                "follow_up": "",
+                "references_used": []
+            }
+            empty_guidance = {
                 "summary": "No recommendation evidence was found for this prediction.",
                 "what_to_do_now": [],
                 "monitoring": [],
                 "caution": [],
-                "follow_up": "",
-                "references_used": []
+                "follow_up": ""
+            }
+            return {
+                "research_evidence": empty_research,
+                "home_gardener_guidance": empty_guidance
             }
 
-        prompt = self.build_prompt(evidence)
+        research_evidence = self.build_research_evidence(evidence)
+        prompt = self.build_prompt(evidence, research_evidence)
 
         response = self.client.responses.create(
             model=self.model,
@@ -189,24 +245,24 @@ class NvidiaLLMRecommender:
 
         try:
             parsed = json.loads(cleaned_text)
-
-            return {
+            home_gardener_guidance = {
                 "summary": parsed.get("summary", ""),
                 "what_to_do_now": parsed.get("what_to_do_now", []),
                 "monitoring": parsed.get("monitoring", []),
                 "caution": parsed.get("caution", []),
-                "follow_up": parsed.get("follow_up", ""),
-                "references_used": parsed.get("references_used", [])
+                "follow_up": parsed.get("follow_up", "")
             }
-
         except json.JSONDecodeError as e:
             print("JSON PARSE ERROR =", e)
-
-            return {
+            home_gardener_guidance = {
                 "summary": cleaned_text,
                 "what_to_do_now": [],
                 "monitoring": [],
                 "caution": [],
-                "follow_up": "",
-                "references_used": []
+                "follow_up": ""
             }
+
+        return {
+            "research_evidence": research_evidence,
+            "home_gardener_guidance": home_gardener_guidance
+        }

@@ -73,5 +73,249 @@
     ],
     "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0005_gradcam.png",
     "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0005_affected.png"
+  },
+  {
+    "timestamp": "2026-04-10T18:55:22",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Late_Blight_0010.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Tomato_Late_Blight",
+    "confidence": 1.0,
+    "severity_label": "Mild",
+    "severity_percent": 13.149214151736627,
+    "top3": [
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 4.970048195218624e-08
+      },
+      {
+        "class": "Tomato_Leaf_Mold",
+        "confidence": 2.830595313696449e-08
+      }
+    ],
+    "summary": "Late blight is a serious tomato disease that thrives in cool, wet weather. Acting early is best because the disease can spread quickly. Good prevention and careful monitoring keep the damage low.",
+    "what_to_do_now": [
+      "Remove any leaves or shoots that look clearly infected",
+      "Use locally approved preventive treatments that work against oomycetes",
+      "Avoid putting water on the leaves; reduce leaf wetness"
+    ],
+    "monitoring": [
+      "Watch how fast the lesions grow during cool and wet weather",
+      "Check the undersides of leaves and the edges of lesions for signs of spores"
+    ],
+    "caution": [
+      "Late blight can spread very fast when the weather stays humid or wet",
+      "Treatments should reflect that the pathogen is an oomycete, not a true fungus"
+    ],
+    "follow_up": "Check again the same area in about 24 to 48 hours when it’s still cool and wet.",
+    "references_used": [
+      "Nowicki_2012",
+      "Shrestha_Ashley_2014"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0010_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0010_affected.png"
+  },
+  {
+    "timestamp": "2026-04-10T18:58:19",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Potato_Early_Blight_0004.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Potato_Early_Blight",
+    "confidence": 1.0,
+    "severity_label": "Mild",
+    "severity_percent": 9.902761571373006,
+    "top3": [
+      {
+        "class": "Potato_Early_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Early_Blight",
+        "confidence": 7.567865333967666e-14
+      },
+      {
+        "class": "Pepper_Bacterial_Spot",
+        "confidence": 4.550904398876836e-14
+      }
+    ],
+    "summary": "No recommendation evidence was found for this prediction.",
+    "what_to_do_now": [],
+    "monitoring": [],
+    "caution": [],
+    "follow_up": "",
+    "references_used": [],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Potato_Early_Blight_0004_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Potato_Early_Blight_0004_affected.png"
+  },
+  {
+    "timestamp": "2026-04-10T19:24:43",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Potato_Late_Blight_0008.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Potato_Late_Blight",
+    "confidence": 1.0,
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "top3": [
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 5.035529770935909e-10
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 3.0550420526687105e-10
+      }
+    ],
+    "summary": "No recommendation evidence was found for this prediction.",
+    "what_to_do_now": [],
+    "monitoring": [],
+    "caution": [],
+    "follow_up": "",
+    "references_used": [],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Potato_Late_Blight_0008_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Potato_Late_Blight_0008_affected.png"
+  },
+  {
+    "timestamp": "2026-04-10T19:27:54",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Potato_Late_Blight_0008.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Potato_Late_Blight",
+    "confidence": 1.0,
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "top3": [
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 5.035529770935909e-10
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 3.0550420526687105e-10
+      }
+    ],
+    "summary": "You have mild late blight on your potatoes. This disease likes cool, wet weather, so it can spread quickly if conditions stay that way. Acting early protects more of your crop.",
+    "what_to_do_now": [
+      "Remove any clearly infected leaves when possible",
+      "Use a locally approved preventative treatment that works against oomycetes",
+      "Keep leaf wetness low and avoid watering from above",
+      "If allowed locally, consider a copper-based spray for prevention"
+    ],
+    "monitoring": [
+      "Check if lesions are getting bigger during cool, wet weather",
+      "Look at the edges of lesions and the undersides of leaves for spores"
+    ],
+    "caution": [
+      "Late blight can spread fast once the weather stays favorable",
+      "Because it is an oomycete, not all fungal treatments work the same way"
+    ],
+    "follow_up": "Recheck the plants within 24‑48 hours during any cool, wet spell.",
+    "references_used": [
+      "Fry_2015",
+      "Kessel_2018",
+      "Nowicki_2012",
+      "Stefanczyk_2023"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Potato_Late_Blight_0008_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Potato_Late_Blight_0008_affected.png"
+  },
+  {
+    "timestamp": "2026-04-10T19:28:19",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Potato_Early_Blight_0012.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Potato_Early_Blight",
+    "confidence": 1.0,
+    "severity_label": "Mild",
+    "severity_percent": 4.62583137520411,
+    "top3": [
+      {
+        "class": "Potato_Early_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 1.109364048513346e-14
+      },
+      {
+        "class": "Pepper_Bacterial_Spot",
+        "confidence": 8.343655165885531e-16
+      }
+    ],
+    "summary": "Early blight is a fungal leaf disease that can cause loss of potato foliage. Acting early, before it spreads through the canopy, gives the best chance for control. Look for small, target-shaped spots on the leaves.",
+    "what_to_do_now": [
+      "Remove visibly infected lower leaves where practical",
+      "Apply protectant products to healthy leaves if locally approved",
+      "Use mulch or similar barriers to reduce soil splash",
+      "Consider Bacillus subtilis‑based support where available"
+    ],
+    "monitoring": [
+      "Check for new target-like lesions on leaves",
+      "Reassess disease progress during favorable weather"
+    ],
+    "caution": [
+      "The disease gets harder to manage once it spreads strongly through the canopy"
+    ],
+    "follow_up": "Reassess disease development within about 5 to 7 days under favorable conditions.",
+    "references_used": [
+      "Abuley_2017",
+      "Jindo_2021",
+      "Noh_2024",
+      "vanDerWaals_2001"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Potato_Early_Blight_0012_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Potato_Early_Blight_0012_affected.png"
+  },
+  {
+    "timestamp": "2026-04-10T22:59:26",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Mango_Powdery_Mildew_0001.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Mango_Powdery_Mildew",
+    "confidence": 1.0,
+    "severity_label": "Severe",
+    "severity_percent": 60.24540170776626,
+    "top3": [
+      {
+        "class": "Mango_Powdery_Mildew",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 1.2160962040567516e-27
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 2.7820765224075077e-29
+      }
+    ],
+    "summary": "Severe powdery mildew on mango can severely reduce flowering and fruit set. The best control is a sulfur-based spray, which is approved locally for severe cases. Protect flowers, young fruit, and choose varieties that are more resistant when planning future plantings.",
+    "what_to_do_now": [
+      "Apply a sulfur-based spray as approved in your area.",
+      "Protect flowers, panicles, and young fruit from infection.",
+      "Consider a more resistant variety if you plan new plantings."
+    ],
+    "monitoring": [
+      "Keep an eye on flowering success.",
+      "Check fruit set regularly.",
+      "Watch newly developing tissues for symptoms."
+    ],
+    "caution": [
+      "Severe powdery mildew can badly reduce flowering and fruit set."
+    ],
+    "follow_up": "Reassess disease development frequently during severe outbreaks, especially on flowers and young fruit.",
+    "references_used": [
+      "AbouElNasr_2025",
+      "Joubert_1993",
+      "Naqvi_2014"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Mango_Powdery_Mildew_0001_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Mango_Powdery_Mildew_0001_affected.png"
   }
 ]

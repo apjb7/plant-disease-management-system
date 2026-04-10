@@ -2426,5 +2426,644 @@
         "type": "peer_reviewed_article"
       }
     }
+  },
+  "Potato_Early_Blight": {
+    "disease_type": "fungal_disease",
+    "causal_agent": "Alternaria solani",
+    "pathogen_notes": [
+      {
+        "statement": "Early blight is an important foliar disease of potato and can lead to significant defoliation and yield reduction.",
+        "paper_refs": [
+          "vanDerWaals_2001",
+          "Jindo_2021"
+        ]
+      },
+      {
+        "statement": "Disease development is influenced by environmental conditions and crop management practices.",
+        "paper_refs": [
+          "vanDerWaals_2001",
+          "Abuley_2017"
+        ]
+      }
+    ],
+    "severity_profiles": {
+      "Mild": {
+        "research_findings": [
+          {
+            "statement": "Early management is more effective before disease becomes widespread in the canopy.",
+            "paper_refs": [
+              "vanDerWaals_2001",
+              "Jindo_2021"
+            ]
+          },
+          {
+            "statement": "Bacillus subtilis-based biological support has been reported in early blight control studies.",
+            "paper_refs": [
+              "Noh_2024"
+            ]
+          },
+          {
+            "statement": "Reduction of splash dispersal and early sanitation are relevant parts of management.",
+            "paper_refs": [
+              "vanDerWaals_2001",
+              "Jindo_2021"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove visibly infected lower leaves where practical",
+            "research_support": "Early sanitation helps reduce inoculum pressure.",
+            "paper_refs": [
+              "vanDerWaals_2001",
+              "Jindo_2021"
+            ]
+          },
+          {
+            "action": "use protectant management on healthy foliage where locally approved",
+            "research_support": "Early protectant action is stronger before disease becomes extensive.",
+            "paper_refs": [
+              "vanDerWaals_2001",
+              "Jindo_2021"
+            ]
+          },
+          {
+            "action": "reduce soil splash using mulch or similar barriers",
+            "research_support": "Splash dispersal contributes to disease spread from lower canopy sources.",
+            "paper_refs": [
+              "vanDerWaals_2001"
+            ]
+          },
+          {
+            "action": "consider Bacillus subtilis-based support where available",
+            "research_support": "Bacillus subtilis has been reported in early blight management studies.",
+            "paper_refs": [
+              "Noh_2024"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor for new target-like lesions on additional leaves.",
+            "paper_refs": [
+              "vanDerWaals_2001"
+            ]
+          },
+          {
+            "point": "Reassess disease progress during favorable weather conditions.",
+            "paper_refs": [
+              "Abuley_2017"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Disease becomes harder to manage once it progresses strongly through the canopy.",
+            "paper_refs": [
+              "vanDerWaals_2001",
+              "Jindo_2021"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development within about 5 to 7 days under favorable conditions.",
+          "paper_refs": [
+            "vanDerWaals_2001"
+          ]
+        }
+      },
+      "Moderate": {
+        "research_findings": [
+          {
+            "statement": "Once early blight is established on a noticeable portion of the foliage, integrated management becomes more important.",
+            "paper_refs": [
+              "Jindo_2021",
+              "vanDerWaals_2001"
+            ]
+          },
+          {
+            "statement": "Timing models and forecasting approaches have been evaluated for improving management decisions.",
+            "paper_refs": [
+              "Abuley_2017"
+            ]
+          },
+          {
+            "statement": "Biological support with Bacillus subtilis in combination with chlorothalonil has been reported in field studies.",
+            "paper_refs": [
+              "Noh_2024"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove heavily infected leaves and destroy infected debris away from the crop area",
+            "research_support": "Sanitation reduces inoculum and disease carryover.",
+            "paper_refs": [
+              "vanDerWaals_2001",
+              "Jindo_2021"
+            ]
+          },
+          {
+            "action": "use integrated management combining protectant measures and cultural control",
+            "research_support": "Combined management is emphasized over isolated actions.",
+            "paper_refs": [
+              "Jindo_2021",
+              "vanDerWaals_2001"
+            ]
+          },
+          {
+            "action": "use timing or forecasting support where available",
+            "research_support": "Model-based timing has been evaluated to improve management decisions.",
+            "paper_refs": [
+              "Abuley_2017"
+            ]
+          },
+          {
+            "action": "consider Bacillus subtilis support where available",
+            "research_support": "Bacillus subtilis has been reported in combination management studies.",
+            "paper_refs": [
+              "Noh_2024"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor whether lesions are moving upward through the canopy.",
+            "paper_refs": [
+              "vanDerWaals_2001"
+            ]
+          },
+          {
+            "point": "Monitor disease development during warm and humid periods.",
+            "paper_refs": [
+              "Abuley_2017",
+              "Jindo_2021"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Delayed management becomes less effective as canopy infection increases.",
+            "paper_refs": [
+              "vanDerWaals_2001",
+              "Jindo_2021"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease progression within about 3 to 5 days during favorable periods.",
+          "paper_refs": [
+            "vanDerWaals_2001",
+            "Abuley_2017"
+          ]
+        }
+      },
+      "Severe": {
+        "research_findings": [
+          {
+            "statement": "Severe early blight is associated with major defoliation and reduced tuber development or yield.",
+            "paper_refs": [
+              "vanDerWaals_2001",
+              "Jindo_2021"
+            ]
+          },
+          {
+            "statement": "At severe disease levels, management is mainly focused on protecting remaining healthy foliage and reducing further loss.",
+            "paper_refs": [
+              "Jindo_2021"
+            ]
+          },
+          {
+            "statement": "Carryover reduction and improved timing remain important for future management.",
+            "paper_refs": [
+              "vanDerWaals_2001",
+              "Abuley_2017"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove heavily infected material where practical",
+            "research_support": "This may reduce disease pressure on remaining foliage.",
+            "paper_refs": [
+              "vanDerWaals_2001"
+            ]
+          },
+          {
+            "action": "use a full integrated management strategy focused on remaining healthy foliage",
+            "research_support": "Late-stage management is mainly aimed at limiting further loss.",
+            "paper_refs": [
+              "Jindo_2021"
+            ]
+          },
+          {
+            "action": "remove infected crop debris after the season",
+            "research_support": "Debris removal helps reduce carryover inoculum.",
+            "paper_refs": [
+              "vanDerWaals_2001"
+            ]
+          },
+          {
+            "action": "improve timing strategies for future crops",
+            "research_support": "Forecasting and timing support have been evaluated for management improvement.",
+            "paper_refs": [
+              "Abuley_2017"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor rapid canopy decline during active outbreaks.",
+            "paper_refs": [
+              "vanDerWaals_2001",
+              "Jindo_2021"
+            ]
+          },
+          {
+            "point": "Monitor nearby susceptible crops during favorable weather.",
+            "paper_refs": [
+              "Jindo_2021"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Severe early blight can greatly reduce photosynthetic area and compromise yield.",
+            "paper_refs": [
+              "vanDerWaals_2001",
+              "Jindo_2021"
+            ]
+          },
+          {
+            "point": "At severe stages, management is more about limiting further loss than reversing existing damage.",
+            "paper_refs": [
+              "Jindo_2021"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development frequently during active outbreaks, especially after favorable weather.",
+          "paper_refs": [
+            "vanDerWaals_2001",
+            "Jindo_2021"
+          ]
+        }
+      }
+    },
+    "references": {
+      "vanDerWaals_2001": {
+        "title": "A review of early blight of potato",
+        "authors": "van der Waals et al.",
+        "year": 2001,
+        "type": "peer_reviewed_review"
+      },
+      "Jindo_2021": {
+        "title": "Review: Holistic pest management against early blight disease in potato and tomato",
+        "authors": "Jindo et al.",
+        "year": 2021,
+        "type": "peer_reviewed_review"
+      },
+      "Noh_2024": {
+        "title": "Enhanced control efficacy of Bacillus subtilis NM4 via integration of chlorothalonil on potato early blight caused by Alternaria solani",
+        "authors": "Noh et al.",
+        "year": 2024,
+        "type": "peer_reviewed_article"
+      },
+      "Abuley_2017": {
+        "title": "Evaluation of models to control potato early blight based on field experiments in Finland, 1983–2014",
+        "authors": "Abuley et al.",
+        "year": 2017,
+        "type": "peer_reviewed_article"
+      }
+    }
+  },
+  "Potato_Late_Blight": {
+    "disease_type": "oomycete_disease",
+    "causal_agent": "Phytophthora infestans",
+    "pathogen_notes": [
+      {
+        "statement": "Late blight is a highly destructive disease of potato and can cause rapid epidemic development under favorable conditions.",
+        "paper_refs": [
+          "Nowicki_2012",
+          "Fry_2015"
+        ]
+      },
+      {
+        "statement": "Phytophthora infestans is an oomycete rather than a true fungus.",
+        "paper_refs": [
+          "Nowicki_2012",
+          "Fry_2015"
+        ]
+      },
+      {
+        "statement": "Disease development is strongly favored by cool, wet conditions.",
+        "paper_refs": [
+          "Nowicki_2012",
+          "Fry_2015"
+        ]
+      }
+    ],
+    "severity_profiles": {
+      "Mild": {
+        "research_findings": [
+          {
+            "statement": "Preventative management is more effective than waiting for widespread disease development.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Kessel_2018"
+            ]
+          },
+          {
+            "statement": "Copper remains one of the reported organic preventative options in late blight management studies.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "statement": "Biological control with Bacillus strains has been studied for antagonistic activity against Phytophthora infestans.",
+            "paper_refs": [
+              "Stefanczyk_2023"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove clearly infected foliage where practical",
+            "research_support": "Early removal may help reduce local inoculum pressure.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "action": "use locally approved preventative management effective against oomycetes",
+            "research_support": "Preventative action is reported to be stronger than delayed response.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Kessel_2018"
+            ]
+          },
+          {
+            "action": "reduce leaf wetness and avoid overhead irrigation",
+            "research_support": "Cool and wet conditions strongly favor disease development and spread.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Fry_2015"
+            ]
+          },
+          {
+            "action": "consider copper-based preventative management where locally approved",
+            "research_support": "Copper remains a reported preventative option in late blight studies.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor lesion expansion during cool and wet weather.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Fry_2015"
+            ]
+          },
+          {
+            "point": "Monitor lesion margins and lower leaf surfaces for sporulation.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Late blight can spread rapidly once favorable weather persists.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Fry_2015"
+            ]
+          },
+          {
+            "point": "Because the pathogen is an oomycete, not all standard fungal control approaches are equally suitable.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development within about 24 to 48 hours during cool and wet conditions.",
+          "paper_refs": [
+            "Nowicki_2012",
+            "Fry_2015"
+          ]
+        }
+      },
+      "Moderate": {
+        "research_findings": [
+          {
+            "statement": "Once late blight is established on a noticeable part of the foliage, rapid spread to more leaves, stems, and nearby plants becomes a major risk.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Fry_2015"
+            ]
+          },
+          {
+            "statement": "Decision support systems have been evaluated for reducing fungicide inputs while maintaining late blight control.",
+            "paper_refs": [
+              "Kessel_2018"
+            ]
+          },
+          {
+            "statement": "Biological control with Bacillus strains has shown antagonistic potential in studies.",
+            "paper_refs": [
+              "Stefanczyk_2023"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove heavily infected foliage and destroy infected debris away from the crop area",
+            "research_support": "Reducing local inoculum becomes more important once spread begins.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "action": "use integrated management combining preventative protection and moisture control",
+            "research_support": "Combined measures are needed because disease can accelerate quickly.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Kessel_2018"
+            ]
+          },
+          {
+            "action": "use disease forecasting or decision-support guidance where available",
+            "research_support": "Decision support systems have been evaluated to improve late blight management timing.",
+            "paper_refs": [
+              "Kessel_2018"
+            ]
+          },
+          {
+            "action": "remove volunteer potatoes where relevant",
+            "research_support": "Volunteer plants can act as carryover sources for future disease development.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor for new water-soaked lesions on upper foliage and stems.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "point": "Monitor nearby susceptible potato plants during active disease periods.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Fry_2015"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Delays in action can lead to major crop loss once disease spread accelerates.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Fry_2015"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease progression within about 1 to 2 days during cool, wet, or otherwise favorable conditions.",
+          "paper_refs": [
+            "Nowicki_2012",
+            "Fry_2015"
+          ]
+        }
+      },
+      "Severe": {
+        "research_findings": [
+          {
+            "statement": "Severe late blight is associated with major canopy destruction, tuber infection risk, and severe yield loss.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Fry_2015"
+            ]
+          },
+          {
+            "statement": "Host resistance remains important in long-term late blight management.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Duan_2021"
+            ]
+          },
+          {
+            "statement": "Under severe disease pressure, management mainly focuses on limiting further spread and protecting remaining healthy plants.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove severely infected plants or heavily affected material where practical",
+            "research_support": "This can help reduce ongoing pressure on surrounding plants.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "action": "avoid composting heavily infected material unless clearly permitted by local guidance",
+            "research_support": "Heavily infected material remains a disease risk.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "action": "prioritize resistant cultivars in future planting where available",
+            "research_support": "Host resistance has an important role in long-term management.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Duan_2021"
+            ]
+          },
+          {
+            "action": "monitor harvested tubers carefully during storage",
+            "research_support": "Severe field infection increases tuber infection risk.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor nearby plants frequently during active outbreaks.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Fry_2015"
+            ]
+          },
+          {
+            "point": "Monitor harvested tubers for continuing late blight symptoms.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Severe late blight can cause major field loss and storage problems.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Fry_2015"
+            ]
+          },
+          {
+            "point": "At severe stages, management is mainly focused on limiting further spread rather than reversing existing damage.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development frequently during active outbreaks and continue monitoring harvested tubers during storage.",
+          "paper_refs": [
+            "Nowicki_2012"
+          ]
+        }
+      }
+    },
+    "references": {
+      "Nowicki_2012": {
+        "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+        "authors": "Nowicki et al.",
+        "year": 2012,
+        "type": "peer_reviewed_review"
+      },
+      "Fry_2015": {
+        "title": "Five Reasons why Phytophthora infestans is the 'Plant Destroyer'",
+        "authors": "Fry et al.",
+        "year": 2015,
+        "type": "peer_reviewed_article"
+      },
+      "Stefanczyk_2023": {
+        "title": "Biological control of Phytophthora infestans by Bacillus strains: Antagonistic potential and mechanism of action",
+        "authors": "Stefańczyk et al.",
+        "year": 2023,
+        "type": "peer_reviewed_article"
+      },
+      "Kessel_2018": {
+        "title": "Reduced fungicide inputs for Phytophthora infestans control in potato using a decision support system",
+        "authors": "Kessel et al.",
+        "year": 2018,
+        "type": "peer_reviewed_article"
+      },
+      "Duan_2021": {
+        "title": "Late Blight Resistance Evaluation and Genome-Wide Association Analysis in Tetraploid Potato",
+        "authors": "Duan et al.",
+        "year": 2021,
+        "type": "peer_reviewed_article"
+      }
+    }
   }
 }

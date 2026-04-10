@@ -17,6 +17,13 @@ const monitoringList = document.getElementById("monitoringList");
 const cautionList = document.getElementById("cautionList");
 const followUpText = document.getElementById("followUpText");
 
+const researchPathogenNotes = document.getElementById("researchPathogenNotes");
+const researchFindings = document.getElementById("researchFindings");
+const researchActions = document.getElementById("researchActions");
+const researchMonitoring = document.getElementById("researchMonitoring");
+const researchCautions = document.getElementById("researchCautions");
+const researchFollowUp = document.getElementById("researchFollowUp");
+
 const uploadedPreview = document.getElementById("uploadedPreview");
 const gradcamImage = document.getElementById("gradcamImage");
 const affectedImage = document.getElementById("affectedImage");
@@ -125,14 +132,20 @@ analyzeBtn.addEventListener("click", async () => {
       top3List.appendChild(li);
     });
 
-    summary.textContent = data.summary || "";
-    fillList(treatmentList, data.what_to_do_now || []);
-    fillList(monitoringList, data.monitoring || []);
-    fillList(cautionList, data.caution || []);
+    const research = data.research_evidence || {};
+    fillList(researchPathogenNotes, research.pathogen_notes || []);
+    fillList(researchFindings, research.research_findings || []);
+    fillList(researchActions, research.supported_actions || []);
+    fillList(researchMonitoring, research.monitoring_points || []);
+    fillList(researchCautions, research.cautions || []);
+    researchFollowUp.textContent = research.follow_up || "";
 
-    if (followUpText) {
-      followUpText.textContent = data.follow_up || "";
-    }
+    const home = data.home_gardener_guidance || {};
+    summary.textContent = home.summary || "";
+    fillList(treatmentList, home.what_to_do_now || []);
+    fillList(monitoringList, home.monitoring || []);
+    fillList(cautionList, home.caution || []);
+    followUpText.textContent = home.follow_up || "";
 
     setImageFromOutputPath(gradcamImage, data.gradcam_overlay_path);
     setImageFromOutputPath(affectedImage, data.affected_overlay_path);

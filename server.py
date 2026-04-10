@@ -30,14 +30,12 @@ ensure_directories([UPLOADS_DIR])
 predictor = DiseasePredictor()
 recommender = RecommendationEngine()
 
-# IMPORTANT: do not let the pipeline save before LLM output is added
 pipeline = PlantDiseasePipeline(
     predictor=predictor,
     recommender=recommender,
     save_logs=False
 )
 
-# NVIDIA LLM recommender
 llm_recommender = NvidiaLLMRecommender(
     "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/data/final_recommendation_knowledge_base.json"
 )
@@ -77,7 +75,6 @@ def predict():
     file.save(upload_path)
 
     try:
-        # Step 1: run analysis WITHOUT saving yet
         result = pipeline.run_analysis(upload_path)
 
         print("RAW PIPELINE RESULT =", result)
@@ -87,32 +84,23 @@ def predict():
         predicted_class = result.get("predicted_class")
         severity_label = result.get("severity_label") or result.get("severity")
 
-        # Step 2: generate dynamic LLM recommendation
-        llm_output = {
-            "summary": "",
-            "what_to_do_now": [],
-            "monitoring": [],
-            "caution": [],
-            "follow_up": "",
-            "references_used": []
-        }
+        llm_output = llm_recommender.generate(predicted_class, severity_label)
 
-        try:
-            llm_output = llm_recommender.generate(predicted_class, severity_label)
-        except Exception as llm_error:
-            print("LLM generation failed:", llm_error)
+        research_evidence = llm_output.get("research_evidence", {})
+        home_gardener_guidance = llm_output.get("home_gardener_guidance", {})
 
-        # Step 3: attach LLM response to result
-        result["summary"] = llm_output.get("summary", "")
-        result["what_to_do_now"] = llm_output.get("what_to_do_now", [])
-        result["monitoring"] = llm_output.get("monitoring", [])
-        result["caution"] = llm_output.get("caution", [])
-        result["follow_up"] = llm_output.get("follow_up", "")
-        result["references_used"] = llm_output.get("references_used", [])
+        result["research_evidence"] = research_evidence
+        result["home_gardener_guidance"] = home_gardener_guidance
+
+        result["summary"] = home_gardener_guidance.get("summary", "")
+        result["what_to_do_now"] = home_gardener_guidance.get("what_to_do_now", [])
+        result["monitoring"] = home_gardener_guidance.get("monitoring", [])
+        result["caution"] = home_gardener_guidance.get("caution", [])
+        result["follow_up"] = home_gardener_guidance.get("follow_up", "")
+        result["references_used"] = research_evidence.get("references_used", [])
 
         print("FINAL RESULT BEFORE SAVE =", result)
 
-        # Step 4: save the FINAL enriched result
         save_logbook_entry(result)
 
         return jsonify(result)
