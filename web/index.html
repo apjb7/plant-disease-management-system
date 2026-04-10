@@ -12,13 +12,20 @@
 
 <body>
   <header class="topbar">
-    <div class="brand-block">
-      <h1>Plant Disease Management System</h1>
-      <p class="brand-subtitle">Simple plant health support for home gardeners</p>
+    <div class="brand-wrap">
+      <div class="logo-box">
+        <img src="/icon-192.png" alt="Plant Disease Management System Logo" class="site-logo" />
+      </div>
+
+      <div class="brand-block">
+        <h1>Plant Disease Management System</h1>
+        <p class="brand-subtitle">AI support for home gardeners and plant care</p>
+      </div>
     </div>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/history">Logbook</a>
+
+    <nav class="topnav">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/history" class="nav-link">Logbook</a>
     </nav>
   </header>
 
@@ -40,7 +47,6 @@
     </section>
 
     <section class="hidden" id="resultSection">
-      <!-- Main summary -->
       <section class="card summary-card">
         <span class="section-label">Analysis Result</span>
         <h2>Plant Health Summary</h2>
@@ -75,7 +81,6 @@
         </div>
       </section>
 
-      <!-- Main actions first -->
       <section class="card action-card">
         <span class="section-label">What To Do Now</span>
         <h2>Immediate Action Plan</h2>
@@ -83,13 +88,7 @@
       </section>
 
       <section class="card action-card secondary-card">
-        <span class="section-label">Prevent Further Problems</span>
-        <h2>Prevention Tips</h2>
-        <ul id="preventionList" class="action-list"></ul>
-      </section>
-
-      <section class="card action-card secondary-card">
-        <span class="section-label">Check Again Later</span>
+        <span class="section-label">What To Monitor</span>
         <h2>Monitoring Advice</h2>
         <ul id="monitoringList" class="action-list"></ul>
       </section>
@@ -100,7 +99,12 @@
         <ul id="cautionList" class="action-list caution-list"></ul>
       </section>
 
-      <!-- Optional advanced details -->
+      <section class="card action-card secondary-card">
+        <span class="section-label">Follow-Up</span>
+        <h2>When To Check Again</h2>
+        <p id="followUpText" class="follow-up-text"></p>
+      </section>
+
       <section class="card details-card">
         <div class="section-header">
           <div>
@@ -116,14 +120,6 @@
               <span class="report-chip">Alternatives</span>
             </div>
             <ul id="top3List" class="prediction-list"></ul>
-          </div>
-
-          <div class="report-card hidden" id="referencesCard">
-            <div class="report-card-header">
-              <h3>References</h3>
-              <span class="report-chip">Evidence Base</span>
-            </div>
-            <ul id="referencesList" class="references-list"></ul>
           </div>
         </div>
       </section>

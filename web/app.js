@@ -13,12 +13,9 @@ const top3List = document.getElementById("top3List");
 const summary = document.getElementById("summary");
 
 const treatmentList = document.getElementById("treatmentList");
-const preventionList = document.getElementById("preventionList");
 const monitoringList = document.getElementById("monitoringList");
 const cautionList = document.getElementById("cautionList");
-
-const referencesCard = document.getElementById("referencesCard");
-const referencesList = document.getElementById("referencesList");
+const followUpText = document.getElementById("followUpText");
 
 const uploadedPreview = document.getElementById("uploadedPreview");
 const gradcamImage = document.getElementById("gradcamImage");
@@ -34,6 +31,8 @@ function prettifyClassName(name) {
 }
 
 function fillList(element, items) {
+  if (!element) return;
+
   element.innerHTML = "";
   (items || []).forEach(item => {
     const li = document.createElement("li");
@@ -42,26 +41,37 @@ function fillList(element, items) {
   });
 }
 
-function fillReferences(references) {
-  referencesList.innerHTML = "";
+function setSeverityPill(severityLabel) {
+  severity.innerHTML = "";
 
-  if (!references || references.length === 0) {
-    referencesCard.classList.add("hidden");
+  if (!severityLabel) {
+    severity.innerHTML = '<span class="result-pill healthy">Healthy</span>';
     return;
   }
 
-  references.forEach(ref => {
-    const li = document.createElement("li");
-    const parts = [];
-    if (ref.authors) parts.push(ref.authors);
-    if (ref.year) parts.push(`(${ref.year})`);
-    if (ref.title) parts.push(ref.title);
-    if (ref.type) parts.push(`[${ref.type}]`);
-    li.textContent = parts.join(" ");
-    referencesList.appendChild(li);
-  });
+  const pill = document.createElement("span");
+  pill.classList.add("result-pill");
 
-  referencesCard.classList.remove("hidden");
+  const label = severityLabel.toLowerCase();
+
+  if (label === "mild") pill.classList.add("mild");
+  else if (label === "moderate") pill.classList.add("moderate");
+  else if (label === "severe") pill.classList.add("severe");
+  else pill.classList.add("healthy");
+
+  pill.textContent = severityLabel;
+  severity.appendChild(pill);
+}
+
+function setImageFromOutputPath(imgElement, fullPath) {
+  if (!imgElement) return;
+
+  if (fullPath) {
+    const rel = fullPath.split("/outputs/")[1];
+    imgElement.src = `/outputs/${rel}`;
+  } else {
+    imgElement.removeAttribute("src");
+  }
 }
 
 analyzeBtn.addEventListener("click", async () => {
@@ -75,7 +85,6 @@ analyzeBtn.addEventListener("click", async () => {
   statusDiv.textContent = "Analyzing image and preparing your care report...";
   resultSection.classList.add("hidden");
   visualSection.classList.add("hidden");
-  referencesCard.classList.add("hidden");
 
   const formData = new FormData();
   formData.append("image", file);
@@ -100,22 +109,12 @@ analyzeBtn.addEventListener("click", async () => {
     predictedClass.textContent = prettifyClassName(data.predicted_class);
     confidence.textContent = Number(data.confidence).toFixed(4);
 
-    severity.innerHTML = "";
-    if (!data.severity_label) {
-      severity.innerHTML = '<span class="result-pill healthy">Healthy</span>';
+    const severityLabel = data.severity_label || data.severity || null;
+    setSeverityPill(severityLabel);
+
+    if (!severityLabel) {
       severityPercent.textContent = "Not applicable";
     } else {
-      const pill = document.createElement("span");
-      pill.classList.add("result-pill");
-
-      const label = data.severity_label.toLowerCase();
-      if (label === "mild") pill.classList.add("mild");
-      else if (label === "moderate") pill.classList.add("moderate");
-      else if (label === "severe") pill.classList.add("severe");
-
-      pill.textContent = data.severity_label;
-      severity.appendChild(pill);
-
       severityPercent.textContent = `${Number(data.severity_percent).toFixed(2)}%`;
     }
 
@@ -126,28 +125,17 @@ analyzeBtn.addEventListener("click", async () => {
       top3List.appendChild(li);
     });
 
-    const rec = data.recommendation || {};
-    summary.textContent = rec.summary || "";
+    summary.textContent = data.summary || "";
+    fillList(treatmentList, data.what_to_do_now || []);
+    fillList(monitoringList, data.monitoring || []);
+    fillList(cautionList, data.caution || []);
 
-    fillList(treatmentList, rec.treatment);
-    fillList(preventionList, rec.prevention);
-    fillList(monitoringList, rec.monitoring);
-    fillList(cautionList, rec.caution);
-    fillReferences(rec.references);
-
-    if (data.gradcam_overlay_path) {
-      const rel = data.gradcam_overlay_path.split("/outputs/")[1];
-      gradcamImage.src = `/outputs/${rel}`;
-    } else {
-      gradcamImage.removeAttribute("src");
+    if (followUpText) {
+      followUpText.textContent = data.follow_up || "";
     }
 
-    if (data.affected_overlay_path) {
-      const rel = data.affected_overlay_path.split("/outputs/")[1];
-      affectedImage.src = `/outputs/${rel}`;
-    } else {
-      affectedImage.removeAttribute("src");
-    }
+    setImageFromOutputPath(gradcamImage, data.gradcam_overlay_path);
+    setImageFromOutputPath(affectedImage, data.affected_overlay_path);
 
     resultSection.classList.remove("hidden");
     visualSection.classList.remove("hidden");

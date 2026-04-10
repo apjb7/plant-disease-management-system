@@ -1,0 +1,2430 @@
+{
+  "Mango_Anthracnose": {
+    "disease_type": "fungal_disease",
+    "causal_agent": "Colletotrichum gloeosporioides",
+    "pathogen_notes": [
+      {
+        "statement": "Anthracnose is one of the most important diseases of mango fruit and affects pre-harvest and post-harvest fruit quality.",
+        "paper_refs": [
+          "Uddin_2018"
+        ]
+      },
+      {
+        "statement": "The disease also affects flowers and leaves and inoculum may be present throughout the canopy year-round.",
+        "paper_refs": [
+          "Uddin_2018"
+        ]
+      },
+      {
+        "statement": "Anthracnose is prevalent but is less significant in dry regions.",
+        "paper_refs": [
+          "Uddin_2018"
+        ]
+      }
+    ],
+    "severity_profiles": {
+      "Mild": {
+        "research_findings": [
+          {
+            "statement": "Use of resistant cultivars is described as an ideal, simplest, and cheapest method for control of plant disease.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "statement": "Heat treatment has been reported to reduce disease incidence in mango and other fruits.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "statement": "Management requires awareness of the weather conditions that increase infection and disease development.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "use resistant cultivars where available",
+            "research_support": "Reported as an ideal, simple, and cheap disease control method.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "action": "consider heat treatment where relevant and available",
+            "research_support": "Reported to reduce disease incidence.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor weather conditions that increase infection and disease development.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Disease management depends strongly on environmental conditions that favor infection.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development when weather conditions become favorable for infection.",
+          "paper_refs": [
+            "Uddin_2018"
+          ]
+        }
+      },
+      "Moderate": {
+        "research_findings": [
+          {
+            "statement": "Copper oxychloride applied every 3 weeks was reported as part of a treatment program.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "statement": "These fungicides were alternated until harvest on a monthly basis once fruit had set.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "statement": "The treatment was reported to be effective in wet seasons when fruit set is prevented in the absence of fungicide application.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "statement": "Copper oxychloride applied prior to flowering significantly increased fruit set in one comparison.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "statement": "The timing of sprays was reported to be crucial in preventing disease spread.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "apply copper oxychloride as part of a spray program",
+            "research_support": "Reported as part of a treatment schedule and associated with increased fruit set in one comparison.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "action": "alternate fungicide applications until harvest after fruit set",
+            "research_support": "Reported as part of the management program described in the review.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Pay particular attention during flowering and fruit set.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "point": "Monitor disease development closely during wet seasons.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Spray timing is crucial for preventing disease spread.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease progression during flowering, fruit set, and wet-season conditions.",
+          "paper_refs": [
+            "Uddin_2018"
+          ]
+        }
+      },
+      "Severe": {
+        "research_findings": [
+          {
+            "statement": "Non-systemic fungicides such as zineb, maneb, or captan were reported to provide good control when sprayed weekly during flowering and monthly during fruit maturation.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "statement": "Improved results were reported with copper fungicides.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "statement": "Benomyl with a surfactant was reported to provide excellent control and was superior to protectant fungicides.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "statement": "In the Philippines, five sprays were reported between flower induction and fruit set, with a sixth spray between fruit set and harvest for blossom blight management.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "statement": "Benomyl, captafol, and mancozeb were reported to give adequate control of blossom blight and increased fruit set per inflorescence by 55–80% compared with untreated controls.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "statement": "Chlorothalonil used alternately with copper sprays in commercial orchards in the Philippines was reported as economically effective.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "use zineb, maneb, or captan in repeated spray schedules",
+            "research_support": "Reported to provide good control when applied weekly during flowering and monthly during fruit maturation.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "action": "use copper fungicides",
+            "research_support": "Reported to provide improved results.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "action": "use benomyl with a surfactant",
+            "research_support": "Reported to provide excellent control and to be superior to protectant fungicides.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "action": "use benomyl, captafol, or mancozeb for blossom blight management",
+            "research_support": "Reported to provide adequate control and increase fruit set by 55–80% compared with untreated controls.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "action": "alternate chlorothalonil with copper sprays",
+            "research_support": "Reported as economically effective in commercial orchards.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor blossom blight closely because it can drastically reduce fruit set.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "point": "Monitor disease pressure throughout flowering, fruit set, and fruit maturation periods.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Extensive spray programs have been reported in severe management situations.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          },
+          {
+            "point": "Blossom blight can drastically reduce fruit set.",
+            "paper_refs": [
+              "Uddin_2018"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development throughout flowering, fruit set, and harvest stages under active management.",
+          "paper_refs": [
+            "Uddin_2018"
+          ]
+        }
+      }
+    },
+    "references": {
+      "Uddin_2018": {
+        "title": "Management of Anthracnose Disease of Mango Caused by Colletotrichum gloeosporioides: A Review",
+        "authors": "Md. Nasir Uddin et al.",
+        "year": 2018,
+        "type": "review_article"
+      }
+    }
+  },
+  "Mango_Powdery_Mildew": {
+    "disease_type": "fungal_disease",
+    "causal_agent": "Oidium mangiferae",
+    "pathogen_notes": [
+      {
+        "statement": "Powdery mildew is an important mango disease and is especially damaging during flowering and early fruit development.",
+        "paper_refs": [
+          "Joubert_1993"
+        ]
+      },
+      {
+        "statement": "Disease severity and susceptibility vary among mango varieties.",
+        "paper_refs": [
+          "Naqvi_2014"
+        ]
+      }
+    ],
+    "severity_profiles": {
+      "Mild": {
+        "research_findings": [
+          {
+            "statement": "Early management is important because powdery mildew affects flowering and fruit set.",
+            "paper_refs": [
+              "Joubert_1993"
+            ]
+          },
+          {
+            "statement": "Sulfur-based treatment remains a reported management option for powdery mildew.",
+            "paper_refs": [
+              "Joubert_1993",
+              "AbouElNasr_2025"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "apply sulfur-based treatment where locally approved",
+            "research_support": "Sulfur is reported as a management option for mango powdery mildew.",
+            "paper_refs": [
+              "Joubert_1993",
+              "AbouElNasr_2025"
+            ]
+          },
+          {
+            "action": "begin management during early disease development, especially around flowering",
+            "research_support": "Early disease during flowering and fruit set is important in yield loss.",
+            "paper_refs": [
+              "Joubert_1993"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor flowers, panicles, and young fruit for continued powdery growth.",
+            "paper_refs": [
+              "Joubert_1993"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Powdery mildew can reduce fruit set if not managed early.",
+            "paper_refs": [
+              "Joubert_1993"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development during flowering and early fruit development.",
+          "paper_refs": [
+            "Joubert_1993"
+          ]
+        }
+      },
+      "Moderate": {
+        "research_findings": [
+          {
+            "statement": "Once disease is established on a noticeable part of the canopy or reproductive structures, management remains important because flowering and fruit set are strongly affected.",
+            "paper_refs": [
+              "Joubert_1993"
+            ]
+          },
+          {
+            "statement": "Variation in varietal susceptibility has been reported in mango powdery mildew studies.",
+            "paper_refs": [
+              "Naqvi_2014"
+            ]
+          },
+          {
+            "statement": "Sulfur nanoparticle treatment was reported to alleviate biotic stress of powdery mildew and affect disease severity and productivity in mango cv. Keitt.",
+            "paper_refs": [
+              "AbouElNasr_2025"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "continue sulfur-based protective management where locally approved",
+            "research_support": "Sulfur remains one of the reported management options.",
+            "paper_refs": [
+              "Joubert_1993",
+              "AbouElNasr_2025"
+            ]
+          },
+          {
+            "action": "pay particular attention to disease management during flowering and fruit-set stages",
+            "research_support": "These stages are strongly affected by powdery mildew.",
+            "paper_refs": [
+              "Joubert_1993"
+            ]
+          },
+          {
+            "action": "consider varietal susceptibility in management planning",
+            "research_support": "Different mango varieties show different levels of infection dynamics.",
+            "paper_refs": [
+              "Naqvi_2014"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor spread to additional flowers, panicles, and young fruit.",
+            "paper_refs": [
+              "Joubert_1993"
+            ]
+          },
+          {
+            "point": "Observe whether disease pressure differs across cultivars where multiple varieties are grown.",
+            "paper_refs": [
+              "Naqvi_2014"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Delayed management reduces effectiveness during sensitive reproductive stages.",
+            "paper_refs": [
+              "Joubert_1993"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease progression during active flowering and fruit-set periods.",
+          "paper_refs": [
+            "Joubert_1993"
+          ]
+        }
+      },
+      "Severe": {
+        "research_findings": [
+          {
+            "statement": "Severe powdery mildew creates major risk to flowering success and fruit set.",
+            "paper_refs": [
+              "Joubert_1993"
+            ]
+          },
+          {
+            "statement": "Sulfur nanoparticle treatment has been reported in mango cv. Keitt in relation to disease severity and productivity.",
+            "paper_refs": [
+              "AbouElNasr_2025"
+            ]
+          },
+          {
+            "statement": "Varietal susceptibility remains relevant under high disease pressure.",
+            "paper_refs": [
+              "Naqvi_2014"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "maintain sulfur-based management where locally approved under severe disease pressure",
+            "research_support": "Sulfur-based management is one of the reported options for powdery mildew.",
+            "paper_refs": [
+              "Joubert_1993",
+              "AbouElNasr_2025"
+            ]
+          },
+          {
+            "action": "prioritize protection of flowers, panicles, and young fruit",
+            "research_support": "These tissues are central to losses caused by powdery mildew.",
+            "paper_refs": [
+              "Joubert_1993"
+            ]
+          },
+          {
+            "action": "take varietal susceptibility into account in future planting or management decisions",
+            "research_support": "Different varieties show different infection dynamics.",
+            "paper_refs": [
+              "Naqvi_2014"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor continued effects on flowering, fruit set, and newly developing tissues.",
+            "paper_refs": [
+              "Joubert_1993"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Severe powdery mildew can cause major reduction in flowering success and fruit set.",
+            "paper_refs": [
+              "Joubert_1993"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development frequently during severe outbreaks, especially on flowers and young fruit.",
+          "paper_refs": [
+            "Joubert_1993"
+          ]
+        }
+      }
+    },
+    "references": {
+      "AbouElNasr_2025": {
+        "title": "Alleviating biotic stress of powdery mildew in mango cv. Keitt by sulfur nanoparticles and assessing their effect on productivity and disease severity",
+        "authors": "Abou El-Nasr et al.",
+        "year": 2025,
+        "type": "peer_reviewed_article"
+      },
+      "Joubert_1993": {
+        "title": "Powdery mildew of mango in South Africa: A review",
+        "authors": "Joubert, Manicom and Wingfield",
+        "year": 1993,
+        "type": "peer_reviewed_review"
+      },
+      "Naqvi_2014": {
+        "title": "Evaluation of Various Mango Varieties against the Infection Dynamics of Powdery Mildew",
+        "authors": "Naqvi et al.",
+        "year": 2014,
+        "type": "peer_reviewed_article"
+      }
+    }
+  },
+  "Pepper_Bacterial_Spot": {
+    "disease_type": "bacterial_disease",
+    "causal_agent": "Xanthomonas spp.",
+    "pathogen_notes": [
+      {
+        "statement": "Bacterial spot of pepper is caused by diverse Xanthomonas species and is a worldwide disease problem.",
+        "paper_refs": [
+          "Potnis_2015",
+          "Osdaghi_2021"
+        ]
+      },
+      {
+        "statement": "Pathogen diversity and copper tolerance complicate disease management.",
+        "paper_refs": [
+          "Potnis_2015",
+          "Osdaghi_2021"
+        ]
+      },
+      {
+        "statement": "Spread is associated with water splash and favorable warm, humid conditions.",
+        "paper_refs": [
+          "Potnis_2015",
+          "Osdaghi_2021"
+        ]
+      }
+    ],
+    "severity_profiles": {
+      "Mild": {
+        "research_findings": [
+          {
+            "statement": "Copper-based management acts mainly as a protectant and is more useful before disease becomes widespread.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          },
+          {
+            "statement": "Biological control with Bacillus velezensis has been reported in pepper bacterial spot studies.",
+            "paper_refs": [
+              "Pajcin_2020"
+            ]
+          },
+          {
+            "statement": "Bacteriophage-based suppression has also been studied against Xanthomonas euvesicatoria.",
+            "paper_refs": [
+              "Shopova_2023"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove clearly infected plant parts where practical",
+            "research_support": "Early reduction of infected tissue may help reduce local inoculum pressure.",
+            "paper_refs": [
+              "Osdaghi_2021",
+              "Potnis_2015"
+            ]
+          },
+          {
+            "action": "use locally approved protectant management on healthy foliage",
+            "research_support": "Protectant approaches are reported to be more useful before disease becomes extensive.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          },
+          {
+            "action": "reduce splash dispersal and avoid handling wet foliage",
+            "research_support": "Disease spread is strongly linked with water splash and contaminated handling.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          },
+          {
+            "action": "consider Bacillus-based or bacteriophage-based approaches where available",
+            "research_support": "Both Bacillus velezensis and phage-based suppression have been reported in studies.",
+            "paper_refs": [
+              "Pajcin_2020",
+              "Shopova_2023"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor new leaves, stems, and fruit for additional lesions during warm, humid, or rainy conditions.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Copper tolerance may reduce the effectiveness of copper-based programs.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          },
+          {
+            "point": "Early intervention is more useful than waiting for widespread spread.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development within about 3 to 5 days during warm, humid, or rainy conditions.",
+          "paper_refs": [
+            "Potnis_2015",
+            "Osdaghi_2021"
+          ]
+        }
+      },
+      "Moderate": {
+        "research_findings": [
+          {
+            "statement": "Once bacterial spot is established on a noticeable part of the plant, integrated management becomes more important than relying on a single control measure.",
+            "paper_refs": [
+              "Osdaghi_2021",
+              "Potnis_2015"
+            ]
+          },
+          {
+            "statement": "Induced resistance approaches have been studied in pepper bacterial spot management.",
+            "paper_refs": [
+              "Yi_2013"
+            ]
+          },
+          {
+            "statement": "Bacillus-based and bacteriophage-based suppression have been reported as additional management options in studies.",
+            "paper_refs": [
+              "Pajcin_2020",
+              "Shopova_2023"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove heavily infected leaves and fruit where practical",
+            "research_support": "Reducing disease sources may help limit further spread.",
+            "paper_refs": [
+              "Osdaghi_2021",
+              "Potnis_2015"
+            ]
+          },
+          {
+            "action": "use integrated management combining sanitation, protectant approaches, and resistance-inducing or biological support where available",
+            "research_support": "Integrated management is emphasized over single-measure control.",
+            "paper_refs": [
+              "Osdaghi_2021",
+              "Potnis_2015",
+              "Yi_2013"
+            ]
+          },
+          {
+            "action": "consider induced resistance support where available",
+            "research_support": "Induced resistance approaches have shown additive action in studies.",
+            "paper_refs": [
+              "Yi_2013"
+            ]
+          },
+          {
+            "action": "consider Bacillus-based or phage-based support where available",
+            "research_support": "These approaches have been investigated for bacterial spot suppression.",
+            "paper_refs": [
+              "Pajcin_2020",
+              "Shopova_2023"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor nearby pepper and tomato plants for linked spread.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          },
+          {
+            "point": "Monitor disease increase during disease-conducive weather.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Warm and humid conditions can accelerate spread.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          },
+          {
+            "point": "Single-strategy management is weaker than integrated management.",
+            "paper_refs": [
+              "Osdaghi_2021",
+              "Yi_2013"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease progression within about 2 to 3 days during disease-conducive weather.",
+          "paper_refs": [
+            "Potnis_2015",
+            "Osdaghi_2021"
+          ]
+        }
+      },
+      "Severe": {
+        "research_findings": [
+          {
+            "statement": "Severe bacterial spot is difficult to reverse once widely established in the crop.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          },
+          {
+            "statement": "Long-term management depends strongly on prevention, clean planting material, and host resistance.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021",
+              "Sharma_2023"
+            ]
+          },
+          {
+            "statement": "Recessive resistance sources such as bs5 and bs6 have been mapped in pepper.",
+            "paper_refs": [
+              "Sharma_2023"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove severely infected plants or heavily affected plant material where practical",
+            "research_support": "This may reduce inoculum pressure on nearby plants.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          },
+          {
+            "action": "focus management on sanitation, splash reduction, and clean seed or transplants",
+            "research_support": "These remain central measures under high disease pressure.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          },
+          {
+            "action": "prioritize resistant or less susceptible cultivars for future planting where available",
+            "research_support": "Host resistance is important in long-term bacterial spot management.",
+            "paper_refs": [
+              "Sharma_2023",
+              "Potnis_2015"
+            ]
+          },
+          {
+            "action": "remove infected crop debris after the season",
+            "research_support": "Reducing carryover inoculum supports future disease management.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor surrounding susceptible plants frequently during active outbreaks.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          },
+          {
+            "point": "Monitor new growth and fruit for continued lesion development.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Severe outbreaks are difficult to reverse once disease is established across the crop.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          },
+          {
+            "point": "Pathogen diversity and copper tolerance complicate long-term management.",
+            "paper_refs": [
+              "Potnis_2015",
+              "Osdaghi_2021"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development frequently during active outbreaks, especially if new lesions continue to appear on nearby plants.",
+          "paper_refs": [
+            "Potnis_2015",
+            "Osdaghi_2021"
+          ]
+        }
+      }
+    },
+    "references": {
+      "Osdaghi_2021": {
+        "title": "A centenary for bacterial spot of tomato and pepper",
+        "authors": "Osdaghi et al.",
+        "year": 2021,
+        "type": "peer_reviewed_review"
+      },
+      "Potnis_2015": {
+        "title": "Bacterial spot of tomato and pepper: diverse Xanthomonas species posing a worldwide challenge",
+        "authors": "Potnis et al.",
+        "year": 2015,
+        "type": "peer_reviewed_review"
+      },
+      "Pajcin_2020": {
+        "title": "Pepper Bacterial Spot Control by Bacillus velezensis",
+        "authors": "Pajčin et al.",
+        "year": 2020,
+        "type": "peer_reviewed_article"
+      },
+      "Shopova_2023": {
+        "title": "Xanthomonas euvesicatoria-Specific Bacteriophage and Its Biocontrol Potential against Bacterial Spot of Pepper",
+        "authors": "Shopova et al.",
+        "year": 2023,
+        "type": "peer_reviewed_article"
+      },
+      "Yi_2013": {
+        "title": "ISR meets SAR outside: additive action of the endophyte Bacillus pumilus INR7 and the chemical inducer BTH on induced resistance against bacterial spot in pepper",
+        "authors": "Yi et al.",
+        "year": 2013,
+        "type": "peer_reviewed_article"
+      },
+      "Sharma_2023": {
+        "title": "Mapping of the bs5 and bs6 non-race-specific recessive resistances against bacterial spot of pepper",
+        "authors": "Sharma et al.",
+        "year": 2023,
+        "type": "peer_reviewed_article"
+      }
+    }
+  },
+  "Tomato_Leaf_Mold": {
+    "disease_type": "fungal_disease",
+    "causal_agent": "Cladosporium fulvum",
+    "pathogen_notes": [
+      {
+        "statement": "Tomato leaf mold is caused by Cladosporium fulvum and is prevalent in greenhouse tomato production, especially under high humidity conditions.",
+        "paper_refs": [
+          "Belabess_2024"
+        ]
+      },
+      {
+        "statement": "Fulvia fulva (syn. Cladosporium fulvum) is an apoplastic pathogen of tomato.",
+        "paper_refs": [
+          "Mesarich_2023",
+          "Tarallo_2022"
+        ]
+      },
+      {
+        "statement": "Cf-16 has shown effective resistance in field trials for many years in tomato breeding material.",
+        "paper_refs": [
+          "Zhang_2023"
+        ]
+      }
+    ],
+    "severity_profiles": {
+      "Mild": {
+        "research_findings": [
+          {
+            "statement": "Studies have evaluated bacterial and fungal biocontrol agents as alternatives to chemical control for managing Cladosporium fulvum.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          },
+          {
+            "statement": "Azoxystrobin was evaluated as a fungicide in the control of Cladosporium fulvum.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          },
+          {
+            "statement": "High humidity is a favorable condition for tomato leaf mold development.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "reduce humidity around the crop where possible",
+            "research_support": "High humidity is reported as favorable for tomato leaf mold development.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          },
+          {
+            "action": "consider biocontrol agents where available",
+            "research_support": "Bacterial and fungal biocontrol agents were evaluated as alternatives to chemical control.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          },
+          {
+            "action": "consider azoxystrobin where locally approved",
+            "research_support": "Azoxystrobin was evaluated in the control of Cladosporium fulvum.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor plants closely under high-humidity conditions.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Disease development is favored by greenhouse-like humid conditions.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development under continued high-humidity conditions.",
+          "paper_refs": [
+            "Belabess_2024"
+          ]
+        }
+      },
+      "Moderate": {
+        "research_findings": [
+          {
+            "statement": "Alternative antifungal management strategies, including biocontrol agents and azoxystrobin, have been investigated against Cladosporium fulvum.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          },
+          {
+            "statement": "Cf-16 is a valuable resistance resource against Cladosporium fulvum in tomato breeding.",
+            "paper_refs": [
+              "Zhang_2023"
+            ]
+          },
+          {
+            "statement": "Pathogen race differentiation can affect resistance durability.",
+            "paper_refs": [
+              "Zhang_2023"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "continue humidity-reduction measures",
+            "research_support": "Humidity remains a major favorable condition for disease development.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          },
+          {
+            "action": "consider biocontrol agents or azoxystrobin where available and locally approved",
+            "research_support": "These were evaluated as antifungal management options against Cladosporium fulvum.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          },
+          {
+            "action": "consider resistant material such as Cf-16-bearing sources in future management or breeding decisions",
+            "research_support": "Cf-16 has shown effective resistance in field trials and is described as a valuable resistance resource.",
+            "paper_refs": [
+              "Zhang_2023"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor whether disease continues increasing under humid conditions.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          },
+          {
+            "point": "Monitor resistance performance where resistant material is used, because pathogen race differentiation is reported.",
+            "paper_refs": [
+              "Zhang_2023"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Resistance durability can be affected by physiological race differentiation of Cladosporium fulvum.",
+            "paper_refs": [
+              "Zhang_2023"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease progression under continued humid conditions and where resistance-based management is being used.",
+          "paper_refs": [
+            "Belabess_2024",
+            "Zhang_2023"
+          ]
+        }
+      },
+      "Severe": {
+        "research_findings": [
+          {
+            "statement": "Cladosporium fulvum remains an economically important pathogen in greenhouse tomato production.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          },
+          {
+            "statement": "Biocontrol agents and azoxystrobin have been investigated as control options against Cladosporium fulvum.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          },
+          {
+            "statement": "Resistance resources such as Cf-16 remain important for tomato breeding against Cladosporium fulvum.",
+            "paper_refs": [
+              "Zhang_2023"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "maintain strong humidity management where possible",
+            "research_support": "Humidity strongly favors disease development in greenhouse tomato production.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          },
+          {
+            "action": "use evaluated antifungal options such as biocontrol agents or azoxystrobin where available and locally approved",
+            "research_support": "These were investigated for control of Cladosporium fulvum.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          },
+          {
+            "action": "prioritize resistant sources in future breeding or variety selection decisions",
+            "research_support": "Cf-16 is reported as a valuable resistance resource.",
+            "paper_refs": [
+              "Zhang_2023"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor disease pressure closely under greenhouse or high-humidity conditions.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          },
+          {
+            "point": "Monitor whether symptoms continue despite resistance-based management because race differentiation is reported.",
+            "paper_refs": [
+              "Zhang_2023"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Tomato leaf mold remains economically important under favorable environmental conditions.",
+            "paper_refs": [
+              "Belabess_2024"
+            ]
+          },
+          {
+            "point": "Race differentiation can limit the long-term effectiveness of resistance.",
+            "paper_refs": [
+              "Zhang_2023"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development frequently during continued high-humidity conditions or where symptoms continue increasing.",
+          "paper_refs": [
+            "Belabess_2024",
+            "Zhang_2023"
+          ]
+        }
+      }
+    },
+    "references": {
+      "Belabess_2024": {
+        "title": "Exploring the Antifungal Activity of Moroccan Bacterial and Fungal Isolates and a Strobilurin Fungicide in the Control of Cladosporium fulvum, the Causal Agent of Tomato Leaf Mold Disease",
+        "authors": "Belabess et al.",
+        "year": 2024,
+        "type": "peer_reviewed_article"
+      },
+      "Zhang_2023": {
+        "title": "Mapping of the Cladosporium fulvum resistance gene Cf-16, a major gene involved in leaf mold disease in tomato",
+        "authors": "Zhang et al.",
+        "year": 2023,
+        "type": "peer_reviewed_article"
+      },
+      "Mesarich_2023": {
+        "title": "Beyond the genomes of Fulvia fulva (syn. Cladosporium fulvum) and Dothistroma septosporum: New insights into how these fungal pathogens interact with their host plants",
+        "authors": "Mesarich et al.",
+        "year": 2023,
+        "type": "peer_reviewed_review"
+      },
+      "Tarallo_2022": {
+        "title": "Characterization of two conserved cell death elicitor families from the Dothideomycete fungal pathogens Dothistroma septosporum and Fulvia fulva (syn. Cladosporium fulvum)",
+        "authors": "Tarallo et al.",
+        "year": 2022,
+        "type": "peer_reviewed_article"
+      }
+    }
+  },
+  "Tomato_Early_Blight": {
+    "disease_type": "fungal_disease",
+    "causal_agent": "Alternaria spp.",
+    "pathogen_notes": [
+      {
+        "statement": "Early blight of tomato is associated with Alternaria species in the tomato pathosystem.",
+        "paper_refs": [
+          "Salotti_2024"
+        ]
+      },
+      {
+        "statement": "Early blight is an important disease in tomato production and can affect foliage, stems, and fruit.",
+        "paper_refs": [
+          "Salotti_2024"
+        ]
+      },
+      {
+        "statement": "Disease development and epidemic behavior are influenced by environmental conditions and host-pathogen interactions.",
+        "paper_refs": [
+          "Salotti_2024"
+        ]
+      }
+    ],
+    "severity_profiles": {
+      "Mild": {
+        "research_findings": [
+          {
+            "statement": "Early management is important before disease becomes widespread in the canopy.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          },
+          {
+            "statement": "Trichoderma culture filtrates have been reported as a sustainable approach for mitigating tomato early blight.",
+            "paper_refs": [
+              "Imran_2023"
+            ]
+          },
+          {
+            "statement": "Volatiles produced by Bacillus subtilis have been reported to show antifungal potential against Alternaria solani in tomato early blight.",
+            "paper_refs": [
+              "Awan_2023"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove visibly infected lower leaves where practical",
+            "research_support": "Early sanitation helps reduce local inoculum pressure.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          },
+          {
+            "action": "reduce soil splash and improve airflow around the canopy",
+            "research_support": "Cultural conditions that reduce spread and leaf wetness are relevant in early blight management.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          },
+          {
+            "action": "consider Trichoderma-based support where available",
+            "research_support": "Trichoderma culture filtrates were reported as a sustainable approach against tomato early blight.",
+            "paper_refs": [
+              "Imran_2023"
+            ]
+          },
+          {
+            "action": "consider Bacillus subtilis-based support where available",
+            "research_support": "Bacillus subtilis volatiles were reported to have antifungal potential against Alternaria solani.",
+            "paper_refs": [
+              "Awan_2023"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor lower leaves for new lesions and increasing spotting.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          },
+          {
+            "point": "Reassess disease progress during favorable environmental conditions.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Disease becomes harder to manage once it spreads strongly through the canopy.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development within about 5 to 7 days under favorable conditions.",
+          "paper_refs": [
+            "Salotti_2024"
+          ]
+        }
+      },
+      "Moderate": {
+        "research_findings": [
+          {
+            "statement": "Once early blight is established on a noticeable portion of the foliage, integrated management becomes more important.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          },
+          {
+            "statement": "Trichoderma culture filtrates have been reported to influence disease mitigation and plant biomarkers in tomato early blight.",
+            "paper_refs": [
+              "Imran_2023"
+            ]
+          },
+          {
+            "statement": "Bacillus subtilis-derived volatiles have been reported as biologically active against Alternaria solani.",
+            "paper_refs": [
+              "Awan_2023"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove heavily infected leaves and destroy infected debris away from the growing area",
+            "research_support": "Sanitation remains important once disease is established.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          },
+          {
+            "action": "use integrated management combining sanitation and supportive biological approaches where available",
+            "research_support": "Integrated strategies are more suitable than relying on one isolated step.",
+            "paper_refs": [
+              "Salotti_2024",
+              "Imran_2023",
+              "Awan_2023"
+            ]
+          },
+          {
+            "action": "maintain mulch or other barriers that reduce splash dispersal",
+            "research_support": "Reducing splash-related spread remains relevant in canopy disease management.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor whether lesions are moving upward through the canopy.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          },
+          {
+            "point": "Monitor stems and fruiting structures for further disease development.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Delayed management reduces effectiveness as disease progresses.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease progression within about 3 to 5 days during active disease-conducive periods.",
+          "paper_refs": [
+            "Salotti_2024"
+          ]
+        }
+      },
+      "Severe": {
+        "research_findings": [
+          {
+            "statement": "Severe early blight can result in major defoliation and reduced productivity.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          },
+          {
+            "statement": "At severe stages, management mainly focuses on protecting remaining healthy tissue and reducing further spread.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          },
+          {
+            "statement": "Biological approaches such as Trichoderma culture filtrates and Bacillus subtilis volatiles have been investigated, but severe disease still represents a major management challenge.",
+            "paper_refs": [
+              "Imran_2023",
+              "Awan_2023"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove heavily infected plant material where practical",
+            "research_support": "Severely affected tissue is unlikely to recover and can continue contributing disease pressure.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          },
+          {
+            "action": "use a full integrated management approach focused on remaining healthy foliage",
+            "research_support": "Late-stage management is mainly aimed at limiting further loss.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          },
+          {
+            "action": "remove infected crop debris after the season",
+            "research_support": "Debris removal helps reduce disease carryover.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor rapid canopy decline during active outbreaks.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          },
+          {
+            "point": "Monitor whether new lesions continue to develop on upper foliage and fruiting structures.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Severe early blight can strongly reduce plant vigor and yield.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          },
+          {
+            "point": "At severe stages, management is more about limiting further loss than reversing existing damage.",
+            "paper_refs": [
+              "Salotti_2024"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development frequently during active outbreaks, especially if canopy decline continues.",
+          "paper_refs": [
+            "Salotti_2024"
+          ]
+        }
+      }
+    },
+    "references": {
+      "Salotti_2024": {
+        "title": "Biology, ecology, and epidemiology of Alternaria species associated with the tomato pathosystem: a review",
+        "authors": "Salotti et al.",
+        "year": 2024,
+        "type": "peer_reviewed_review"
+      },
+      "Imran_2023": {
+        "title": "Use of Trichoderma culture filtrates as a sustainable approach to mitigate early blight disease of tomato and their influence on plant biomarkers and antioxidants production",
+        "authors": "Imran et al.",
+        "year": 2023,
+        "type": "peer_reviewed_article"
+      },
+      "Awan_2023": {
+        "title": "Antifungal potential of volatiles produced by Bacillus subtilis for controlling Alternaria solani causing early blight disease in tomato",
+        "authors": "Awan et al.",
+        "year": 2023,
+        "type": "peer_reviewed_article"
+      }
+    }
+  },
+  "Tomato_Late_Blight": {
+    "disease_type": "oomycete_disease",
+    "causal_agent": "Phytophthora infestans",
+    "pathogen_notes": [
+      {
+        "statement": "Late blight is a major disease of tomato and can cause severe crop loss.",
+        "paper_refs": [
+          "Nowicki_2012",
+          "Shrestha_Ashley_2014"
+        ]
+      },
+      {
+        "statement": "Phytophthora infestans is an oomycete rather than a true fungus.",
+        "paper_refs": [
+          "Nowicki_2012"
+        ]
+      },
+      {
+        "statement": "Disease development is strongly favored by cool and wet conditions.",
+        "paper_refs": [
+          "Nowicki_2012"
+        ]
+      }
+    ],
+    "severity_profiles": {
+      "Mild": {
+        "research_findings": [
+          {
+            "statement": "Preventative management is more effective than waiting until disease becomes widespread.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "statement": "Integrated disease management approaches have been studied to reduce disease severity while reducing excessive fungicide use.",
+            "paper_refs": [
+              "Shrestha_Ashley_2014"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove clearly infected leaves or shoots where practical",
+            "research_support": "Early removal may help reduce local inoculum pressure.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "action": "use locally approved preventative management effective against oomycetes",
+            "research_support": "Preventative action is reported to be more effective than delayed response.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "action": "reduce leaf wetness and avoid overhead irrigation",
+            "research_support": "Cool and wet conditions strongly favor disease development and spread.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor lesion expansion during cool and wet weather.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "point": "Monitor leaf undersides and lesion margins for sporulation.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Late blight can spread rapidly once favorable weather persists.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "point": "Management should account for the oomycete biology of the pathogen.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development within about 24 to 48 hours during cool and wet conditions.",
+          "paper_refs": [
+            "Nowicki_2012"
+          ]
+        }
+      },
+      "Moderate": {
+        "research_findings": [
+          {
+            "statement": "Once late blight is established on a noticeable part of the foliage, rapid spread to stems and nearby susceptible plants becomes a major risk.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "statement": "Integrated disease management has been studied as a way to reduce disease and minimize fungicide use.",
+            "paper_refs": [
+              "Shrestha_Ashley_2014"
+            ]
+          },
+          {
+            "statement": "Late blight resistance QTLs have been identified in wild tomato material and may support breeding for resistance.",
+            "paper_refs": [
+              "Sullenberger_2024"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove heavily infected foliage and destroy infected debris away from the crop area",
+            "research_support": "Reducing local inoculum becomes more important once spread begins.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "action": "use integrated management combining preventative protection and moisture control",
+            "research_support": "Combined measures are needed because disease can accelerate quickly.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Shrestha_Ashley_2014"
+            ]
+          },
+          {
+            "action": "consider resistant breeding material in future management planning",
+            "research_support": "Resistance QTLs have been identified and mapped in wild tomato accessions.",
+            "paper_refs": [
+              "Sullenberger_2024"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor for new water-soaked lesions on upper foliage and stems.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "point": "Monitor nearby susceptible tomato or potato plants during active disease periods.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Delays in action can lead to major crop loss once disease spread accelerates.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease progression within about 1 to 2 days during cool, wet, or otherwise favorable conditions.",
+          "paper_refs": [
+            "Nowicki_2012"
+          ]
+        }
+      },
+      "Severe": {
+        "research_findings": [
+          {
+            "statement": "Severe late blight is associated with major plant loss and fruit infection risk.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Shrestha_Ashley_2014"
+            ]
+          },
+          {
+            "statement": "At severe disease levels, management mainly focuses on limiting further spread and protecting remaining healthy plants.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "statement": "Resistance breeding remains important for long-term management of tomato late blight.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Sullenberger_2024"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "remove severely infected plants or heavily affected material where practical",
+            "research_support": "This can help reduce ongoing pressure on surrounding plants.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "action": "avoid keeping heavily infected material in the production area",
+            "research_support": "Heavily infected material remains a disease risk.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "action": "prioritize resistant germplasm or resistant cultivars in future planting where available",
+            "research_support": "Resistance breeding is an important long-term strategy and resistance QTLs have been identified in wild tomato.",
+            "paper_refs": [
+              "Nowicki_2012",
+              "Sullenberger_2024"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor surrounding susceptible plants frequently during active outbreaks.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "point": "Monitor fruit closely for continuing infection.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Severe late blight can cause major crop loss very quickly under favorable weather.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          },
+          {
+            "point": "At severe stages, management is mainly focused on limiting further spread rather than reversing existing damage.",
+            "paper_refs": [
+              "Nowicki_2012"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease development frequently during active outbreaks and continue monitoring nearby plants and fruit.",
+          "paper_refs": [
+            "Nowicki_2012"
+          ]
+        }
+      }
+    },
+    "references": {
+      "Nowicki_2012": {
+        "title": "Potato and Tomato Late Blight Caused by Phytophthora infestans: An Overview of Pathology and Resistance Breeding",
+        "authors": "Nowicki et al.",
+        "year": 2012,
+        "type": "peer_reviewed_review"
+      },
+      "Sullenberger_2024": {
+        "title": "Identification and mapping of QTLs for late blight resistance in the wild tomato (Solanum pimpinellifolium) accession PI 270442 via selective genotyping",
+        "authors": "Sullenberger and Foolad",
+        "year": 2024,
+        "type": "peer_reviewed_article"
+      },
+      "Shrestha_Ashley_2014": {
+        "title": "Integrated Disease Management of Tomato Late Blight",
+        "authors": "Shrestha and Ashley",
+        "year": 2014,
+        "type": "peer_reviewed_article"
+      }
+    }
+  },
+  "Tomato_Yellow_leaf_curl_virus": {
+    "disease_type": "viral_disease",
+    "causal_agent": "Tomato yellow leaf curl virus (TYLCV)",
+    "pathogen_notes": [
+      {
+        "statement": "Tomato yellow leaf curl virus is one of the most harmful diseases affecting tomato growth and production.",
+        "paper_refs": [
+          "ElSappah_2022"
+        ]
+      },
+      {
+        "statement": "TYLCV is transmitted by the whitefly Bemisia tabaci.",
+        "paper_refs": [
+          "Riley_2019",
+          "Glick_2009",
+          "Marchant_2020"
+        ]
+      },
+      {
+        "statement": "Resistance genes including Ty-1, Ty-2, Ty-3, Ty-4, ty-5, and Ty-6 have been transferred from wild germplasm into tomato breeding materials.",
+        "paper_refs": [
+          "ElSappah_2022"
+        ]
+      }
+    ],
+    "severity_profiles": {
+      "Mild": {
+        "research_findings": [
+          {
+            "statement": "TYLCV-resistant cultivars, insecticides, and metallic reflective mulch have been evaluated individually and in combination for disease management.",
+            "paper_refs": [
+              "Riley_2019"
+            ]
+          },
+          {
+            "statement": "Reflective mulch significantly reduced whitefly adults, whitefly nymphs, and TYLCV symptom severity in field trials.",
+            "paper_refs": [
+              "Riley_2019"
+            ]
+          },
+          {
+            "statement": "TYLCV-resistant and susceptible cultivars differ in their interaction with whitefly population dynamics.",
+            "paper_refs": [
+              "Marchant_2020"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "use TYLCV-resistant cultivars where available",
+            "research_support": "Resistant cultivars were evaluated as a core component of integrated management, and resistance genes have been identified in breeding materials.",
+            "paper_refs": [
+              "Riley_2019",
+              "ElSappah_2022"
+            ]
+          },
+          {
+            "action": "reduce whitefly pressure using locally approved vector-management measures",
+            "research_support": "Management studies evaluated insecticides and whitefly control as part of TYLCV management.",
+            "paper_refs": [
+              "Riley_2019",
+              "Marchant_2020"
+            ]
+          },
+          {
+            "action": "use metallic reflective mulch where feasible",
+            "research_support": "Reflective mulch significantly reduced whitefly numbers and TYLCV symptom severity.",
+            "paper_refs": [
+              "Riley_2019"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor whitefly adults and nymphs on the crop.",
+            "paper_refs": [
+              "Riley_2019",
+              "Marchant_2020"
+            ]
+          },
+          {
+            "point": "Monitor symptom development and progression in plants showing early TYLCV symptoms.",
+            "paper_refs": [
+              "Riley_2019"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "TYLCV is a virus and management is centered on resistance and vector suppression rather than fungicidal control.",
+            "paper_refs": [
+              "ElSappah_2022",
+              "Glick_2009"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess symptom progression and whitefly activity within a few days under continued vector pressure.",
+          "paper_refs": [
+            "Riley_2019",
+            "Marchant_2020"
+          ]
+        }
+      },
+      "Moderate": {
+        "research_findings": [
+          {
+            "statement": "Integrated management combining resistant cultivars, insecticides, and reflective mulch reduced TYLCV severity and improved marketable yield in field studies.",
+            "paper_refs": [
+              "Riley_2019"
+            ]
+          },
+          {
+            "statement": "Natural resistance remains one of the main strategies for TYLCV management in tomato.",
+            "paper_refs": [
+              "ElSappah_2022"
+            ]
+          },
+          {
+            "statement": "Whitefly population behavior differs between resistant and susceptible cultivars.",
+            "paper_refs": [
+              "Marchant_2020"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "continue integrated management combining resistant cultivars, vector suppression, and reflective mulch where feasible",
+            "research_support": "The combined approach reduced symptom severity and improved yield in field trials.",
+            "paper_refs": [
+              "Riley_2019"
+            ]
+          },
+          {
+            "action": "prioritize whitefly suppression around symptomatic and nearby plants",
+            "research_support": "Whitefly vector activity is central to TYLCV spread and disease development.",
+            "paper_refs": [
+              "Riley_2019",
+              "Marchant_2020",
+              "Glick_2009"
+            ]
+          },
+          {
+            "action": "maintain use of resistant cultivars in management planning",
+            "research_support": "Natural resistance is emphasized as an important control strategy.",
+            "paper_refs": [
+              "ElSappah_2022"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor nearby plants for spread under continued whitefly activity.",
+            "paper_refs": [
+              "Riley_2019",
+              "Marchant_2020"
+            ]
+          },
+          {
+            "point": "Monitor whitefly populations on both resistant and susceptible plant material where applicable.",
+            "paper_refs": [
+              "Marchant_2020"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "Vector pressure remains important once symptoms are established.",
+            "paper_refs": [
+              "Riley_2019",
+              "Glick_2009"
+            ]
+          },
+          {
+            "point": "Resistance is important, but disease management still depends on controlling whitefly transmission.",
+            "paper_refs": [
+              "ElSappah_2022",
+              "Riley_2019"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease progression and whitefly pressure within a short interval during active vector presence.",
+          "paper_refs": [
+            "Riley_2019",
+            "Marchant_2020"
+          ]
+        }
+      },
+      "Severe": {
+        "research_findings": [
+          {
+            "statement": "TYLCV can cause severe disease and major production losses.",
+            "paper_refs": [
+              "ElSappah_2022",
+              "Glick_2009"
+            ]
+          },
+          {
+            "statement": "Integrated management remains centered on resistant cultivars, vector suppression, and reflective mulch.",
+            "paper_refs": [
+              "Riley_2019"
+            ]
+          },
+          {
+            "statement": "Resistance breeding remains important because TYLCV is a major global tomato disease.",
+            "paper_refs": [
+              "ElSappah_2022"
+            ]
+          }
+        ],
+        "supported_actions": [
+          {
+            "action": "maintain strong whitefly suppression around remaining plants",
+            "research_support": "Whitefly vector activity is central to continued spread under severe disease conditions.",
+            "paper_refs": [
+              "Riley_2019",
+              "Marchant_2020",
+              "Glick_2009"
+            ]
+          },
+          {
+            "action": "prioritize resistant cultivars in future planting where available",
+            "research_support": "Natural resistance remains a major management strategy and multiple TY resistance genes are reported in the literature.",
+            "paper_refs": [
+              "ElSappah_2022"
+            ]
+          },
+          {
+            "action": "continue use of reflective mulch where feasible as part of integrated management",
+            "research_support": "Reflective mulch reduced whitefly numbers and symptom severity in field studies.",
+            "paper_refs": [
+              "Riley_2019"
+            ]
+          }
+        ],
+        "monitoring_points": [
+          {
+            "point": "Monitor surrounding tomato plants for continued spread under active whitefly pressure.",
+            "paper_refs": [
+              "Riley_2019",
+              "Marchant_2020"
+            ]
+          },
+          {
+            "point": "Monitor vector abundance closely during severe outbreaks.",
+            "paper_refs": [
+              "Riley_2019",
+              "Marchant_2020"
+            ]
+          }
+        ],
+        "cautions": [
+          {
+            "point": "TYLCV is associated with major production loss and remains difficult to manage without resistance and vector control.",
+            "paper_refs": [
+              "ElSappah_2022",
+              "Glick_2009"
+            ]
+          },
+          {
+            "point": "Severe disease pressure increases the importance of integrated management rather than relying on one measure alone.",
+            "paper_refs": [
+              "Riley_2019"
+            ]
+          }
+        ],
+        "follow_up_rule": {
+          "statement": "Reassess disease status and whitefly pressure frequently during severe outbreaks.",
+          "paper_refs": [
+            "Riley_2019",
+            "Marchant_2020"
+          ]
+        }
+      }
+    },
+    "references": {
+      "ElSappah_2022": {
+        "title": "Natural resistance of tomato plants to Tomato yellow leaf curl virus",
+        "authors": "El-Sappah et al.",
+        "year": 2022,
+        "type": "peer_reviewed_review"
+      },
+      "Riley_2019": {
+        "title": "Integrated Management of Tomato Yellow Leaf Curl Virus and Bemisia tabaci in Tomato Using Resistant Tomato Cultivars, Insecticides, and Mulches",
+        "authors": "Riley et al.",
+        "year": 2019,
+        "type": "peer_reviewed_article"
+      },
+      "Marchant_2020": {
+        "title": "Tomato Yellow Leaf Curl Virus-Resistant and -Susceptible Tomato Cultivars and Their Effects on Silverleaf Whitefly Population Dynamics",
+        "authors": "Marchant et al.",
+        "year": 2020,
+        "type": "peer_reviewed_article"
+      },
+      "Glick_2009": {
+        "title": "The viral etiology of tomato yellow leaf curl disease - a review",
+        "authors": "Glick et al.",
+        "year": 2009,
+        "type": "peer_reviewed_review"
+      }
+    }
+  },
+  "Mango_Healthy": {
+    "disease_type": "healthy_leaf",
+    "causal_agent": null,
+    "pathogen_notes": [
+      {
+        "statement": "No visible disease symptoms are detected in the current class label.",
+        "paper_refs": []
+      },
+      {
+        "statement": "Disease risk in mango remains influenced by environmental conditions, especially humid and wet periods.",
+        "paper_refs": [
+          "Uddin_2018",
+          "Joubert_1993"
+        ]
+      }
+    ],
+    "evidence_profile": {
+      "research_findings": [
+        {
+          "statement": "Anthracnose infection and disease development increase under favorable weather conditions.",
+          "paper_refs": [
+            "Uddin_2018"
+          ]
+        },
+        {
+          "statement": "Powdery mildew is especially important during flowering and early fruit development.",
+          "paper_refs": [
+            "Joubert_1993"
+          ]
+        }
+      ],
+      "supported_actions": [
+        {
+          "action": "maintain routine monitoring during humid, wet, or disease-favorable periods",
+          "research_support": "Disease development is linked to favorable environmental conditions.",
+          "paper_refs": [
+            "Uddin_2018",
+            "Joubert_1993"
+          ]
+        },
+        {
+          "action": "maintain good orchard or canopy management where relevant",
+          "research_support": "Disease management literature highlights the role of environmental and canopy-related conditions.",
+          "paper_refs": [
+            "Uddin_2018",
+            "Joubert_1993"
+          ]
+        }
+      ],
+      "monitoring_points": [
+        {
+          "point": "Monitor leaves, flowers, and fruit during wet or humid periods.",
+          "paper_refs": [
+            "Uddin_2018",
+            "Joubert_1993"
+          ]
+        }
+      ],
+      "cautions": [
+        {
+          "point": "A healthy leaf at one time point does not rule out later disease development under favorable conditions.",
+          "paper_refs": [
+            "Uddin_2018",
+            "Joubert_1993"
+          ]
+        }
+      ],
+      "follow_up_rule": {
+        "statement": "Reassess if symptoms appear or when disease-favorable weather conditions persist.",
+        "paper_refs": [
+          "Uddin_2018",
+          "Joubert_1993"
+        ]
+      }
+    },
+    "references": {
+      "Uddin_2018": {
+        "title": "Management of Anthracnose Disease of Mango Caused by Colletotrichum gloeosporioides: A Review",
+        "authors": "Md. Nasir Uddin et al.",
+        "year": 2018,
+        "type": "review_article"
+      },
+      "Joubert_1993": {
+        "title": "Powdery mildew of mango in South Africa: A review",
+        "authors": "Joubert, Manicom and Wingfield",
+        "year": 1993,
+        "type": "peer_reviewed_review"
+      }
+    }
+  },
+  "Pepper_Healthy": {
+    "disease_type": "healthy_leaf",
+    "causal_agent": null,
+    "pathogen_notes": [
+      {
+        "statement": "No visible disease symptoms are detected in the current class label.",
+        "paper_refs": []
+      },
+      {
+        "statement": "Bacterial spot spread is associated with water splash and favorable warm, humid conditions.",
+        "paper_refs": [
+          "Potnis_2015",
+          "Osdaghi_2021"
+        ]
+      }
+    ],
+    "evidence_profile": {
+      "research_findings": [
+        {
+          "statement": "Bacterial spot management is complicated by pathogen diversity and copper tolerance.",
+          "paper_refs": [
+            "Potnis_2015",
+            "Osdaghi_2021"
+          ]
+        },
+        {
+          "statement": "Spread is linked with splash dispersal and wet foliage conditions.",
+          "paper_refs": [
+            "Potnis_2015",
+            "Osdaghi_2021"
+          ]
+        }
+      ],
+      "supported_actions": [
+        {
+          "action": "maintain monitoring during warm, humid, or rainy periods",
+          "research_support": "These conditions favor disease spread and development.",
+          "paper_refs": [
+            "Potnis_2015",
+            "Osdaghi_2021"
+          ]
+        },
+        {
+          "action": "reduce splash dispersal and avoid unnecessary wet foliage conditions where possible",
+          "research_support": "Spread is associated with water splash and wet conditions.",
+          "paper_refs": [
+            "Potnis_2015",
+            "Osdaghi_2021"
+          ]
+        }
+      ],
+      "monitoring_points": [
+        {
+          "point": "Monitor leaves, stems, and fruit for new lesions during warm, humid, or rainy conditions.",
+          "paper_refs": [
+            "Potnis_2015",
+            "Osdaghi_2021"
+          ]
+        }
+      ],
+      "cautions": [
+        {
+          "point": "A healthy leaf at one time point does not rule out later infection under disease-favorable conditions.",
+          "paper_refs": [
+            "Potnis_2015",
+            "Osdaghi_2021"
+          ]
+        }
+      ],
+      "follow_up_rule": {
+        "statement": "Reassess if lesions appear or when warm, humid, or rainy conditions persist.",
+        "paper_refs": [
+          "Potnis_2015",
+          "Osdaghi_2021"
+        ]
+      }
+    },
+    "references": {
+      "Osdaghi_2021": {
+        "title": "A centenary for bacterial spot of tomato and pepper",
+        "authors": "Osdaghi et al.",
+        "year": 2021,
+        "type": "peer_reviewed_review"
+      },
+      "Potnis_2015": {
+        "title": "Bacterial spot of tomato and pepper: diverse Xanthomonas species posing a worldwide challenge",
+        "authors": "Potnis et al.",
+        "year": 2015,
+        "type": "peer_reviewed_review"
+      }
+    }
+  },
+  "Potato_Healthy": {
+    "disease_type": "healthy_leaf",
+    "causal_agent": null,
+    "pathogen_notes": [
+      {
+        "statement": "No visible disease symptoms are detected in the current class label.",
+        "paper_refs": []
+      },
+      {
+        "statement": "Potato foliar disease risk remains influenced by environmental conditions, especially for early blight and late blight.",
+        "paper_refs": [
+          "vanDerWaals_2001",
+          "Nowicki_2012"
+        ]
+      }
+    ],
+    "evidence_profile": {
+      "research_findings": [
+        {
+          "statement": "Early blight development is influenced by environmental conditions and crop management practices.",
+          "paper_refs": [
+            "vanDerWaals_2001",
+            "Abuley_2017"
+          ]
+        },
+        {
+          "statement": "Late blight development is strongly favored by cool and wet conditions.",
+          "paper_refs": [
+            "Nowicki_2012",
+            "Fry_2015"
+          ]
+        }
+      ],
+      "supported_actions": [
+        {
+          "action": "maintain routine monitoring during warm, humid, cool, or wet conditions depending on disease risk",
+          "research_support": "Both early blight and late blight are strongly influenced by environmental conditions.",
+          "paper_refs": [
+            "vanDerWaals_2001",
+            "Abuley_2017",
+            "Nowicki_2012",
+            "Fry_2015"
+          ]
+        },
+        {
+          "action": "maintain crop management practices that reduce disease-favorable conditions where possible",
+          "research_support": "Disease development is linked with crop management and environmental conditions.",
+          "paper_refs": [
+            "vanDerWaals_2001",
+            "Nowicki_2012"
+          ]
+        }
+      ],
+      "monitoring_points": [
+        {
+          "point": "Monitor for target-like lesions, water-soaked lesions, or rapid foliar changes during favorable weather.",
+          "paper_refs": [
+            "vanDerWaals_2001",
+            "Nowicki_2012"
+          ]
+        }
+      ],
+      "cautions": [
+        {
+          "point": "A healthy leaf at one time point does not rule out later disease development, especially during favorable weather.",
+          "paper_refs": [
+            "vanDerWaals_2001",
+            "Nowicki_2012"
+          ]
+        }
+      ],
+      "follow_up_rule": {
+        "statement": "Reassess if symptoms appear or when favorable weather conditions persist.",
+        "paper_refs": [
+          "vanDerWaals_2001",
+          "Nowicki_2012"
+        ]
+      }
+    },
+    "references": {
+      "vanDerWaals_2001": {
+        "title": "A review of early blight of potato",
+        "authors": "van der Waals et al.",
+        "year": 2001,
+        "type": "peer_reviewed_review"
+      },
+      "Abuley_2017": {
+        "title": "Evaluation of models to control potato early blight based on field experiments in Finland, 1983–2014",
+        "authors": "Abuley et al.",
+        "year": 2017,
+        "type": "peer_reviewed_article"
+      },
+      "Nowicki_2012": {
+        "title": "Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding",
+        "authors": "Nowicki et al.",
+        "year": 2012,
+        "type": "peer_reviewed_review"
+      },
+      "Fry_2015": {
+        "title": "Five Reasons why Phytophthora infestans is the 'Plant Destroyer'",
+        "authors": "Fry et al.",
+        "year": 2015,
+        "type": "peer_reviewed_article"
+      }
+    }
+  },
+  "Tomato_Healthy": {
+    "disease_type": "healthy_leaf",
+    "causal_agent": null,
+    "pathogen_notes": [
+      {
+        "statement": "No visible disease symptoms are detected in the current class label.",
+        "paper_refs": []
+      },
+      {
+        "statement": "Tomato disease risk remains influenced by environmental conditions and vector pressure depending on the disease involved.",
+        "paper_refs": [
+          "Salotti_2024",
+          "Nowicki_2012",
+          "Belabess_2024",
+          "ElSappah_2022"
+        ]
+      }
+    ],
+    "evidence_profile": {
+      "research_findings": [
+        {
+          "statement": "Early blight is influenced by environmental conditions and host-pathogen interactions.",
+          "paper_refs": [
+            "Salotti_2024"
+          ]
+        },
+        {
+          "statement": "Late blight is strongly favored by cool and wet conditions.",
+          "paper_refs": [
+            "Nowicki_2012"
+          ]
+        },
+        {
+          "statement": "Leaf mold is favored by high humidity, especially in greenhouse conditions.",
+          "paper_refs": [
+            "Belabess_2024"
+          ]
+        },
+        {
+          "statement": "TYLCV management depends strongly on resistance and whitefly vector suppression.",
+          "paper_refs": [
+            "ElSappah_2022",
+            "Riley_2019"
+          ]
+        }
+      ],
+      "supported_actions": [
+        {
+          "action": "maintain routine monitoring under humid, wet, or vector-favorable conditions",
+          "research_support": "Major tomato diseases covered in the system are strongly influenced by environment or vector pressure.",
+          "paper_refs": [
+            "Salotti_2024",
+            "Nowicki_2012",
+            "Belabess_2024",
+            "ElSappah_2022",
+            "Riley_2019"
+          ]
+        },
+        {
+          "action": "maintain crop conditions that reduce prolonged leaf wetness, excessive humidity, and vector pressure where possible",
+          "research_support": "Disease development and spread are linked with wetness, humidity, and whitefly activity depending on the disease.",
+          "paper_refs": [
+            "Salotti_2024",
+            "Nowicki_2012",
+            "Belabess_2024",
+            "Riley_2019"
+          ]
+        }
+      ],
+      "monitoring_points": [
+        {
+          "point": "Monitor for spotting, mold, curling, yellowing, water-soaked lesions, or whitefly activity depending on growing conditions.",
+          "paper_refs": [
+            "Salotti_2024",
+            "Nowicki_2012",
+            "Belabess_2024",
+            "Riley_2019"
+          ]
+        }
+      ],
+      "cautions": [
+        {
+          "point": "A healthy leaf at one time point does not rule out later disease development under favorable environmental or vector conditions.",
+          "paper_refs": [
+            "Salotti_2024",
+            "Nowicki_2012",
+            "Belabess_2024",
+            "ElSappah_2022"
+          ]
+        }
+      ],
+      "follow_up_rule": {
+        "statement": "Reassess if symptoms appear or when humid, wet, or vector-favorable conditions continue.",
+        "paper_refs": [
+          "Salotti_2024",
+          "Nowicki_2012",
+          "Belabess_2024",
+          "Riley_2019"
+        ]
+      }
+    },
+    "references": {
+      "Salotti_2024": {
+        "title": "Biology, ecology, and epidemiology of Alternaria species associated with the tomato pathosystem: a review",
+        "authors": "Salotti et al.",
+        "year": 2024,
+        "type": "peer_reviewed_review"
+      },
+      "Nowicki_2012": {
+        "title": "Potato and Tomato Late Blight Caused by Phytophthora infestans: An Overview of Pathology and Resistance Breeding",
+        "authors": "Nowicki et al.",
+        "year": 2012,
+        "type": "peer_reviewed_review"
+      },
+      "Belabess_2024": {
+        "title": "Exploring the Antifungal Activity of Moroccan Bacterial and Fungal Isolates and a Strobilurin Fungicide in the Control of Cladosporium fulvum, the Causal Agent of Tomato Leaf Mold Disease",
+        "authors": "Belabess et al.",
+        "year": 2024,
+        "type": "peer_reviewed_article"
+      },
+      "ElSappah_2022": {
+        "title": "Natural resistance of tomato plants to Tomato yellow leaf curl virus",
+        "authors": "El-Sappah et al.",
+        "year": 2022,
+        "type": "peer_reviewed_review"
+      },
+      "Riley_2019": {
+        "title": "Integrated Management of Tomato Yellow Leaf Curl Virus and Bemisia tabaci in Tomato Using Resistant Tomato Cultivars, Insecticides, and Mulches",
+        "authors": "Riley et al.",
+        "year": 2019,
+        "type": "peer_reviewed_article"
+      }
+    }
+  }
+}
