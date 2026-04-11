@@ -317,5 +317,138 @@
     ],
     "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Mango_Powdery_Mildew_0001_gradcam.png",
     "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Mango_Powdery_Mildew_0001_affected.png"
+  },
+  {
+    "timestamp": "2026-04-11T02:10:50",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Mango_Powdery_Mildew_0002.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Mango_Powdery_Mildew",
+    "confidence": 1.0,
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "top3": [
+      {
+        "class": "Mango_Powdery_Mildew",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 6.548178863880562e-18
+      },
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 2.1677951264498636e-18
+      }
+    ],
+    "summary": "Powdery mildew can damage mango flowers and early fruits, leading to poor fruit set. Early management, especially during flowering, is key to protect yield. Sulfur-based sprays are a proven option where approved in your area.",
+    "what_to_do_now": [
+      "Start management early, especially around flowering.",
+      "Apply a sulfur-based treatment if it is locally approved."
+    ],
+    "monitoring": [
+      "Check flowers, panicles, and young fruit for powdery growth."
+    ],
+    "caution": [
+      "If not treated early, powdery mildew can lower fruit set."
+    ],
+    "follow_up": "Reassess the disease during flowering and early fruit development.",
+    "references_used": [
+      "AbouElNasr_2025",
+      "Joubert_1993",
+      "Naqvi_2014"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Mango_Powdery_Mildew_0002_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Mango_Powdery_Mildew_0002_affected.png"
+  },
+  {
+    "timestamp": "2026-04-11T03:21:56",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Yellow_Leaf_Curl_Virus_0005.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Tomato_Yellow_leaf_curl_virus",
+    "confidence": 0.9999995231628418,
+    "severity_label": "Severe",
+    "severity_percent": 43.179025888547606,
+    "top3": [
+      {
+        "class": "Tomato_Yellow_leaf_curl_virus",
+        "confidence": 0.9999995231628418
+      },
+      {
+        "class": "Tomato_Leaf_Mold",
+        "confidence": 4.4778300889447564e-07
+      },
+      {
+        "class": "Tomato_Early_Blight",
+        "confidence": 4.045369195182502e-08
+      }
+    ],
+    "summary": "Tomato yellow leaf curl virus is a major and serious disease that can cause heavy losses in tomato plants. It is spread by whiteflies and is best managed by using resistant varieties, keeping whiteflies down, and using reflective mulch.",
+    "what_to_do_now": [
+      "Maintain strong whitefly suppression around remaining plants",
+      "Prioritize resistant cultivars in future planting where available",
+      "Continue use of reflective mulch where feasible as part of integrated management"
+    ],
+    "monitoring": [
+      "Monitor surrounding tomato plants for continued spread under active whitefly pressure",
+      "Monitor vector abundance closely during severe outbreaks"
+    ],
+    "caution": [
+      "TYLCV is associated with major production loss and remains difficult to manage without resistance and vector control",
+      "Severe disease pressure increases the importance of integrated management rather than relying on one measure alone"
+    ],
+    "follow_up": "Reassess disease status and whitefly pressure frequently during severe outbreaks.",
+    "references_used": [
+      "ElSappah_2022",
+      "Glick_2009",
+      "Marchant_2020",
+      "Riley_2019"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Yellow_Leaf_Curl_Virus_0005_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Yellow_Leaf_Curl_Virus_0005_affected.png"
+  },
+  {
+    "timestamp": "2026-04-11T03:25:09",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Late_Blight_0014.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Tomato_Late_Blight",
+    "confidence": 0.9999992847442627,
+    "severity_label": "Severe",
+    "severity_percent": 41.63383545770568,
+    "top3": [
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 0.9999992847442627
+      },
+      {
+        "class": "Tomato_Leaf_Mold",
+        "confidence": 6.035544402038795e-07
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 5.3331778104848127e-08
+      }
+    ],
+    "summary": "Late blight, caused by an oomycete, can destroy tomatoes quickly in cool, wet weather. At severe stages the main goal is to stop the disease from spreading to healthy plants. Long‑term control depends on using resistant tomato varieties.",
+    "what_to_do_now": [
+      "Remove severely infected plants or heavily affected material.",
+      "Do not keep infected material in the growing area.",
+      "Protect remaining healthy plants to limit further spread."
+    ],
+    "monitoring": [
+      "Check neighboring susceptible plants frequently during outbreaks.",
+      "Inspect fruit closely for new infection."
+    ],
+    "caution": [
+      "Severe late blight can cause major crop loss very quickly under favorable weather.",
+      "At severe stages management is mainly focused on limiting spread, not reversing damage."
+    ],
+    "follow_up": "Reassess disease development frequently during active outbreaks and continue monitoring nearby plants and fruit.",
+    "references_used": [
+      "Nowicki_2012",
+      "Shrestha_Ashley_2014",
+      "Sullenberger_2024"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0014_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0014_affected.png"
   }
 ]

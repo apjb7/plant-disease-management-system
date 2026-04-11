@@ -1,0 +1,14 @@
+Class,Training,Validation,Test,Total
+Mango_Anthracnose,301,65,65,431
+Mango_Healthy,247,53,53,353
+Mango_Powdery_Mildew,317,68,69,454
+Pepper_Bacterial_Spot,349,75,75,499
+Pepper_Healthy,349,75,75,499
+Potato_Early_blight,349,75,75,499
+Potato_Healthy,349,75,75,499
+Potato_Late_blight,349,75,75,499
+Tomato_Early_Blight,350,75,75,500
+Tomato_Healthy,349,75,75,499
+Tomato_Late_Blight,350,75,75,500
+Tomato_Leaf_Mold,349,75,75,499
+Tomato_Yellow_leaf_curl_virus,349,75,75,499

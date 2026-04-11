@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 from app.config import HEATMAP_THRESHOLD, MILD_THRESHOLD, MODERATE_THRESHOLD
-
 def segment_leaf_mask(image_rgb):
     """
     Broader leaf segmentation:
@@ -42,7 +41,6 @@ def segment_leaf_mask(image_rgb):
         mask = np.where(labels == largest_label, 255, 0).astype(np.uint8)
 
     return mask
-
 
 def create_disease_mask_from_heatmap(heatmap, image_shape, threshold=0.25):
     """
