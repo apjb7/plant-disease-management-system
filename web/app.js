@@ -1,14 +1,13 @@
-/* ═══════════════════════════════════════════════════════
-   PlantGuard AI — App Logic
-   ═══════════════════════════════════════════════════════ */
+/**
+ * Plant Disease Management System — App Logic
+ */
 
 const imageInput = document.getElementById("imageInput");
 const analyzeBtn = document.getElementById("analyzeBtn");
 const statusDiv = document.getElementById("status");
 
 const resultSection = document.getElementById("resultSection");
-const emptyState = document.getElementById("emptyState");
-const appGrid = document.getElementById("appGrid");
+const visualSection = document.getElementById("visualSection");
 
 const predictedClass = document.getElementById("predictedClass");
 const confidence = document.getElementById("confidence");
@@ -103,39 +102,6 @@ function showStatus(message, isLoading = false) {
 }
 
 
-/* ── Tab System ── */
-
-function initTabs() {
-  const tabBtns = document.querySelectorAll(".tab-btn");
-  const tabPanels = document.querySelectorAll(".tab-panel");
-
-  tabBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-      const targetTab = btn.dataset.tab;
-
-      // Deactivate all
-      tabBtns.forEach(b => b.classList.remove("active"));
-      tabPanels.forEach(p => {
-        p.classList.remove("active");
-        p.style.animation = "none";
-      });
-
-      // Activate clicked
-      btn.classList.add("active");
-      const targetPanel = document.querySelector(`.tab-panel[data-tab="${targetTab}"]`);
-      if (targetPanel) {
-        targetPanel.classList.add("active");
-        // Re-trigger animation
-        void targetPanel.offsetWidth;
-        targetPanel.style.animation = "";
-      }
-    });
-  });
-}
-
-initTabs();
-
-
 /* ── Drag & Drop Upload ── */
 
 function showFilePreview(file) {
@@ -203,6 +169,7 @@ analyzeBtn.addEventListener("click", async () => {
 
   showStatus("Analyzing image and preparing your care report…", true);
   resultSection.classList.add("hidden");
+  visualSection.classList.add("hidden");
 
   const formData = new FormData();
   formData.append("image", file);
@@ -222,7 +189,7 @@ analyzeBtn.addEventListener("click", async () => {
       return;
     }
 
-    showStatus("✓ Analysis report generated successfully.");
+    showStatus("✓ Analysis complete.");
 
     // Populate results
     predictedClass.textContent = prettifyClassName(data.predicted_class);
@@ -266,19 +233,12 @@ analyzeBtn.addEventListener("click", async () => {
     setImageFromOutputPath(gradcamImage, data.gradcam_overlay_path);
     setImageFromOutputPath(affectedImage, data.affected_overlay_path);
 
-    // Switch to 2-column layout and show results
-    if (appGrid) appGrid.classList.add("has-results");
-    if (emptyState) emptyState.style.display = "none";
+    // Show result sections
     resultSection.classList.remove("hidden");
+    visualSection.classList.remove("hidden");
 
-    // Activate first tab
-    const firstBtn = document.querySelector(".tab-btn");
-    if (firstBtn) firstBtn.click();
-
-    // Scroll to results on mobile (single-column)
-    if (window.innerWidth <= 960) {
-      resultSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    // Scroll to results
+    resultSection.scrollIntoView({ behavior: "smooth", block: "start" });
 
   } catch (error) {
     showStatus(`Error: ${error.message}`);

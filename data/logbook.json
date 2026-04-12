@@ -1031,5 +1031,98 @@
     ],
     "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0005_gradcam.png",
     "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0005_affected.png"
+  },
+  {
+    "timestamp": "2026-04-13T00:09:51",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Early_Blight_0007.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Tomato_Early_Blight",
+    "confidence": 0.9999806880950928,
+    "severity_label": "Severe",
+    "severity_percent": 63.19302654311293,
+    "top3": [
+      {
+        "class": "Tomato_Early_Blight",
+        "confidence": 0.9999806880950928
+      },
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 1.0255876986775547e-05
+      },
+      {
+        "class": "Tomato_Yellow_leaf_curl_virus",
+        "confidence": 8.599986358603928e-06
+      }
+    ],
+    "summary": "Alternaria solani causes severe early blight. Research shows Trichoderma sp. and Bacillus thuringiensis or Bacillus mycoides can reduce severity when applied at 10⁶ cells mL⁻¹, especially in the Romano variety. Timing and cultivar choice influence effectiveness.",
+    "what_to_do_now": [
+      "Apply Trichoderma sp. as a foliar or soil treatment at a concentration of 10⁶ cells mL⁻¹.",
+      "Incorporate Bacillus thuringiensis or Bacillus mycoides into your disease management routine.",
+      "Adjust the timing of applications to match the pathogen’s active cycle.",
+      "Select cultivars that respond well, such as Romano, and note differences in other varieties."
+    ],
+    "monitoring": [
+      "Measure mycelial growth inhibition of Alternaria solani in laboratory assays to gauge agent potency.",
+      "Track disease severity (%) on treated versus untreated plants throughout the growing season.",
+      "Record varietal differences in response to biocontrol applications."
+    ],
+    "caution": [
+      "Efficacy depends strongly on application timing and method; inconsistent use may yield poor results.",
+      "Responses vary among tomato varieties; a treatment that works on one variety may be less effective on another.",
+      "Laboratory inhibition does not always translate directly to field success, so field trials are essential."
+    ],
+    "follow_up": "Reassess disease severity at the end of each cropping cycle, typically at harvest, to determine the long‑term impact of the biocontrol strategy.",
+    "references_used": [
+      "RAG_ChromaDB_Research_Papers"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Early_Blight_0007_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Early_Blight_0007_affected.png"
+  },
+  {
+    "timestamp": "2026-04-13T02:26:20",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Early_Blight_0011.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Tomato_Early_Blight",
+    "confidence": 0.8909136056900024,
+    "severity_label": "Mild",
+    "severity_percent": 3.8143510663430766,
+    "top3": [
+      {
+        "class": "Tomato_Early_Blight",
+        "confidence": 0.8909136056900024
+      },
+      {
+        "class": "Tomato_Leaf_Mold",
+        "confidence": 0.1045202985405922
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 0.004163740202784538
+      }
+    ],
+    "summary": "Early blight on tomatoes is caused by the fungus Alternaria solani. Using biocontrol agents such as Trichoderma and Bacillus species together with good cultural practices can lower disease severity, but the reduction is modest. Watch the canopy for spores and leaf wetness to know when to act.",
+    "what_to_do_now": [
+      "Apply Trichoderma sp and selected Bacillus species as foliar or soil treatments during periods of high humidity.",
+      "Use crop rotation, border crops, or increased spacing to reduce beetle populations that spread spores.",
+      "Improve canopy airflow and adjust irrigation so leaves dry quickly.",
+      "Combine biocontrol sprays with fungicides for integrated management.",
+      "Choose cultivars that show lower early blight responses in biocontrol trials."
+    ],
+    "monitoring": [
+      "Measure conidial density in the canopy and wind‑driven spore concentrations.",
+      "Record leaf wetness duration, temperature, and radiation levels that drive spore germination.",
+      "Track early blight severity as the percent of leaf area affected."
+    ],
+    "caution": [
+      "Disease reduction from biocontrols is modest and varies with plant variety and application timing.",
+      "Biocontrol alone is unlikely to replace synthetic fungicides in high‑risk settings.",
+      "Variation among A. solani isolates can change virulence, so screen cultivars."
+    ],
+    "follow_up": "Reassess disease severity and spore counts 2–4 weeks after the first biocontrol application or when early blight symptoms first appear.",
+    "references_used": [
+      "RAG_ChromaDB_Research_Papers"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Early_Blight_0011_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Early_Blight_0011_affected.png"
   }
 ]

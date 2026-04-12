@@ -23,16 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Drag-and-drop
   dropZone.addEventListener("dragover", (e) => {
     e.preventDefault();
-    dropZone.classList.add("dragover");
+    dropZone.classList.add("drag-over");
   });
 
   dropZone.addEventListener("dragleave", () => {
-    dropZone.classList.remove("dragover");
+    dropZone.classList.remove("drag-over");
   });
 
   dropZone.addEventListener("drop", (e) => {
     e.preventDefault();
-    dropZone.classList.remove("dragover");
+    dropZone.classList.remove("drag-over");
     if (e.dataTransfer.files.length && e.dataTransfer.files[0].type === "application/pdf") {
       pdfInput.files = e.dataTransfer.files;
       uploadBtn.disabled = false;
@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
 // ─── Status Helper ───────────────────────────────────
 function showStatus(msg, type = "loading") {
   const el = document.getElementById("uploadStatus");
-  el.className = `admin-status status-${type}`;
+  el.className = "status-bar";
+  if (type === "loading") el.classList.add("loading");
   el.textContent = msg;
   el.classList.remove("hidden");
 }
@@ -94,7 +95,7 @@ async function uploadPaper() {
 
     if (response.ok) {
       showStatus(
-        `Successfully ingested "${data.filename}" — ${data.chunks_added} chunks added (${data.disease_classes.join(", ")})`,
+        `✓ Successfully ingested "${data.filename}" — ${data.chunks_added} chunks added (${data.disease_classes.join(", ")})`,
         "success"
       );
       // Reset form
@@ -191,7 +192,7 @@ async function deletePaper(filename) {
     const data = await response.json();
 
     if (response.ok) {
-      showStatus(`Removed "${filename}" — ${data.chunks_removed} chunks deleted.`, "success");
+      showStatus(`✓ Removed "${filename}" — ${data.chunks_removed} chunks deleted.`, "success");
       loadStats();
       loadPapers();
     } else {

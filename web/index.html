@@ -4,321 +4,188 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plant Disease Management System — AI-Powered Leaf Diagnostics</title>
-  <meta name="description" content="Upload a leaf photo and get instant AI-powered disease diagnosis, severity analysis, and research-backed treatment recommendations for your plants." />
+  <title>Plant Disease Management System</title>
+  <meta name="description" content="Upload a leaf photo and get AI-powered disease diagnosis with treatment recommendations." />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="manifest" href="/manifest.json" />
-  <meta name="theme-color" content="#0a2e1f" />
+  <meta name="theme-color" content="#16a34a" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <!-- Animated background orbs -->
-  <div class="bg-orbs" aria-hidden="true">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-  </div>
-
-  <!-- Particle canvas -->
-  <canvas id="particleCanvas" aria-hidden="true"></canvas>
-
-  <header class="topbar" id="topbar">
-    <div class="brand-wrap">
-      <div class="logo-box">
-        <img src="/icon-192.png" alt="PDMS Logo" class="site-logo" />
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="/icon-192.png" alt="PDMS Logo" class="logo-img" />
+        <span class="logo-text">Plant Disease Management System</span>
       </div>
-      <div class="brand-block">
-        <h1>PlantGuard<span class="brand-ai">AI</span></h1>
-        <p class="brand-subtitle">Intelligent Plant Disease Diagnostics</p>
-      </div>
+      <nav class="nav">
+        <a href="/" class="nav-link active">Home</a>
+        <a href="/history" class="nav-link">Logbook</a>
+        <a href="/admin" class="nav-link">Admin</a>
+      </nav>
     </div>
-
-    <nav class="topnav" aria-label="Main Navigation">
-      <a href="/" class="nav-link active" id="nav-home">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        Home
-      </a>
-      <a href="/history" class="nav-link" id="nav-logbook">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-        Logbook
-      </a>
-      <a href="/admin" class="nav-link" id="nav-admin">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-        Admin
-      </a>
-    </nav>
   </header>
 
-  <main class="app-grid" id="appGrid">
-    <!-- ═══ LEFT PANEL — Upload ═══ -->
-    <aside class="panel-left" id="panelLeft">
-      <div class="panel-left-inner">
-        <h2 class="hero-title">Diagnose plant diseases<br /><span class="gradient-text">in seconds</span></h2>
-        <p class="hero-description">
-          Upload a clear leaf photo to identify disease, estimate severity, and receive research-backed treatment guidance.
-        </p>
+  <main class="main">
+    <!-- Upload Section -->
+    <section class="card" id="heroSection">
+      <h2>Upload a Leaf Image</h2>
+      <p class="subtitle">Take a clear photo of a plant leaf to identify disease, estimate severity, and get treatment recommendations.</p>
 
-        <!-- Feature strip -->
-        <div class="feature-strip">
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"/><path d="M12 22v-8"/><path d="M8 18c1.5-1 2.5-2 4-4"/></svg>
-            </div>
-            <span>9 Disease Classes</span>
+      <div class="upload-zone" id="uploadZone">
+        <div class="upload-zone-inner" id="uploadZoneInner">
+          <div class="upload-icon-wrap">
+            <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
           </div>
-          <div class="feature-divider"></div>
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-            </div>
-            <span>RAG-Enhanced</span>
-          </div>
-          <div class="feature-divider"></div>
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            </div>
-            <span>Severity Mapping</span>
-          </div>
+          <p class="upload-label">Drag & drop a leaf image here</p>
+          <p class="upload-sublabel">or click to browse · JPG, JPEG, PNG</p>
+          <input type="file" id="imageInput" accept=".jpg,.jpeg,.png" />
         </div>
 
-        <div class="upload-zone" id="uploadZone">
-          <div class="upload-zone-inner" id="uploadZoneInner">
-            <div class="upload-icon-wrap">
-              <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                <polyline points="17 8 12 3 7 8"/>
-                <line x1="12" y1="3" x2="12" y2="15"/>
-              </svg>
-            </div>
-            <p class="upload-label">Drag & drop a leaf image here</p>
-            <p class="upload-sublabel">or click to browse · JPG, JPEG, PNG</p>
-            <input type="file" id="imageInput" accept=".jpg,.jpeg,.png" />
-          </div>
-
-          <!-- Preview overlay -->
-          <div class="upload-preview hidden" id="uploadPreviewWrap">
-            <img id="filePreviewImg" alt="Selected leaf preview" />
-            <button class="preview-clear-btn" id="clearPreviewBtn" type="button" title="Remove image">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-            </button>
-          </div>
+        <div class="upload-preview hidden" id="uploadPreviewWrap">
+          <img id="filePreviewImg" alt="Selected leaf preview" />
+          <button class="preview-clear-btn" id="clearPreviewBtn" type="button" title="Remove image">&times;</button>
         </div>
-
-        <button id="analyzeBtn" class="analyze-btn">
-          <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          <span>Analyze Leaf</span>
-          <div class="btn-shimmer"></div>
-        </button>
-
-        <div id="status" class="status-bar hidden"></div>
-      </div>
-    </aside>
-
-    <!-- ═══ RIGHT PANEL — Results ═══ -->
-    <section class="panel-right" id="panelRight">
-      <!-- Empty state -->
-      <div class="empty-state" id="emptyState">
-        <div class="empty-state-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"/><path d="M12 22v-8"/><path d="M8 18c1.5-1 2.5-2 4-4"/></svg>
-        </div>
-        <h3 class="empty-state-title">No analysis yet</h3>
-        <p class="empty-state-text">Upload a leaf image and click <strong>Analyze Leaf</strong> to see your diagnosis report here.</p>
       </div>
 
-      <!-- Results (hidden until analysis) -->
-      <div class="hidden" id="resultSection">
-        <!-- Diagnosis Summary -->
-        <section class="glass-card result-summary-card animate-in" id="summaryCard">
-          <div class="card-header">
-            <span class="chip chip-primary">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              Analysis Complete
-            </span>
+      <button id="analyzeBtn" class="btn-primary">Analyze Leaf</button>
+
+      <div id="status" class="status-bar hidden"></div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="hidden" id="resultSection">
+      <!-- Diagnosis -->
+      <div class="card" id="summaryCard">
+        <h2>Diagnosis Result</h2>
+        <div class="result-row">
+          <div class="result-block">
+            <span class="label">Detected Condition</span>
+            <div class="result-value large" id="predictedClass"></div>
           </div>
-
-          <div class="result-hero-row">
-            <div class="result-main">
-              <span class="result-label">Detected Condition</span>
-              <div class="result-disease-name" id="predictedClass"></div>
-            </div>
+        </div>
+        <div class="metrics-row">
+          <div class="metric">
+            <span class="label">Confidence</span>
+            <span class="metric-val" id="confidence"></span>
           </div>
-
-          <div class="metrics-grid">
-            <div class="metric-card">
-              <div class="metric-icon-wrap confidence-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <span class="metric-label">Confidence</span>
-              <span class="metric-value" id="confidence"></span>
-            </div>
-            <div class="metric-card">
-              <div class="metric-icon-wrap severity-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-              </div>
-              <span class="metric-label">Severity</span>
-              <div id="severity"></div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-icon-wrap area-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
-              </div>
-              <span class="metric-label">Affected Area</span>
-              <span class="metric-value" id="severityPercent"></span>
-            </div>
+          <div class="metric">
+            <span class="label">Severity</span>
+            <div id="severity"></div>
           </div>
-        </section>
-
-        <!-- Tab Navigation -->
-        <nav class="tab-nav" id="tabNav" aria-label="Result tabs">
-          <button class="tab-btn active" data-tab="research" id="tabBtnResearch">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-            Research
-          </button>
-          <button class="tab-btn" data-tab="care" id="tabBtnCare">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Care Plan
-          </button>
-          <button class="tab-btn" data-tab="visuals" id="tabBtnVisuals">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            Visuals
-          </button>
-          <button class="tab-btn" data-tab="details" id="tabBtnDetails">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            Details
-          </button>
-        </nav>
-
-        <!-- Tab Panels -->
-        <div class="tab-panels">
-          <!-- TAB: Research -->
-          <div class="tab-panel active" id="panelResearch" data-tab="research">
-            <div class="glass-card animate-in">
-              <h2 class="card-title">Research-Based Findings</h2>
-              <div class="findings-grid">
-                <div class="finding-block">
-                  <h4 class="finding-heading">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/></svg>
-                    Pathogen Notes
-                  </h4>
-                  <ul id="researchPathogenNotes" class="finding-list"></ul>
-                </div>
-                <div class="finding-block">
-                  <h4 class="finding-heading">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-                    Research Findings
-                  </h4>
-                  <ul id="researchFindings" class="finding-list"></ul>
-                </div>
-                <div class="finding-block">
-                  <h4 class="finding-heading">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-                    Supported Actions
-                  </h4>
-                  <ul id="researchActions" class="finding-list"></ul>
-                </div>
-                <div class="finding-block">
-                  <h4 class="finding-heading">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                    Monitoring Points
-                  </h4>
-                  <ul id="researchMonitoring" class="finding-list"></ul>
-                </div>
-                <div class="finding-block">
-                  <h4 class="finding-heading">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-                    Cautions
-                  </h4>
-                  <ul id="researchCautions" class="finding-list"></ul>
-                </div>
-                <div class="finding-block full-width">
-                  <h4 class="finding-heading">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    Research Follow-Up
-                  </h4>
-                  <p id="researchFollowUp" class="follow-up-text"></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB: Care Plan -->
-          <div class="tab-panel" id="panelCare" data-tab="care">
-            <div class="glass-card animate-in">
-              <h2 class="card-title">Simple Guidance for Home Gardeners</h2>
-              <div class="guidance-summary-box">
-                <div class="guidance-icon-wrap">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
-                </div>
-                <div>
-                  <span class="result-label">What this means</span>
-                  <p id="summary" class="summary-text"></p>
-                </div>
-              </div>
-            </div>
-            <div class="glass-card animate-in">
-              <h2 class="card-title">What To Do Now</h2>
-              <ul id="treatmentList" class="action-list"></ul>
-            </div>
-            <div class="glass-card animate-in">
-              <h2 class="card-title">What To Monitor</h2>
-              <ul id="monitoringList" class="action-list"></ul>
-            </div>
-            <div class="glass-card caution-card animate-in">
-              <h2 class="card-title">Please Be Careful</h2>
-              <ul id="cautionList" class="action-list caution-list"></ul>
-            </div>
-            <div class="glass-card animate-in">
-              <h2 class="card-title">When To Check Again</h2>
-              <p id="followUpText" class="follow-up-text"></p>
-            </div>
-          </div>
-
-          <!-- TAB: Visuals -->
-          <div class="tab-panel" id="panelVisuals" data-tab="visuals">
-            <div class="glass-card animate-in">
-              <h2 class="card-title">Image Analysis</h2>
-              <div class="visual-grid">
-                <div class="visual-card">
-                  <h3>Your Uploaded Image</h3>
-                  <img id="uploadedPreview" alt="Uploaded image preview" />
-                </div>
-                <div class="visual-card">
-                  <h3>Model Focus Area</h3>
-                  <img id="gradcamImage" alt="Grad-CAM overlay" />
-                </div>
-                <div class="visual-card">
-                  <h3>Estimated Affected Area</h3>
-                  <img id="affectedImage" alt="Affected area overlay" />
-                </div>
-              </div>
-              <p class="footnote">
-                The severity result is an approximate support indicator based on model attention and leaf-region masking.
-              </p>
-            </div>
-          </div>
-
-          <!-- TAB: Details -->
-          <div class="tab-panel" id="panelDetails" data-tab="details">
-            <div class="glass-card animate-in">
-              <h2 class="card-title">Top 3 Predictions</h2>
-              <ul id="top3List" class="prediction-list"></ul>
-            </div>
+          <div class="metric">
+            <span class="label">Affected Area</span>
+            <span class="metric-val" id="severityPercent"></span>
           </div>
         </div>
       </div>
+
+      <!-- Research Evidence -->
+      <div class="card" id="researchCard">
+        <h2>Research-Based Findings</h2>
+        <div class="findings-grid">
+          <div class="finding-block">
+            <h4>Pathogen Notes</h4>
+            <ul id="researchPathogenNotes"></ul>
+          </div>
+          <div class="finding-block">
+            <h4>Research Findings</h4>
+            <ul id="researchFindings"></ul>
+          </div>
+          <div class="finding-block">
+            <h4>Supported Actions</h4>
+            <ul id="researchActions"></ul>
+          </div>
+          <div class="finding-block">
+            <h4>Monitoring Points</h4>
+            <ul id="researchMonitoring"></ul>
+          </div>
+          <div class="finding-block">
+            <h4>Cautions</h4>
+            <ul id="researchCautions"></ul>
+          </div>
+          <div class="finding-block full-width">
+            <h4>Research Follow-Up</h4>
+            <p id="researchFollowUp"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Guidance -->
+      <div class="card" id="guidanceCard">
+        <h2>Home Gardener Guidance</h2>
+        <div class="guidance-box">
+          <span class="label">What this means</span>
+          <p id="summary"></p>
+        </div>
+      </div>
+
+      <!-- Action Plan -->
+      <div class="card" id="actionCard">
+        <h2>What To Do Now</h2>
+        <ul id="treatmentList" class="action-list"></ul>
+      </div>
+
+      <!-- Monitoring -->
+      <div class="card" id="monitorCard">
+        <h2>What To Monitor</h2>
+        <ul id="monitoringList" class="action-list"></ul>
+      </div>
+
+      <!-- Caution -->
+      <div class="card caution" id="cautionCard">
+        <h2>⚠ Please Be Careful</h2>
+        <ul id="cautionList" class="action-list"></ul>
+      </div>
+
+      <!-- Follow Up -->
+      <div class="card" id="followUpCard">
+        <h2>When To Check Again</h2>
+        <p id="followUpText"></p>
+      </div>
+
+      <!-- Top 3 Predictions -->
+      <div class="card" id="detailsCard">
+        <h2>Top 3 Predictions</h2>
+        <ul id="top3List"></ul>
+      </div>
+    </section>
+
+    <!-- Visual Explanation -->
+    <section class="card hidden" id="visualSection">
+      <h2>Image Analysis</h2>
+      <div class="visual-grid">
+        <div class="visual-item">
+          <h4>Your Uploaded Image</h4>
+          <img id="uploadedPreview" alt="Uploaded image preview" />
+        </div>
+        <div class="visual-item">
+          <h4>Model Focus Area</h4>
+          <img id="gradcamImage" alt="Grad-CAM overlay" />
+        </div>
+        <div class="visual-item">
+          <h4>Estimated Affected Area</h4>
+          <img id="affectedImage" alt="Affected area overlay" />
+        </div>
+      </div>
+      <p class="footnote">
+        The severity result is an approximate indicator based on model attention and leaf-region masking.
+      </p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 PlantGuard AI &middot; Plant Disease Management System</p>
+  <footer class="footer">
+    <p>&copy; 2026 Plant Disease Management System</p>
   </footer>
 
   <script src="/app.js"></script>
-  <script src="/particles.js"></script>
 </body>
 
 </html>
