@@ -1,0 +1,167 @@
+{
+  "total_searched": 22,
+  "downloaded": 6,
+  "failed": 16,
+  "papers": [
+    {
+      "title": "Management of Anthracnose Disease of Mango Caused by Colletotrichum gloeosporioides: A Review",
+      "authors": "Md. Nasir Uddin et al.",
+      "doi": "10.22271/chemi.2020.v8.i6g.10810",
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "Alleviating biotic stress of powdery mildew in mango cv. Keitt by sulfur nanoparticles and assessing their effect on productivity and disease severity",
+      "authors": "Abou El-Nasr et al.",
+      "doi": "10.21203/rs.3.rs-4824860/v1",
+      "status": "downloaded",
+      "filename": "Alleviating_biotic_stress_of_powdery_mildew_in_mango_cv_Keitt_by_sulfur_nanoparticles_and_assessing_.pdf",
+      "source": "serpapi_scholar_pdf"
+    },
+    {
+      "title": "Powdery mildew of mango in South Africa: A review",
+      "authors": "Joubert, Manicom and Wingfield",
+      "doi": null,
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "A centenary for bacterial spot of tomato and pepper",
+      "authors": "Osdaghi et al.",
+      "doi": "10.1111/mpp.13125",
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "Bacterial spot of tomato and pepper: diverse Xanthomonas species posing a worldwide challenge",
+      "authors": "Potnis et al.",
+      "doi": null,
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "Pepper Bacterial Spot Control by Bacillus velezensis",
+      "authors": "Pajcin et al.",
+      "doi": "10.3390/microorganisms8101463",
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "Exploring the Antifungal Activity of Moroccan Bacterial and Fungal Isolates and a Strobilurin Fungicide in the Control of Cladosporium fulvum, the Causal Agent of Tomato Leaf Mold Disease",
+      "authors": "Belabess et al.",
+      "doi": "10.3390/plants13162213",
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "Beyond the genomes of Fulvia fulva (syn. Cladosporium fulvum) and Dothistroma septosporum: New insights into how these fungal pathogens interact with their host plants",
+      "authors": "Mesarich et al.",
+      "doi": "10.1111/mpp.13309",
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "Biology, ecology, and epidemiology of Alternaria species associated with the tomato pathosystem: a review",
+      "authors": "Salotti et al.",
+      "doi": null,
+      "status": "downloaded",
+      "filename": "Biology_ecology_and_epidemiology_of_Alternaria_species_associated_with_the_tomato_pathosystem_a_revi.pdf",
+      "source": "serpapi_author_search"
+    },
+    {
+      "title": "Antifungal potential of volatiles produced by Bacillus subtilis for controlling Alternaria solani causing early blight disease in tomato",
+      "authors": "Awan et al.",
+      "doi": null,
+      "status": "downloaded",
+      "filename": "Antifungal_potential_of_volatiles_produced_by_Bacillus_subtilis_for_controlling_Alternaria_solani_ca.pdf",
+      "source": "serpapi_author_search"
+    },
+    {
+      "title": "Potato and Tomato Late Blight Caused by Phytophthora infestans: An Overview of Pathology and Resistance Breeding",
+      "authors": "Nowicki et al.",
+      "doi": "10.1094/pdis-05-11-0458",
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "Integrated Disease Management of Tomato Late Blight",
+      "authors": "Shrestha and Ashley",
+      "doi": "10.3126/narj.v8i0.11583",
+      "status": "downloaded",
+      "filename": "Integrated_Disease_Management_of_Tomato_Late_Blight.pdf",
+      "source": "serpapi_scholar_pdf"
+    },
+    {
+      "title": "Integrated Management of Tomato Yellow Leaf Curl Virus and Bemisia tabaci in Tomato Using Resistant Tomato Cultivars, Insecticides, and Mulches",
+      "authors": "Riley et al.",
+      "doi": null,
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "Tomato Yellow Leaf Curl Virus-Resistant and -Susceptible Tomato Cultivars and Their Effects on Silverleaf Whitefly Population Dynamics",
+      "authors": "Marchant et al.",
+      "doi": null,
+      "status": "downloaded",
+      "filename": "Tomato_Yellow_Leaf_Curl_Virus-Resistant_and_-Susceptible_Tomato_Cultivars_and_Their_Effects_on_Silve.pdf",
+      "source": "serpapi_author_search"
+    },
+    {
+      "title": "The viral etiology of tomato yellow leaf curl disease - a review",
+      "authors": "Glick et al.",
+      "doi": "10.17221/26/2009-pps",
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "A review of early blight of potato",
+      "authors": "van der Waals et al.",
+      "doi": null,
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "Enhanced control efficacy of Bacillus subtilis NM4 via integration of chlorothalonil on potato early blight caused by Alternaria solani",
+      "authors": "Noh et al.",
+      "doi": "10.1016/j.micpath.2024.106604",
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "Evaluation of models to control potato early blight based on field experiments in Finland, 1983-2014",
+      "authors": "Abuley et al.",
+      "doi": null,
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "Five Reasons why Phytophthora infestans is the Plant Destroyer",
+      "authors": "Fry et al.",
+      "doi": null,
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "Biological control of Phytophthora infestans by Bacillus strains: Antagonistic potential and mechanism of action",
+      "authors": "Stefanczyk et al.",
+      "doi": null,
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "Reduced fungicide inputs for Phytophthora infestans control in potato using a decision support system",
+      "authors": "Kessel et al.",
+      "doi": null,
+      "status": "failed",
+      "filename": null
+    },
+    {
+      "title": "Late Blight Resistance Evaluation and Genome-Wide Association Analysis in Tetraploid Potato",
+      "authors": "Duan et al.",
+      "doi": "10.3724/sp.j.1006.2021.04099",
+      "status": "downloaded",
+      "filename": "Late_Blight_Resistance_Evaluation_and_Genome-Wide_Association_Analysis_in_Tetraploid_Potato.pdf",
+      "source": "serpapi_author_search"
+    }
+  ]
+}

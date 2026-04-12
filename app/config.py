@@ -1,6 +1,6 @@
 from pathlib import Path
 
-BASE_DIR = Path("/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System")
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 MODEL_PATH = BASE_DIR / "models_second" / "best_stage1_model_tuned.keras"
 CLASS_NAMES_PATH = BASE_DIR / "models_second" / "class_names_tuned.txt"

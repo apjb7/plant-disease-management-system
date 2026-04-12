@@ -1,0 +1,296 @@
+{
+  "total_papers": 32,
+  "downloaded": 10,
+  "failed": 5,
+  "no_open_access": 17,
+  "papers": [
+    {
+      "title": "Management of Anthracnose Disease of Mango Caused by Colletotrichum gloeosporioides: A Review",
+      "authors": "Md. Nasir Uddin et al.",
+      "doi": "10.22271/chemi.2020.v8.i6g.10810",
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "Alleviating biotic stress of powdery mildew in mango cv. Keitt by sulfur nanoparticles and assessing their effect on productivity and disease severity",
+      "authors": "Abou El-Nasr et al.",
+      "doi": "10.21203/rs.3.rs-4824860/v1",
+      "pdf_url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC11828861&blobtype=pdf",
+      "source": "europe_pmc",
+      "filename": null,
+      "status": "download_failed"
+    },
+    {
+      "title": "Powdery mildew of mango in South Africa: A review",
+      "authors": "Joubert, Manicom and Wingfield",
+      "doi": null,
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "Evaluation of Various Mango Varieties against the Infection Dynamics of Powdery Mildew",
+      "authors": "Naqvi et al.",
+      "doi": "10.4236/ajps.2014.515250",
+      "pdf_url": null,
+      "source": "retry_publisher_direct",
+      "filename": "Evaluation_of_Various_Mango_Varieties_against_the_Infection_Dynamics_of_Powdery_Mildew.pdf",
+      "status": "downloaded"
+    },
+    {
+      "title": "A centenary for bacterial spot of tomato and pepper",
+      "authors": "Osdaghi et al.",
+      "doi": "10.1111/mpp.13125",
+      "pdf_url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC8578828&blobtype=pdf",
+      "source": "europe_pmc",
+      "filename": null,
+      "status": "download_failed"
+    },
+    {
+      "title": "Bacterial spot of tomato and pepper: diverse Xanthomonas species posing a worldwide challenge",
+      "authors": "Potnis et al.",
+      "doi": null,
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "Pepper Bacterial Spot Control by Bacillus velezensis",
+      "authors": "Pajčin et al.",
+      "doi": "10.3390/microorganisms8101463",
+      "pdf_url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC7656301&blobtype=pdf",
+      "source": "europe_pmc",
+      "filename": null,
+      "status": "download_failed"
+    },
+    {
+      "title": "Xanthomonas euvesicatoria-Specific Bacteriophage and Its Biocontrol Potential against Bacterial Spot of Pepper",
+      "authors": "Shopova et al.",
+      "doi": "10.3389/fmicb.2018.02021",
+      "pdf_url": null,
+      "source": "retry_publisher_direct",
+      "filename": "Xanthomonas_euvesicatoria-Specific_Bacteriophage_and_Its_Biocontrol_Potential_against_Bacterial_Spot.pdf",
+      "status": "downloaded"
+    },
+    {
+      "title": "ISR meets SAR outside: additive action of the endophyte Bacillus pumilus INR7 and the chemical inducer BTH on induced resistance against bacterial spot in pepper",
+      "authors": "Yi et al.",
+      "doi": "10.3389/fpls.2013.00122",
+      "pdf_url": null,
+      "source": "retry_publisher_direct",
+      "filename": "ISR_meets_SAR_outside_additive_action_of_the_endophyte_Bacillus_pumilus_INR7_and_the_chemical_induce.pdf",
+      "status": "downloaded"
+    },
+    {
+      "title": "Mapping of the bs5 and bs6 non-race-specific recessive resistances against bacterial spot of pepper",
+      "authors": "Sharma et al.",
+      "doi": "10.3389/fpls.2023.1061803",
+      "pdf_url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC10235544&blobtype=pdf",
+      "source": "retry_publisher_direct",
+      "filename": "Mapping_of_the_bs5_and_bs6_non-race-specific_recessive_resistances_against_bacterial_spot_of_pepper.pdf",
+      "status": "downloaded"
+    },
+    {
+      "title": "Exploring the Antifungal Activity of Moroccan Bacterial and Fungal Isolates and a Strobilurin Fungicide in the Control of Cladosporium fulvum, the Causal Agent of Tomato Leaf Mold Disease",
+      "authors": "Belabess et al.",
+      "doi": "10.3390/plants13162213",
+      "pdf_url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC11360235&blobtype=pdf",
+      "source": "europe_pmc",
+      "filename": null,
+      "status": "download_failed"
+    },
+    {
+      "title": "Mapping of the Cladosporium fulvum resistance gene Cf-16, a major gene involved in leaf mold disease in tomato",
+      "authors": "Zhang et al.",
+      "doi": "10.3389/fgene.2023.1219898",
+      "pdf_url": "https://www.frontiersin.org/articles/10.3389/fgene.2023.1219898/pdf?isPublishedV2=False",
+      "source": "semantic_scholar",
+      "filename": "Mapping_of_the_Cladosporium_fulvum_resistance_gene_Cf-16_a_major_gene_involved_in_leaf_mold_disease_.pdf",
+      "status": "downloaded"
+    },
+    {
+      "title": "Beyond the genomes of Fulvia fulva (syn. Cladosporium fulvum) and Dothistroma septosporum: New insights into how these fungal pathogens interact with their host plants",
+      "authors": "Mesarich et al.",
+      "doi": "10.1111/mpp.13309",
+      "pdf_url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC10098069&blobtype=pdf",
+      "source": "europe_pmc",
+      "filename": null,
+      "status": "download_failed"
+    },
+    {
+      "title": "Characterization of two conserved cell death elicitor families from the Dothideomycete fungal pathogens Dothistroma septosporum and Fulvia fulva (syn. Cladosporium fulvum)",
+      "authors": "Tarallo et al.",
+      "doi": "10.3389/fmicb.2022.964851",
+      "pdf_url": "https://www.frontiersin.org/articles/10.3389/fmicb.2022.964851/pdf",
+      "source": "semantic_scholar",
+      "filename": "Characterization_of_two_conserved_cell_death_elicitor_families_from_the_Dothideomycete_fungal_pathog.pdf",
+      "status": "downloaded"
+    },
+    {
+      "title": "Biology, ecology, and epidemiology of Alternaria species associated with the tomato pathosystem: a review",
+      "authors": "Salotti et al.",
+      "doi": null,
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "Use of Trichoderma culture filtrates as a sustainable approach to mitigate early blight disease of tomato and their influence on plant biomarkers and antioxidants production",
+      "authors": "Imran et al.",
+      "doi": "10.3389/fpls.2023.1192818",
+      "pdf_url": "https://www.frontiersin.org/articles/10.3389/fpls.2023.1192818/pdf",
+      "source": "semantic_scholar",
+      "filename": "Use_of_Trichoderma_culture_filtrates_as_a_sustainable_approach_to_mitigate_early_blight_disease_of_t.pdf",
+      "status": "downloaded"
+    },
+    {
+      "title": "Antifungal potential of volatiles produced by Bacillus subtilis for controlling Alternaria solani causing early blight disease in tomato",
+      "authors": "Awan et al.",
+      "doi": null,
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "Potato and Tomato Late Blight Caused by Phytophthora infestans: An Overview of Pathology and Resistance Breeding",
+      "authors": "Nowicki et al.",
+      "doi": "10.1094/pdis-05-11-0458",
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "Identification and mapping of QTLs for late blight resistance in the wild tomato (Solanum pimpinellifolium) accession PI 270442 via selective genotyping",
+      "authors": "Sullenberger and Foolad",
+      "doi": "10.3389/fpls.2024.1482241",
+      "pdf_url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC11604435&blobtype=pdf",
+      "source": "retry_publisher_direct",
+      "filename": "Identification_and_mapping_of_QTLs_for_late_blight_resistance_in_the_wild_tomato_Solanum_pimpinellif.pdf",
+      "status": "downloaded"
+    },
+    {
+      "title": "Integrated Disease Management of Tomato Late Blight",
+      "authors": "Shrestha and Ashley",
+      "doi": "10.3126/narj.v8i0.11583",
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "Natural resistance of tomato plants to Tomato yellow leaf curl virus",
+      "authors": "El-Sappah et al.",
+      "doi": "10.3389/fpls.2022.1081549",
+      "pdf_url": "https://www.frontiersin.org/articles/10.3389/fpls.2022.1081549/pdf",
+      "source": "semantic_scholar",
+      "filename": "Natural_resistance_of_tomato_plants_to_Tomato_yellow_leaf_curl_virus.pdf",
+      "status": "downloaded"
+    },
+    {
+      "title": "Integrated Management of Tomato Yellow Leaf Curl Virus and Bemisia tabaci in Tomato Using Resistant Tomato Cultivars, Insecticides, and Mulches",
+      "authors": "Riley et al.",
+      "doi": null,
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "Tomato Yellow Leaf Curl Virus-Resistant and -Susceptible Tomato Cultivars and Their Effects on Silverleaf Whitefly Population Dynamics",
+      "authors": "Marchant et al.",
+      "doi": null,
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "The viral etiology of tomato yellow leaf curl disease - a review",
+      "authors": "Glick et al.",
+      "doi": "10.17221/26/2009-pps",
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "A review of early blight of potato",
+      "authors": "van der Waals et al.",
+      "doi": null,
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "Review: Holistic pest management against early blight disease in potato and tomato",
+      "authors": "Jindo et al.",
+      "doi": "10.1002/ps.6320",
+      "pdf_url": null,
+      "source": "retry_publisher_direct",
+      "filename": "Review_Holistic_pest_management_against_early_blight_disease_in_potato_and_tomato.pdf",
+      "status": "downloaded"
+    },
+    {
+      "title": "Enhanced control efficacy of Bacillus subtilis NM4 via integration of chlorothalonil on potato early blight caused by Alternaria solani",
+      "authors": "Noh et al.",
+      "doi": "10.1016/j.micpath.2024.106604",
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "Evaluation of models to control potato early blight based on field experiments in Finland, 1983–2014",
+      "authors": "Abuley et al.",
+      "doi": null,
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "Five Reasons why Phytophthora infestans is the ‘Plant Destroyer’",
+      "authors": "Fry et al.",
+      "doi": null,
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "Biological control of Phytophthora infestans by Bacillus strains: Antagonistic potential and mechanism of action",
+      "authors": "Stefańczyk et al.",
+      "doi": null,
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "Reduced fungicide inputs for Phytophthora infestans control in potato using a decision support system",
+      "authors": "Kessel et al.",
+      "doi": null,
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    },
+    {
+      "title": "Late Blight Resistance Evaluation and Genome-Wide Association Analysis in Tetraploid Potato",
+      "authors": "Duan et al.",
+      "doi": "10.3724/sp.j.1006.2021.04099",
+      "pdf_url": null,
+      "source": null,
+      "filename": null,
+      "status": "no_open_access_found"
+    }
+  ]
+}

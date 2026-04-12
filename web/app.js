@@ -1,9 +1,14 @@
+/* ═══════════════════════════════════════════════════════
+   PlantGuard AI — App Logic
+   ═══════════════════════════════════════════════════════ */
+
 const imageInput = document.getElementById("imageInput");
 const analyzeBtn = document.getElementById("analyzeBtn");
 const statusDiv = document.getElementById("status");
 
 const resultSection = document.getElementById("resultSection");
-const visualSection = document.getElementById("visualSection");
+const emptyState = document.getElementById("emptyState");
+const appGrid = document.getElementById("appGrid");
 
 const predictedClass = document.getElementById("predictedClass");
 const confidence = document.getElementById("confidence");
@@ -28,9 +33,18 @@ const uploadedPreview = document.getElementById("uploadedPreview");
 const gradcamImage = document.getElementById("gradcamImage");
 const affectedImage = document.getElementById("affectedImage");
 
+// Upload zone elements
+const uploadZone = document.getElementById("uploadZone");
+const uploadZoneInner = document.getElementById("uploadZoneInner");
+const uploadPreviewWrap = document.getElementById("uploadPreviewWrap");
+const filePreviewImg = document.getElementById("filePreviewImg");
+const clearPreviewBtn = document.getElementById("clearPreviewBtn");
+
+
+/* ── Helpers ── */
+
 function prettifyClassName(name) {
   if (!name) return "";
-
   return name
     .replace(/_/g, " ")
     .replace(/\btylcv\b/gi, "TYLCV")
@@ -39,7 +53,6 @@ function prettifyClassName(name) {
 
 function fillList(element, items) {
   if (!element) return;
-
   element.innerHTML = "";
   (items || []).forEach(item => {
     const li = document.createElement("li");
@@ -60,7 +73,6 @@ function setSeverityPill(severityLabel) {
   pill.classList.add("result-pill");
 
   const label = severityLabel.toLowerCase();
-
   if (label === "mild") pill.classList.add("mild");
   else if (label === "moderate") pill.classList.add("moderate");
   else if (label === "severe") pill.classList.add("severe");
@@ -72,7 +84,6 @@ function setSeverityPill(severityLabel) {
 
 function setImageFromOutputPath(imgElement, fullPath) {
   if (!imgElement) return;
-
   if (fullPath) {
     const rel = fullPath.split("/outputs/")[1];
     imgElement.src = `/outputs/${rel}`;
@@ -81,17 +92,117 @@ function setImageFromOutputPath(imgElement, fullPath) {
   }
 }
 
+function showStatus(message, isLoading = false) {
+  statusDiv.textContent = message;
+  statusDiv.classList.remove("hidden");
+  if (isLoading) {
+    statusDiv.classList.add("loading");
+  } else {
+    statusDiv.classList.remove("loading");
+  }
+}
+
+
+/* ── Tab System ── */
+
+function initTabs() {
+  const tabBtns = document.querySelectorAll(".tab-btn");
+  const tabPanels = document.querySelectorAll(".tab-panel");
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const targetTab = btn.dataset.tab;
+
+      // Deactivate all
+      tabBtns.forEach(b => b.classList.remove("active"));
+      tabPanels.forEach(p => {
+        p.classList.remove("active");
+        p.style.animation = "none";
+      });
+
+      // Activate clicked
+      btn.classList.add("active");
+      const targetPanel = document.querySelector(`.tab-panel[data-tab="${targetTab}"]`);
+      if (targetPanel) {
+        targetPanel.classList.add("active");
+        // Re-trigger animation
+        void targetPanel.offsetWidth;
+        targetPanel.style.animation = "";
+      }
+    });
+  });
+}
+
+initTabs();
+
+
+/* ── Drag & Drop Upload ── */
+
+function showFilePreview(file) {
+  filePreviewImg.src = URL.createObjectURL(file);
+  uploadPreviewWrap.classList.remove("hidden");
+  uploadZoneInner.style.opacity = "0";
+  uploadZoneInner.style.pointerEvents = "none";
+}
+
+function clearFilePreview() {
+  imageInput.value = "";
+  uploadPreviewWrap.classList.add("hidden");
+  uploadZoneInner.style.opacity = "";
+  uploadZoneInner.style.pointerEvents = "";
+  filePreviewImg.src = "";
+}
+
+// File input change
+imageInput.addEventListener("change", () => {
+  const file = imageInput.files[0];
+  if (file) showFilePreview(file);
+});
+
+// Clear button
+clearPreviewBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  clearFilePreview();
+});
+
+// Drag events
+["dragenter", "dragover"].forEach(evt => {
+  uploadZone.addEventListener(evt, (e) => {
+    e.preventDefault();
+    uploadZone.classList.add("drag-over");
+  });
+});
+
+["dragleave", "drop"].forEach(evt => {
+  uploadZone.addEventListener(evt, (e) => {
+    e.preventDefault();
+    uploadZone.classList.remove("drag-over");
+  });
+});
+
+uploadZone.addEventListener("drop", (e) => {
+  const file = e.dataTransfer.files[0];
+  if (file) {
+    const dt = new DataTransfer();
+    dt.items.add(file);
+    imageInput.files = dt.files;
+    showFilePreview(file);
+  }
+});
+
+
+/* ── Analyze ── */
+
 analyzeBtn.addEventListener("click", async () => {
   const file = imageInput.files[0];
 
   if (!file) {
-    statusDiv.textContent = "Please select an image first.";
+    showStatus("Please select an image first.");
     return;
   }
 
-  statusDiv.textContent = "Analyzing image and preparing your care report...";
+  showStatus("Analyzing image and preparing your care report…", true);
   resultSection.classList.add("hidden");
-  visualSection.classList.add("hidden");
 
   const formData = new FormData();
   formData.append("image", file);
@@ -107,12 +218,13 @@ analyzeBtn.addEventListener("click", async () => {
     const data = await response.json();
 
     if (!response.ok) {
-      statusDiv.textContent = data.error || "An error occurred.";
+      showStatus(data.error || "An error occurred.");
       return;
     }
 
-    statusDiv.textContent = "Analysis report generated successfully.";
+    showStatus("✓ Analysis report generated successfully.");
 
+    // Populate results
     predictedClass.textContent = prettifyClassName(data.predicted_class);
     confidence.textContent = Number(data.confidence).toFixed(4);
 
@@ -125,6 +237,7 @@ analyzeBtn.addEventListener("click", async () => {
       severityPercent.textContent = `${Number(data.severity_percent).toFixed(2)}%`;
     }
 
+    // Top 3
     top3List.innerHTML = "";
     (data.top3 || []).forEach(item => {
       const li = document.createElement("li");
@@ -132,6 +245,7 @@ analyzeBtn.addEventListener("click", async () => {
       top3List.appendChild(li);
     });
 
+    // Research evidence
     const research = data.research_evidence || {};
     fillList(researchPathogenNotes, research.pathogen_notes || []);
     fillList(researchFindings, research.research_findings || []);
@@ -140,6 +254,7 @@ analyzeBtn.addEventListener("click", async () => {
     fillList(researchCautions, research.cautions || []);
     researchFollowUp.textContent = research.follow_up || "";
 
+    // Home gardener guidance
     const home = data.home_gardener_guidance || {};
     summary.textContent = home.summary || "";
     fillList(treatmentList, home.what_to_do_now || []);
@@ -147,15 +262,31 @@ analyzeBtn.addEventListener("click", async () => {
     fillList(cautionList, home.caution || []);
     followUpText.textContent = home.follow_up || "";
 
+    // Visual images
     setImageFromOutputPath(gradcamImage, data.gradcam_overlay_path);
     setImageFromOutputPath(affectedImage, data.affected_overlay_path);
 
+    // Switch to 2-column layout and show results
+    if (appGrid) appGrid.classList.add("has-results");
+    if (emptyState) emptyState.style.display = "none";
     resultSection.classList.remove("hidden");
-    visualSection.classList.remove("hidden");
+
+    // Activate first tab
+    const firstBtn = document.querySelector(".tab-btn");
+    if (firstBtn) firstBtn.click();
+
+    // Scroll to results on mobile (single-column)
+    if (window.innerWidth <= 960) {
+      resultSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
   } catch (error) {
-    statusDiv.textContent = `Error: ${error.message}`;
+    showStatus(`Error: ${error.message}`);
   }
 });
+
+
+/* ── Service Worker ── */
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {

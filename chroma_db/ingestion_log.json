@@ -1,0 +1,243 @@
+{
+  "total_pdfs_processed": 29,
+  "total_chunks_stored": 698,
+  "collection_name": "plant_disease_research",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "chunk_size": 500,
+  "chunk_overlap": 100,
+  "papers": [
+    {
+      "file": "A_review_on_anthracnose_of_mango_caused_by_Colletotrichum_gloeosporioides.pdf",
+      "text_length": 47613,
+      "chunks": 20,
+      "diseases": [
+        "Mango_Anthracnose"
+      ]
+    },
+    {
+      "file": "Alleviating_biotic_stress_of_powdery_mildew_in_mango_cv_Keitt_by_sulfur_nanoparticles_and_assessing_.pdf",
+      "text_length": 54180,
+      "chunks": 23,
+      "diseases": [
+        "Mango_Anthracnose"
+      ]
+    },
+    {
+      "file": "Antifungal_potential_of_volatiles_produced_by_Bacillus_subtilis_for_controlling_Alternaria_solani_ca.pdf",
+      "text_length": 72396,
+      "chunks": 27,
+      "diseases": [
+        "General_Plant_Disease"
+      ]
+    },
+    {
+      "file": "Bio-rational_management_of_whitefly_Bemisia_tabaci_for_suppressing_tomato_yellow_leaf_curl_virus.pdf",
+      "text_length": 32857,
+      "chunks": 14,
+      "diseases": [
+        "Tomato_Yellow_Leaf_Curl_Virus"
+      ]
+    },
+    {
+      "file": "Biological_control_of_early_blight_on_potato_caused_by_Alternaria_solani_by_some_bioagents.pdf",
+      "text_length": 23001,
+      "chunks": 9,
+      "diseases": [
+        "General_Plant_Disease"
+      ]
+    },
+    {
+      "file": "Biological_control_of_Phytophthora_infestans_of_potatoes_using_Trichoderma_atroviride.pdf",
+      "text_length": 40050,
+      "chunks": 16,
+      "diseases": [
+        "Potato_Late_Blight"
+      ]
+    },
+    {
+      "file": "Biology_ecology_and_epidemiology_of_Alternaria_species_associated_with_the_tomato_pathosystem_a_revi.pdf",
+      "text_length": 90832,
+      "chunks": 36,
+      "diseases": [
+        "Tomato_Early_Blight"
+      ]
+    },
+    {
+      "file": "Characterization_of_Passalora_fulva_and_tomato_leaf_mold-associated_fungi_in_Minnesota_high-tunnels_.pdf",
+      "text_length": 147250,
+      "chunks": 58,
+      "diseases": [
+        "Tomato_Leaf_Mold"
+      ]
+    },
+    {
+      "file": "Characterization_of_two_conserved_cell_death_elicitor_families_from_the_Dothideomycete_fungal_pathog.pdf",
+      "text_length": 95050,
+      "chunks": 37,
+      "diseases": [
+        "Tomato_Leaf_Mold"
+      ]
+    },
+    {
+      "file": "Combining_Different_Potato-Associated_Pseudomonas_Strains_for_Improved_Biocontrol_of_Phytophthora_in.pdf",
+      "text_length": 64136,
+      "chunks": 25,
+      "diseases": [
+        "General_Plant_Disease"
+      ]
+    },
+    {
+      "file": "Control_biológico_de_antracnosis_y_su_efecto_en_la_calidad_poscosecha_del_mango_Mangifera_indica_L.pdf",
+      "text_length": 42233,
+      "chunks": 17,
+      "diseases": [
+        "Mango_Anthracnose"
+      ]
+    },
+    {
+      "file": "Effectiveness_of_fungal_bacterial_and_yeast_antagonists_for_management_of_mango_anthracnose_Colletot.pdf",
+      "text_length": 39532,
+      "chunks": 16,
+      "diseases": [
+        "Mango_Anthracnose"
+      ]
+    },
+    {
+      "file": "Evaluation_of_Various_Mango_Varieties_against_the_Infection_Dynamics_of_Powdery_Mildew.pdf",
+      "text_length": 19401,
+      "chunks": 8,
+      "diseases": [
+        "Mango_Anthracnose",
+        "Mango_Powdery_Mildew"
+      ]
+    },
+    {
+      "file": "Identification_and_mapping_of_QTLs_for_late_blight_resistance_in_the_wild_tomato_Solanum_pimpinellif.pdf",
+      "text_length": 77841,
+      "chunks": 32,
+      "diseases": [
+        "General_Plant_Disease"
+      ]
+    },
+    {
+      "file": "Integrated_Disease_Management_of_Tomato_Late_Blight.pdf",
+      "text_length": 29560,
+      "chunks": 12,
+      "diseases": [
+        "Tomato_Late_Blight"
+      ]
+    },
+    {
+      "file": "ISR_meets_SAR_outside_additive_action_of_the_endophyte_Bacillus_pumilus_INR7_and_the_chemical_induce.pdf",
+      "text_length": 57603,
+      "chunks": 23,
+      "diseases": [
+        "Pepper_Bacterial_Spot"
+      ]
+    },
+    {
+      "file": "Late_blight_of_potato_Phytophthora_infestans_II_Employing_integrated_approaches_in_late_blight_disea.pdf",
+      "text_length": 27703,
+      "chunks": 11,
+      "diseases": [
+        "General_Plant_Disease"
+      ]
+    },
+    {
+      "file": "Late_Blight_Resistance_Evaluation_and_Genome-Wide_Association_Analysis_in_Tetraploid_Potato.pdf",
+      "text_length": 69993,
+      "chunks": 28,
+      "diseases": [
+        "Potato_Late_Blight"
+      ]
+    },
+    {
+      "file": "Late_blight_resistance_genes_in_potato_breeding.pdf",
+      "text_length": 101276,
+      "chunks": 41,
+      "diseases": [
+        "Potato_Late_Blight"
+      ]
+    },
+    {
+      "file": "Management_of_bacterial_spot_of_pepper_caused_by_Xanthomonas_campestris_pv_vesicatoria.pdf",
+      "text_length": 45871,
+      "chunks": 19,
+      "diseases": [
+        "Pepper_Bacterial_Spot"
+      ]
+    },
+    {
+      "file": "Management_tactics_for_early_blight_of_tomato_caused_by_Alternaria_solani_A_review.pdf",
+      "text_length": 22526,
+      "chunks": 9,
+      "diseases": [
+        "Mango_Anthracnose"
+      ]
+    },
+    {
+      "file": "Mapping_of_the_bs5_and_bs6_non-race-specific_recessive_resistances_against_bacterial_spot_of_pepper.pdf",
+      "text_length": 58421,
+      "chunks": 23,
+      "diseases": [
+        "Pepper_Bacterial_Spot"
+      ]
+    },
+    {
+      "file": "Mapping_of_the_Cladosporium_fulvum_resistance_gene_Cf-16_a_major_gene_involved_in_leaf_mold_disease_.pdf",
+      "text_length": 29010,
+      "chunks": 12,
+      "diseases": [
+        "Tomato_Leaf_Mold"
+      ]
+    },
+    {
+      "file": "Natural_resistance_of_tomato_plants_to_Tomato_yellow_leaf_curl_virus.pdf",
+      "text_length": 128305,
+      "chunks": 49,
+      "diseases": [
+        "Tomato_Yellow_Leaf_Curl_Virus"
+      ]
+    },
+    {
+      "file": "Overview_of_Management_Practices_of_Tomato_Late_Blight_Phytoptera_Infestans_Mont_Disease.pdf",
+      "text_length": 36704,
+      "chunks": 15,
+      "diseases": [
+        "Tomato_Late_Blight"
+      ]
+    },
+    {
+      "file": "Review_Holistic_pest_management_against_early_blight_disease_in_potato_and_tomato.pdf",
+      "text_length": 68259,
+      "chunks": 26,
+      "diseases": [
+        "General_Plant_Disease"
+      ]
+    },
+    {
+      "file": "Tomato_Yellow_Leaf_Curl_Virus-Resistant_and_-Susceptible_Tomato_Cultivars_and_Their_Effects_on_Silve.pdf",
+      "text_length": 87167,
+      "chunks": 30,
+      "diseases": [
+        "Tomato_Yellow_Leaf_Curl_Virus"
+      ]
+    },
+    {
+      "file": "Use_of_Trichoderma_culture_filtrates_as_a_sustainable_approach_to_mitigate_early_blight_disease_of_t.pdf",
+      "text_length": 96537,
+      "chunks": 37,
+      "diseases": [
+        "General_Plant_Disease"
+      ]
+    },
+    {
+      "file": "Xanthomonas_euvesicatoria-Specific_Bacteriophage_and_Its_Biocontrol_Potential_against_Bacterial_Spot.pdf",
+      "text_length": 62298,
+      "chunks": 25,
+      "diseases": [
+        "Pepper_Bacterial_Spot"
+      ]
+    }
+  ]
+}

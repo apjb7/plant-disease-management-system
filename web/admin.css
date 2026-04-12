@@ -1,0 +1,472 @@
+/* ═══════════════════════════════════════════════════════
+   PlantGuard AI — Admin Portal Styles (Dark Theme)
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Stats Grid ── */
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.admin-stat-card {
+  padding: 20px 14px;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  text-align: center;
+  transition: var(--transition-fast);
+}
+
+.admin-stat-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--border-default);
+  transform: translateY(-2px);
+}
+
+.admin-stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 12px;
+  border-radius: var(--radius-md);
+  background: rgba(16, 185, 129, 0.08);
+  color: var(--emerald-400);
+}
+
+.admin-stat-icon.icon-indigo {
+  background: rgba(99, 102, 241, 0.08);
+  color: #818cf8;
+}
+
+.admin-stat-icon.icon-amber {
+  background: rgba(251, 191, 36, 0.08);
+  color: var(--amber-400);
+}
+
+.admin-stat-icon.icon-cyan {
+  background: rgba(34, 211, 238, 0.08);
+  color: #22d3ee;
+}
+
+.admin-stat-value {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.admin-stat-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ── Description text ── */
+.admin-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+
+/* ── Upload Form ── */
+.admin-upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-drop-zone {
+  position: relative;
+  border: 2px dashed rgba(16, 185, 129, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 36px 20px;
+  text-align: center;
+  background: rgba(16, 185, 129, 0.03);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.admin-drop-zone:hover,
+.admin-drop-zone.dragover {
+  background: rgba(16, 185, 129, 0.08);
+  border-color: var(--emerald-400);
+  transform: translateY(-2px);
+}
+
+.admin-drop-zone input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  min-width: 0;
+}
+
+.admin-drop-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 600;
+  color: var(--emerald-400);
+  font-size: 0.95rem;
+}
+
+/* ── Field ── */
+.admin-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-field-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.admin-select {
+  padding: 12px 16px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2310b981' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+}
+
+.admin-select:focus {
+  border-color: var(--emerald-400);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.admin-select option {
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
+/* ── Action Buttons ── */
+.admin-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: var(--radius-lg);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(135deg, var(--emerald-500), var(--emerald-600));
+  color: white;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.2);
+  transition: var(--transition-fast);
+  font-family: var(--font-body);
+}
+
+.admin-action-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+}
+
+.admin-action-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.admin-btn-sm {
+  padding: 8px 16px;
+  font-size: 0.82rem;
+}
+
+/* ── Status Messages ── */
+.admin-status {
+  margin-top: 14px;
+  padding: 14px 18px;
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  font-size: 0.88rem;
+  animation: fadeInUp 0.3s var(--ease-out) both;
+}
+
+.admin-status.status-success {
+  background: rgba(16, 185, 129, 0.08);
+  color: var(--emerald-400);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.admin-status.status-error {
+  background: rgba(239, 68, 68, 0.08);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.15);
+}
+
+.admin-status.status-loading {
+  background: rgba(99, 102, 241, 0.06);
+  color: #818cf8;
+  border: 1px solid rgba(99, 102, 241, 0.12);
+}
+
+/* ── Section Header ── */
+.admin-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ── Papers List ── */
+.admin-papers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+  max-height: 500px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(16, 185, 129, 0.15) transparent;
+}
+
+.admin-papers-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.admin-papers-list::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.15);
+  border-radius: 4px;
+}
+
+.paper-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  transition: var(--transition-fast);
+}
+
+.paper-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--border-default);
+  transform: translateX(4px);
+}
+
+.paper-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: rgba(16, 185, 129, 0.06);
+  color: var(--emerald-400);
+  flex-shrink: 0;
+}
+
+.paper-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.paper-name {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.paper-meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.paper-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.paper-tag.tag-disease {
+  background: rgba(16, 185, 129, 0.08);
+  color: var(--emerald-400);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.paper-tag.tag-chunks {
+  background: rgba(99, 102, 241, 0.06);
+  color: #818cf8;
+  border: 1px solid rgba(99, 102, 241, 0.12);
+}
+
+.paper-tag.tag-size {
+  background: rgba(251, 191, 36, 0.06);
+  color: var(--amber-400);
+  border: 1px solid rgba(251, 191, 36, 0.12);
+}
+
+.paper-delete {
+  flex-shrink: 0;
+  background: transparent;
+  border: 1px solid rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  font-family: var(--font-body);
+}
+
+.paper-delete:hover {
+  background: rgba(239, 68, 68, 0.08);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+/* ── Coverage Chart ── */
+.admin-coverage-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.coverage-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.coverage-label {
+  width: 180px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.coverage-bar-bg {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-full);
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.coverage-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--emerald-600), var(--emerald-400));
+  transition: width 0.6s var(--ease-out);
+  min-width: 2px;
+}
+
+.coverage-count {
+  width: 50px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+/* ── Loading / Empty ── */
+.admin-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 12px;
+  color: var(--text-muted);
+}
+
+.empty-message {
+  text-align: center;
+  padding: 30px;
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 30px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* ── Responsive ── */
+@media (max-width: 760px) {
+  .admin-stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .coverage-label {
+    width: 100px;
+    font-size: 0.75rem;
+  }
+
+  .paper-meta {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .admin-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .coverage-bar-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .coverage-label {
+    width: auto;
+    text-align: left;
+  }
+
+  .coverage-count {
+    width: auto;
+  }
+}

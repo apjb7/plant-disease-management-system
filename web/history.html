@@ -4,44 +4,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plant Treatment Logbook</title>
+  <title>Plant Treatment Logbook — PlantGuard AI</title>
+  <meta name="description" content="Review your saved plant health diagnostic reports, treatment history, and research-backed evidence references." />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#0a2e1f" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <header class="topbar">
+  <!-- Animated background orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Particle canvas -->
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <header class="topbar" id="topbar">
     <div class="brand-wrap">
       <div class="logo-box">
-        <img src="/icon-192.png" alt="Plant Disease Management System Logo" class="site-logo" />
+        <img src="/icon-192.png" alt="PDMS Logo" class="site-logo" />
       </div>
-
       <div class="brand-block">
-        <h1>Plant Treatment Logbook</h1>
-        <p class="brand-subtitle">Saved plant health reports and evidence references</p>
+        <h1>PlantGuard<span class="brand-ai">AI</span></h1>
+        <p class="brand-subtitle">Intelligent Plant Disease Diagnostics</p>
       </div>
     </div>
 
-    <nav class="topnav">
-      <a href="/" class="nav-link">Home</a>
-      <a href="/history" class="nav-link">Logbook</a>
+    <nav class="topnav" aria-label="Main Navigation">
+      <a href="/" class="nav-link" id="nav-home">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Home
+      </a>
+      <a href="/history" class="nav-link active" id="nav-logbook">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        Logbook
+      </a>
+      <a href="/admin" class="nav-link" id="nav-admin">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        Admin
+      </a>
     </nav>
   </header>
 
-  <main class="container">
-    <section class="card highlight">
-      <div class="section-header">
-        <div>
-          <span class="section-label">Saved Reports</span>
-          <h2>Plant Treatment Logbook</h2>
-        </div>
+  <main class="page-container">
+    <!-- Page header -->
+    <div class="page-header">
+      <div class="page-header-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
       </div>
+      <div>
+        <h2 class="page-title">Treatment Logbook</h2>
+        <p class="page-subtitle">Your saved plant health reports and evidence references</p>
+      </div>
+    </div>
 
-      <div id="historyContainer"></div>
-    </section>
+    <!-- Search & filter bar -->
+    <div class="logbook-toolbar" id="logbookToolbar">
+      <div class="search-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="logbookSearch" placeholder="Search reports..." class="search-input" />
+      </div>
+      <span class="entry-count" id="entryCount"></span>
+    </div>
+
+    <!-- History entries -->
+    <div id="historyContainer" class="logbook-list"></div>
   </main>
 
+  <footer class="site-footer">
+    <p>&copy; 2026 PlantGuard AI &middot; Plant Disease Management System</p>
+  </footer>
+
   <script src="/history.js"></script>
+  <script src="/particles.js"></script>
 </body>
 
 </html>

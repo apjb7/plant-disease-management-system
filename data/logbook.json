@@ -450,5 +450,586 @@
     ],
     "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0014_gradcam.png",
     "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0014_affected.png"
+  },
+  {
+    "timestamp": "2026-04-11T22:19:17",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Mango_Powdery_Mildew_0002.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Mango_Powdery_Mildew",
+    "confidence": 1.0,
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "top3": [
+      {
+        "class": "Mango_Powdery_Mildew",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 6.548178863880562e-18
+      },
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 2.1677951264498636e-18
+      }
+    ],
+    "summary": "Powdery mildew on mango can damage flowers and early fruit, reducing fruit set. Early treatment—especially during flowering—is essential. Sulfur-based sprays are a reported management option.",
+    "what_to_do_now": [
+      "Apply sulfur‑based treatment where locally approved",
+      "Begin treatment during early disease development, especially around flowering"
+    ],
+    "monitoring": [
+      "Check flowers, panicles, and young fruit for powdery growth",
+      "Reassess during flowering and early fruit development"
+    ],
+    "caution": [
+      "Powdery mildew can reduce fruit set if not managed early"
+    ],
+    "follow_up": "Reassess disease development during flowering and early fruit development",
+    "references_used": [
+      "AbouElNasr_2025",
+      "Joubert_1993",
+      "Naqvi_2014"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Mango_Powdery_Mildew_0002_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Mango_Powdery_Mildew_0002_affected.png"
+  },
+  {
+    "timestamp": "2026-04-11T22:54:45",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Late_Blight_0009.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Tomato_Late_Blight",
+    "confidence": 0.9999988079071045,
+    "severity_label": "Severe",
+    "severity_percent": 75.9394465434494,
+    "top3": [
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 0.9999988079071045
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 6.725413186359219e-07
+      },
+      {
+        "class": "Pepper_Bacterial_Spot",
+        "confidence": 4.570949840854155e-07
+      }
+    ],
+    "summary": "Late blight is a major tomato disease caused by the oomycete Phytophthora infestans, thriving in cool, wet conditions. It can lead to severe crop loss and fruit infection. At severe levels, management focuses on limiting spread and protecting healthy plants.",
+    "what_to_do_now": [
+      "Remove severely infected plants or heavily affected material when possible",
+      "Avoid keeping heavily infected material in the production area",
+      "Prioritize resistant germplasm or cultivars for future planting if available"
+    ],
+    "monitoring": [
+      "Frequency check surrounding susceptible plants during active outbreaks",
+      "Closely monitor fruit for continuing infection"
+    ],
+    "caution": [
+      "Severe late blight can cause major crop loss very quickly under favorable weather",
+      "At severe stages, management is mainly focused on limiting further spread rather than reversing existing damage"
+    ],
+    "follow_up": "Reassess disease development frequently during active outbreaks and continue monitoring nearby plants and fruit.",
+    "references_used": [
+      "Nowicki_2012",
+      "Shrestha_Ashley_2014",
+      "Sullenberger_2024"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0009_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0009_affected.png"
+  },
+  {
+    "timestamp": "2026-04-11T22:59:45",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Potato_Late_Blight_0007.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Potato_Late_Blight",
+    "confidence": 1.0,
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "top3": [
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 6.957880105407099e-11
+      },
+      {
+        "class": "Potato_Early_Blight",
+        "confidence": 5.7927586338824e-12
+      }
+    ],
+    "summary": "Late blight on potatoes spreads quickly when it’s cool and wet. It is caused by the oomycete Phytophthora infestans, not a true fungus. Prevention works best, especially early copper-based measures or local biological controls when approved.",
+    "what_to_do_now": [
+      "Remove clearly infected foliage",
+      "Use locally approved preventative management against oomycetes",
+      "Reduce leaf wetness and avoid overhead irrigation",
+      "Consider copper-based preventative management if locally approved"
+    ],
+    "monitoring": [
+      "Check for lesion expansion during cool, wet weather",
+      "Inspect lesion margins and lower leaf surfaces for sporulation"
+    ],
+    "caution": [
+      "Late blight can spread rapidly once favorable weather persists",
+      "Not all standard fungal control methods apply because the pathogen is an oomycete"
+    ],
+    "follow_up": "Reassess disease development within about 24–48 hours during cool and wet conditions.",
+    "references_used": [
+      "Fry_2015",
+      "Kessel_2018",
+      "Nowicki_2012",
+      "Stefanczyk_2023"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Potato_Late_Blight_0007_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Potato_Late_Blight_0007_affected.png"
+  },
+  {
+    "timestamp": "2026-04-11T23:03:02",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Mango_Anthracnose_0003.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Mango_Anthracnose",
+    "confidence": 1.0,
+    "severity_label": "Moderate",
+    "severity_percent": 15.669799837706247,
+    "top3": [
+      {
+        "class": "Mango_Anthracnose",
+        "confidence": 1.0
+      },
+      {
+        "class": "Mango_Healthy",
+        "confidence": 9.66824842407732e-10
+      },
+      {
+        "class": "Pepper_Bacterial_Spot",
+        "confidence": 1.5227151950372025e-13
+      }
+    ],
+    "summary": "Anthracnose is a common fungal disease that can hurt mango fruit, flowers, and leaves. Research shows that copper oxychloride applied as a regular spray program can help keep the disease under control. Timing of the spray is very important to stop the spread of the disease.",
+    "what_to_do_now": [
+      "Apply copper oxychloride as part of a spray program",
+      "Alternate fungicide applications until harvest after fruit set"
+    ],
+    "monitoring": [
+      "Pay particular attention during flowering and fruit set",
+      "Monitor disease development closely during wet seasons"
+    ],
+    "caution": [
+      "Spray timing is crucial for preventing disease spread"
+    ],
+    "follow_up": "Reassess disease progression during flowering, fruit set, and wet-season conditions.",
+    "references_used": [
+      "Uddin_2018"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Mango_Anthracnose_0003_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Mango_Anthracnose_0003_affected.png"
+  },
+  {
+    "timestamp": "2026-04-11T23:04:43",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Pepper_Bacterial_Spot_0004.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Pepper_Bacterial_Spot",
+    "confidence": 0.9999997615814209,
+    "severity_label": "Severe",
+    "severity_percent": 60.20424971174436,
+    "top3": [
+      {
+        "class": "Pepper_Bacterial_Spot",
+        "confidence": 0.9999997615814209
+      },
+      {
+        "class": "Pepper_Healthy",
+        "confidence": 2.3562803619370243e-07
+      },
+      {
+        "class": "Tomato_Leaf_Mold",
+        "confidence": 9.117150090443005e-11
+      }
+    ],
+    "summary": "Bacterial spot of pepper is caused by Xanthomonas and is hard to reverse once it is established. Prevention with clean plants, good sanitation, and resistant varieties is key. Severe outbreaks need prompt removal of infected material.",
+    "what_to_do_now": [
+      "Remove severely infected plants or heavily affected plant material where practical",
+      "Focus on sanitation, splash reduction, and use clean seed or transplants",
+      "Prioritize resistant or less susceptible cultivars for future planting",
+      "Remove infected crop debris after the season"
+    ],
+    "monitoring": [
+      "Monitor surrounding susceptible plants frequently during active outbreaks",
+      "Monitor new growth and fruit for continued lesion development"
+    ],
+    "caution": [
+      "Severe outbreaks are difficult to reverse once disease is established across the crop",
+      "Pathogen diversity and copper tolerance complicate long-term management"
+    ],
+    "follow_up": "Reassess disease development frequently during active outbreaks, especially if new lesions continue to appear on nearby plants.",
+    "references_used": [
+      "Osdaghi_2021",
+      "Potnis_2015",
+      "Sharma_2023"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Pepper_Bacterial_Spot_0004_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Pepper_Bacterial_Spot_0004_affected.png"
+  },
+  {
+    "timestamp": "2026-04-11T23:08:04",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Mango_Healthy_0004.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Mango_Healthy",
+    "confidence": 1.0,
+    "severity_label": "",
+    "severity_percent": null,
+    "top3": [
+      {
+        "class": "Mango_Healthy",
+        "confidence": 1.0
+      },
+      {
+        "class": "Mango_Anthracnose",
+        "confidence": 1.5031921887787014e-11
+      },
+      {
+        "class": "Tomato_Healthy",
+        "confidence": 1.5719395186561402e-12
+      }
+    ],
+    "summary": "Your mango tree looks healthy right now, but diseases can appear when the weather is humid or wet. Keep an eye on it, especially during flowering and early fruiting.",
+    "what_to_do_now": [
+      "Maintain routine monitoring during humid or wet periods",
+      "Practice good orchard or canopy management"
+    ],
+    "monitoring": [
+      "Check leaves, flowers, and fruit during wet or humid periods"
+    ],
+    "caution": [
+      "A healthy leaf now does not rule out disease later if conditions remain favorable"
+    ],
+    "follow_up": "Reassess if any symptoms show up or if wet/humid weather continues.",
+    "references_used": [
+      "Joubert_1993",
+      "Uddin_2018"
+    ],
+    "gradcam_overlay_path": null,
+    "affected_overlay_path": null
+  },
+  {
+    "timestamp": "2026-04-11T23:25:53",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Mango_Anthracnose_0003.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Mango_Anthracnose",
+    "confidence": 1.0,
+    "severity_label": "Moderate",
+    "severity_percent": 15.669799837706247,
+    "top3": [
+      {
+        "class": "Mango_Anthracnose",
+        "confidence": 1.0
+      },
+      {
+        "class": "Mango_Healthy",
+        "confidence": 9.66824842407732e-10
+      },
+      {
+        "class": "Pepper_Bacterial_Spot",
+        "confidence": 1.5227151950372025e-13
+      }
+    ],
+    "summary": "Anthracnose can spread on mango fruit, flowers, and leaves, especially in wet weather. Treating with copper oxychloride before flowering and then every 3 weeks helps stop the disease and can boost fruit set. The timing of each spray is essential to keep the disease from spreading.",
+    "what_to_do_now": [
+      "Apply copper oxychloride before flowering and every 3 weeks thereafter"
+    ],
+    "monitoring": [
+      "Watch for spots on flowers and developing fruit"
+    ],
+    "caution": [
+      "Spray timing is crucial to prevent spread"
+    ],
+    "follow_up": "Reassess the orchard during flowering, fruit set, and throughout wet-season conditions.",
+    "references_used": [
+      "Uddin_2018"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Mango_Anthracnose_0003_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Mango_Anthracnose_0003_affected.png"
+  },
+  {
+    "timestamp": "2026-04-12T10:34:32",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Potato_Late_Blight_0008.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Potato_Late_Blight",
+    "confidence": 1.0,
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "top3": [
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 5.035529770935909e-10
+      },
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 3.0550420526687105e-10
+      }
+    ],
+    "summary": "Late blight is a very destructive disease of potatoes that spreads quickly in cool, wet weather. The pathogen is an oomycete, so standard fungal treatments may not work.",
+    "what_to_do_now": [
+      "remove clearly infected foliage where practical",
+      "use locally approved preventative management effective against oomycetes",
+      "reduce leaf wetness and avoid overhead irrigation",
+      "consider copper-based preventative management where locally approved"
+    ],
+    "monitoring": [
+      "monitor lesion expansion during cool and wet weather",
+      "monitor lesion margins and lower leaf surfaces for sporulation"
+    ],
+    "caution": [
+      "late blight can spread rapidly once favorable weather persists",
+      "because the pathogen is an oomycete, not all standard fungal control approaches are equally suitable"
+    ],
+    "follow_up": "reassess disease development within about 24 to 48 hours during cool and wet conditions.",
+    "references_used": [
+      "Fry_2015",
+      "Kessel_2018",
+      "Nowicki_2012",
+      "Stefanczyk_2023"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Potato_Late_Blight_0008_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Potato_Late_Blight_0008_affected.png"
+  },
+  {
+    "timestamp": "2026-04-12T11:16:20",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Potato_Late_Blight_0005.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Potato_Late_Blight",
+    "confidence": 1.0,
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "top3": [
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 6.047884415494309e-09
+      },
+      {
+        "class": "Potato_Early_Blight",
+        "confidence": 2.8911950958332433e-12
+      }
+    ],
+    "summary": "Late blight can quickly spread on potatoes when it is cool and wet. Prevention is better than waiting for many plants to get sick. Copper and some organic methods can help stop the disease.",
+    "what_to_do_now": [
+      "remove clearly infected foliage where practical",
+      "use locally approved preventative management effective against oomycetes",
+      "reduce leaf wetness and avoid overhead irrigation",
+      "consider copper-based preventative management where locally approved"
+    ],
+    "monitoring": [
+      "monitor lesion expansion during cool and wet weather",
+      "monitor lesion margins and lower leaf surfaces for sporulation"
+    ],
+    "caution": [
+      "Late blight can spread rapidly once favorable weather persists",
+      "Because the pathogen is an oomycete, not all standard fungal control approaches are equally suitable"
+    ],
+    "follow_up": "Reassess disease development within about 24 to 48 hours during cool and wet conditions.",
+    "references_used": [
+      "Fry_2015",
+      "Kessel_2018",
+      "Nowicki_2012",
+      "Stefanczyk_2023"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Potato_Late_Blight_0005_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Potato_Late_Blight_0005_affected.png"
+  },
+  {
+    "timestamp": "2026-04-12T11:16:49",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Potato_Late_Blight_0005.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Potato_Late_Blight",
+    "confidence": 1.0,
+    "severity_label": "Mild",
+    "severity_percent": 0.0,
+    "top3": [
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Potato_Healthy",
+        "confidence": 6.047884415494309e-09
+      },
+      {
+        "class": "Potato_Early_Blight",
+        "confidence": 2.8911950958332433e-12
+      }
+    ],
+    "summary": "You have mild late blight on your potatoes, which grows fast in cool, wet weather. Quick action can keep it from spreading. This helps you control it before it worsens.",
+    "what_to_do_now": [
+      "Remove any clearly infected leaves or stems.",
+      "Use a locally approved preventative that works on oomycetes.",
+      "Cut down leaf wetness by avoiding overhead watering.",
+      "If allowed locally, apply a copper-based preventative spray."
+    ],
+    "monitoring": [
+      "Watch how quickly lesions grow during cool, wet conditions.",
+      "Check the edges of lesions and the undersides of leaves for new spores."
+    ],
+    "caution": [
+      "Late blight can spread very quickly when the weather stays cool and wet.",
+      "Because it’s an oomycete, typical fungal treatments may not work."
+    ],
+    "follow_up": "Reassess the disease within about 24 to 48 hours while the weather remains cool and wet.",
+    "references_used": [
+      "Fry_2015",
+      "Kessel_2018",
+      "Nowicki_2012",
+      "Stefanczyk_2023"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Potato_Late_Blight_0005_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Potato_Late_Blight_0005_affected.png"
+  },
+  {
+    "timestamp": "2026-04-12T13:07:06",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Potato_Early_Blight_0013.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Potato_Early_Blight",
+    "confidence": 1.0,
+    "severity_label": "Mild",
+    "severity_percent": 14.3481981553675,
+    "top3": [
+      {
+        "class": "Potato_Early_Blight",
+        "confidence": 1.0
+      },
+      {
+        "class": "Tomato_Early_Blight",
+        "confidence": 1.2447518571434557e-09
+      },
+      {
+        "class": "Pepper_Bacterial_Spot",
+        "confidence": 1.0571302166972885e-10
+      }
+    ],
+    "summary": "Early blight in potatoes is a fungal leaf disease that can reduce yield if it spreads widely. It is best handled early, before many leaves become infected, and can be managed with good sanitation, splash reduction, and, where allowed, protectants and a Bacillus subtilis product. Keeping the lower infected leaves removed and limiting splash spread helps keep the disease mild.",
+    "what_to_do_now": [
+      "Remove visibly infected lower leaves where practical",
+      "Use a protectant on healthy foliage where locally approved",
+      "Reduce soil splash by applying mulch or similar barriers",
+      "Consider adding a Bacillus subtilis-based support where available"
+    ],
+    "monitoring": [
+      "Watch for new target‑like lesions on other leaves",
+      "Reassess disease progress during favorable weather conditions"
+    ],
+    "caution": [
+      "The disease becomes harder to manage once it progresses strongly through the canopy"
+    ],
+    "follow_up": "Reassess disease development within about 5 to 7 days under favorable conditions.",
+    "references_used": [
+      "Abuley_2017",
+      "Jindo_2021",
+      "Noh_2024",
+      "vanDerWaals_2001"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Potato_Early_Blight_0013_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Potato_Early_Blight_0013_affected.png"
+  },
+  {
+    "timestamp": "2026-04-12T13:42:44",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Late_Blight_0013.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Tomato_Late_Blight",
+    "confidence": 0.8077300786972046,
+    "severity_label": "Severe",
+    "severity_percent": 43.362948165282305,
+    "top3": [
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 0.8077300786972046
+      },
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 0.19200463593006134
+      },
+      {
+        "class": "Tomato_Early_Blight",
+        "confidence": 0.00026520059327594936
+      }
+    ],
+    "summary": "Late blight is a serious tomato disease that spreads quickly in cool, wet weather. When it becomes severe, it can cause major crop loss. The main goal is to stop the spread and protect the healthy plants you still have.",
+    "what_to_do_now": [
+      "Remove severely infected plants or heavily affected material when possible",
+      "Do not keep heavily infected material in the growing area",
+      "Use resistant varieties or cultivars if they are available"
+    ],
+    "monitoring": [
+      "Check nearby susceptible plants often during outbreaks",
+      "Watch fruit closely for new infections"
+    ],
+    "caution": [
+      "Late blight can wipe out a crop very fast in good conditions",
+      "At severe stages, you can’t reverse damage—focus on stopping spread"
+    ],
+    "follow_up": "Reassess disease development frequently during active outbreaks and continue monitoring nearby plants and fruit.",
+    "references_used": [
+      "Nowicki_2012",
+      "Shrestha_Ashley_2014",
+      "Sullenberger_2024"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0013_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0013_affected.png"
+  },
+  {
+    "timestamp": "2026-04-12T23:37:06",
+    "image_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/uploads/Tomato_Late_Blight_0005.jpg",
+    "uploaded_image_path": "",
+    "predicted_class": "Tomato_Late_Blight",
+    "confidence": 0.9999382495880127,
+    "severity_label": "Severe",
+    "severity_percent": 44.65860557989905,
+    "top3": [
+      {
+        "class": "Tomato_Late_Blight",
+        "confidence": 0.9999382495880127
+      },
+      {
+        "class": "Potato_Late_Blight",
+        "confidence": 6.150625267764553e-05
+      },
+      {
+        "class": "Tomato_Early_Blight",
+        "confidence": 2.8769144932994095e-07
+      }
+    ],
+    "summary": "Phytophthora infestans causes late blight and can wipe out tomatoes under wet, cool conditions. Use varieties with pyramided resistance genes RPi‑mcd1 and RPi‑ber and apply Trichoderma biocontrol strains with copper oxychloride for growth promotion and disease suppression. Also consider inoculating with plant growth‑promoting rhizobacteria and following organic practices such as crop rotation and sanitation.",
+    "what_to_do_now": [
+      "Choose tomato cultivars that include pyramided R genes RPi‑mcd1 and RPi‑ber for durable resistance.",
+      "Apply Trichoderma biocontrol strains in conjunction with copper oxychloride fungicide.",
+      "Inoculate seedlings or crops with plant growth‑promoting rhizobacteria to induce systemic resistance.",
+      "Follow organic management protocols: crop rotation, equipment sanitation, use approved organic fungicides.",
+      "Monitor temperature, humidity, and rainfall to time applications during high‑risk periods."
+    ],
+    "monitoring": [
+      "Ambient humidity and temperature, especially wet and cool periods.",
+      "Presence of early leaf or fruit lesions and sporulation on infected tissue.",
+      "Spore densities in the canopy or on leaf surfaces during wet spells."
+    ],
+    "caution": [
+      "Resistance genes may be overcome by evolving pathogen races.",
+      "Copper‑based fungicides can persist in the environment and may be phytotoxic if overused.",
+      "Biocontrol agents like Trichoderma and PGPR need precise timing and application rates; they may not fully replace conventional cultural practices."
+    ],
+    "follow_up": "Reassess disease status and resistance effectiveness at the end of each growing season or when weather conditions become conducive to late blight outbreaks.",
+    "references_used": [
+      "RAG_ChromaDB_Research_Papers"
+    ],
+    "gradcam_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/gradcam/Tomato_Late_Blight_0005_gradcam.png",
+    "affected_overlay_path": "/Users/adrianpothanah/Plant_Disease_Management_System/Plant-Disease-Management-System/outputs/affected/Tomato_Late_Blight_0005_affected.png"
   }
 ]
